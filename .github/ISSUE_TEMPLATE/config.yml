@@ -1,0 +1,9 @@
+---
+blank_issues_enabled: false
+contact_links:
+  - name: UNICEF Open Source Inventory
+    url: https://github.com/unicef/inventory
+    about: For feedback and improvements to content and information published in the UNICEF Open Source Inventory.
+  - name: UNICEF Drone DPG Toolkit
+    url: https://github.com/unicef/drone-dpgtoolkit
+    about: For feedback and improvements to content and information published in the UNICEF DPG Drone Toolkit.

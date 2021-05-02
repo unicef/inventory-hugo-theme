@@ -154,7 +154,9 @@ img {
     border: 0;
 }
 
+
 /* This changed this from the primary color to a darker shade to improve acessibility (https://github.com/unicef/inventory/issues/32) */
+
 a {
     text-decoration: none;
     color: #0076A3;
@@ -285,7 +287,7 @@ pre {
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 768px) {
@@ -875,8 +877,8 @@ code {
 }
 
 .ui-autocomplete-input {
-  border-bottom: 1px solid rgb(212, 212, 212) !important;
-  padding-right: 50px;
+    border-bottom: 1px solid rgb(212, 212, 212) !important;
+    padding-right: 50px;
 }
 
 .ui-autocomplete-input.active {

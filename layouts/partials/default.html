@@ -16,92 +16,98 @@
         </div>
       </div>
       <div class="col-lg-9">
-        <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">{{ .Title }}</h2>
-          {{ if .Content }}
-          <div class="content">{{.Content}}</div>
-          {{ else }}
-          <div class="bg-light p-4">
-            <ul class="page-list">
-              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
-            </ul>
+        
+        <div>
+          <div class="bg-white" style="margin:auto">
+            {{ partial "breadcrumb.html" . }}
           </div>
-          {{ end }}
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on {{ .Lastmod.Format "02 Jan 2006" }}</p>
-          <nav class="pagination mt-3">
-            <!-- Next prev page -->
-            {{ $currentNode := . }}
-            {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
-            {{ define "menu-nextprev" }}
-            {{$currentNode := .currentnode }}
-            {{ if ne .menu.Params.hidden true}}
-            {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
-            {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
-            {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
-            {{else}}
-            {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
-            {{ $currentNode.Scratch.Set "NextPageOK" nil }}
-            {{ $currentNode.Scratch.Set "nextPage" .menu }}
-            {{end}}
-            {{end}}
-            {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
-
-            {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
-            {{ if .menu.IsHome}}
-            {{ $currentNode.Scratch.Set "pages" .menu.Sections }}
-            {{ else if .menu.Sections}}
-            {{ $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) }}
-            {{end}}
-            {{ $pages := ($currentNode.Scratch.Get "pages") }}
-
-            {{ range $pages.ByWeight  }}
-            {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
-            {{end}}
+          <div class="p-lg-5 p-4 bg-white">
+            <h2 class="mb-5">{{ .Title }}</h2>
+            {{ if .Content }}
+            <div class="content">{{.Content}}</div>
+            {{ else }}
+            <div class="bg-light p-4">
+              <ul class="page-list">
+                {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+              </ul>
+            </div>
             {{ end }}
-            {{ end }}
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on {{ .Lastmod.Format "02 Jan 2006" }}</p>
+            <nav class="pagination mt-3">
+              <!-- Next prev page -->
+              {{ $currentNode := . }}
+              {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
+              {{ define "menu-nextprev" }}
+              {{$currentNode := .currentnode }}
+              {{ if ne .menu.Params.hidden true}}
+              {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
+              {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+              {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+              {{else}}
+              {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
+              {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+              {{ $currentNode.Scratch.Set "nextPage" .menu }}
+              {{end}}
+              {{end}}
+              {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
 
-            {{with ($.Scratch.Get "prevPage")}}
-            <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
-            {{end}}
-            {{with ($.Scratch.Get "nextPage")}}
-            <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
-            {{end}}
-          </nav>
+              {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
+              {{ if .menu.IsHome}}
+              {{ $currentNode.Scratch.Set "pages" .menu.Sections }}
+              {{ else if .menu.Sections}}
+              {{ $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) }}
+              {{end}}
+              {{ $pages := ($currentNode.Scratch.Get "pages") }}
 
-          <!-- Related Articles Section -->
-            <section class="my-3 py-3" id="related-articles">
-              {{ $c := .Section }}
-              {{ $p := .Params.Categories }}
-              {{ $t := .Params.Title }}
-              <h5 class="text-center">Related Articles</h5>
-              <div class="row">
-                  {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
-                    {{ if eq $key $p }}
-                      {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
-                        {{ if ne .Title $t }}
+              {{ range $pages.ByWeight  }}
+              {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
+              {{end}}
+              {{ end }}
+              {{ end }}
 
-                          <div class="col-sm-4 my-2">
-                            <a href="{{ .Permalink }}">
-                              <div class="card text-center">
-                                {{ if isset .Params "image" }}
-                                  <img class="card-img-top" {{ with .Params.image }} src="{{ . }}"{{ end }} alt="{{ .Params.Title }}">
-                                {{ end }}
-                                <div class="card-body">
-                                  <h5 class="card-title">{{ .Title }}</h5>
-                                  <p class="card-subtitle mb-2 text-muted">{{ .Params.Description }}</p>
+              {{with ($.Scratch.Get "prevPage")}}
+              <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
+              {{end}}
+              {{with ($.Scratch.Get "nextPage")}}
+              <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
+              {{end}}
+            </nav>
+
+            <!-- Related Articles Section -->
+              <section class="my-3 py-3" id="related-articles">
+                {{ $c := .Section }}
+                {{ $p := .Params.Categories }}
+                {{ $t := .Params.Title }}
+                <h5 class="text-center">Related Articles</h5>
+                <div class="row">
+                    {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+                      {{ if eq $key $p }}
+                        {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
+                          {{ if ne .Title $t }}
+
+                            <div class="col-sm-4 my-2">
+                              <a href="{{ .Permalink }}">
+                                <div class="card text-center">
+                                  {{ if isset .Params "image" }}
+                                    <img class="card-img-top" {{ with .Params.image }} src="{{ . }}"{{ end }} alt="{{ .Params.Title }}">
+                                  {{ end }}
+                                  <div class="card-body">
+                                    <h5 class="card-title">{{ .Title }}</h5>
+                                    <p class="card-subtitle mb-2 text-muted">{{ .Params.Description }}</p>
+                                  </div>
                                 </div>
-                              </div>
-                            </a>
-                          </div>
+                              </a>
+                            </div>
 
+                          {{ end }}
                         {{ end }}
                       {{ end }}
                     {{ end }}
-                  {{ end }}
-                </div>
-            </section>
-          <!-- End of related articles section-->
+                  </div>
+              </section>
+            <!-- End of related articles section-->
 
+          </div>
         </div>
       </div>
     </div>

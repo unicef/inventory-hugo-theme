@@ -154,11 +154,9 @@ img {
     border: 0;
 }
 
-a,
-a:hover,
-a:focus {
+a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #0076A3;
 }
 
 a:hover,

@@ -154,6 +154,7 @@ img {
     border: 0;
 }
 
+/* This changed this from the primary color to a darker shade to improve acessibility (https://github.com/unicef/inventory/issues/32) */
 a {
     text-decoration: none;
     color: #0076A3;

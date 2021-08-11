@@ -31,7 +31,7 @@
         <div class="p-lg-5 p-4 bg-white" id="content">
           <h2 class="mb-5" id="title">{{ .Title }}</h2>
           {{ if .Content }}
-          <div class="content">{{.Content}}</div>
+          <div class="content">{{ partial "header-link.html" .Content }}</div>
           {{ else }}
           <div class="bg-light p-4">
             <ul class="page-list">

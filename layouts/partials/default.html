@@ -12,6 +12,11 @@
               {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
               {{ end }}
             {{ end }}
+            {{ if .Content }}
+            <div>
+                <button class="btn btn-primary btn-block" id="genratePDF" > Get Pdf  </button>
+            </div>
+            {{ end }}
           </ul>
         </div>
       </div>
@@ -21,8 +26,8 @@
           <div class="bg-white" style="margin:auto">
             {{ partial "breadcrumb.html" . }}
           </div>
-          <div class="p-lg-5 p-4 bg-white">
-            <h2 class="mb-5">{{ .Title }}</h2>
+          <div class="p-lg-5 p-4 bg-white" id="content">
+            <h2 class="mb-5" id="title">{{ .Title }}</h2>
             {{ if .Content }}
             <div class="content">{{ partial "header-link.html" .Content }}</div>
             {{ else }}

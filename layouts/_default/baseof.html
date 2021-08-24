@@ -9,6 +9,8 @@
       {{ partial "navigation.html" . }}
       {{ partialCached "banner.html" . }}
     </header>
+    
+    {{ partial "alert.html" . }}
     {{ "<!-- /header -->" | safeHTML }}
     {{ else }}
     {{ "<!-- header -->" | safeHTML }}

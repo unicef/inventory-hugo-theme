@@ -83,10 +83,12 @@
                 {{ $c := .Section }}
                 {{ $p := .Params.Categories }}
                 {{ $t := .Params.Title }}
+                {{ $ignore := "alert"}}
                 <h5 class="text-center">Related Articles</h5>
                 <div class="row">
                     {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
                       {{ if eq $key $p }}
+                      {{ if ne $key $ignore}}
                         {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
                           {{ if ne .Title $t }}
 
@@ -103,7 +105,7 @@
                                 </div>
                               </a>
                             </div>
-
+                          {{end}}
                           {{ end }}
                         {{ end }}
                       {{ end }}
@@ -111,6 +113,8 @@
                   </div>
               </section>
             <!-- End of related articles section-->
+
+            
 
           </div>
         </div>

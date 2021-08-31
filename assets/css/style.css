@@ -12,6 +12,33 @@ P {
     font-size: 15px;
 }
 
+
+/* Alert Box */
+
+.col-fixed {
+    width: 75%;
+    /* min-height: 9rem;
+    max-height: 9rem; */
+    position: absolute;
+    left: 13%;
+    right: 13%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-fixed {
+        width: 100%;
+        left: 0;
+        right: 0;
+        /* min-height: 12rem;
+        max-height: 12rem; */
+    }
+}
+
+
+/* End of alert box */
+
 h1,
 h2,
 h3,
@@ -154,7 +181,9 @@ img {
     border: 0;
 }
 
+
 /* This changed this from the primary color to a darker shade to improve acessibility (https://github.com/unicef/inventory/issues/32) */
+
 a {
     text-decoration: none;
     color: #0076A3;
@@ -196,13 +225,13 @@ h4:hover a {
 }
 
 .section {
-    padding-top: 80px;
+    padding-top: calc(210px - 4vw);
     padding-bottom: 80px;
 }
 
 @media (max-width: 768px) {
     .section {
-        padding-top: 60px;
+        /* padding-top: 10rem; */
     }
 }
 

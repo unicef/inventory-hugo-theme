@@ -225,8 +225,12 @@ h4:hover a {
 }
 
 .section {
-    padding-top: calc(210px - 4vw);
     padding-bottom: 80px;
+}
+
+.section,
+section.main-section {
+    padding-top: calc(210px - 4vw);
 }
 
 @media (max-width: 768px) {
@@ -235,14 +239,21 @@ h4:hover a {
     }
 }
 
-.section-sm {
+
+/* .section-sm {
     padding-top: 60px;
     padding-bottom: 60px;
-}
+} */
 
 @media (max-width: 768px) {
-    .section-sm {
+    /* .section-sm {
         padding-top: 40px;
+    } */
+}
+
+@media (max-width: 400px) {
+    section.main-section {
+        padding-top: calc(300px - 4vw);
     }
 }
 

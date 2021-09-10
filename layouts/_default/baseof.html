@@ -10,6 +10,7 @@
       {{ partialCached "banner.html" . }}
     </header>
     {{ "<!-- /header -->" | safeHTML }}
+    {{ partial "alert.html" . }}
     {{ else }}
     {{ "<!-- header -->" | safeHTML }}
     <header class="shadow-bottom sticky-top bg-white">

@@ -1,5 +1,5 @@
 {{ "<!-- details page -->" | safeHTML }}
-<section class="single section-sm pb-0">
+<section class="single section-sm main-section" id="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
@@ -93,7 +93,6 @@
                   {{ if ne $key $ignore}}
                     {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
                       {{ if ne .Title $t }}
-
                         <div class="col-sm-4 my-2">
                           <a href="{{ .Permalink }}">
                             <div class="card text-center">
@@ -107,15 +106,16 @@
                             </div>
                           </a>
                         </div>
-                      {{end}}
                       {{ end }}
                     {{ end }}
+                  {{ end }}
                   {{ end }}
                 {{ end }}
               </div>
           </section>
-          <!-- End of related articles section -->
+          <!-- End of related articles section -->    
 
+          </div>
         </div>
       </div>
     </div>

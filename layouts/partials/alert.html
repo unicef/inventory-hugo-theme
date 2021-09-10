@@ -1,0 +1,59 @@
+{{ $alerts := (where .Site.Pages "Params.alerts" "alert") }}
+{{ $alertCount := len $alerts }}
+{{if gt $alertCount 0 }}
+  <div class="">
+  <div class="alert alert-primary alert-dismissible fade show mx-auto px-5 my-3 col-fixed mb-0" role="alert">
+    <div class="d-flex justify-content-center px-0">
+    
+      <div id="carouselExampleControls" class="carousel slide px-0" data-ride="carousel">
+        <div class="carousel-inner">
+        {{ range $alerts := .Site.Taxonomies.alerts }}
+            {{ range first 1 $alerts.Pages  }}
+              <div class="carousel-item active">
+                <h5 class="alert-heading">{{ .Title }}</h5>
+                <p mx-0>{{.Content}}</p>
+              </div>
+            {{end}}
+            {{ range after 1 $alerts.Pages  }}
+              <div class="carousel-item px-0">
+                <h5 class="alert-heading">{{ .Title }}</h5>
+                <p mx-0>{{.Content}}</p>
+              </div>
+            {{ end }}
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <div>
+
+      <a class="carousel-control-prev" style="justify-content:left" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" style="justify-content:right" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+    
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" onClick=remSpace()>
+        <span aria-hidden="true">&times;</span>
+    </button>
+    
+      
+    </div>
+  </div>
+  </div>
+{{ else }}
+  <script>
+    remSpace()
+  </script>
+{{end}}
+
+
+<script>
+  function remSpace() {
+    document.getElementById("section").style.paddingTop = "3rem";
+  }
+</script>

@@ -6,65 +6,68 @@ inventory-hugo-theme
     This makes git diffs easier to read. :)
 -->
 
-Theme used with UNICEF Open Source Inventory portal.
+UNICEF Inventory theme, for use with [Hugo](https://gohugo.io/) static site generator.
 Forked from Dot, a Hugo theme by ThemeFisher.
 
 
-## Demo
+## Examples
 
-Coming soon via GitHub Pages.
+* [UNICEF Open Source Inventory](https://unicef.github.io/inventory/)
+* [UNICEF Drone DPG Toolkit](https://unicef.github.io/drone-dpgtoolkit/)
 
 
 ## Installation
 
-The recommended installation method for an existing Hugo project is with a [git submodule](https://git-scm.com/docs/git-submodule).
-First, open a terminal and change directories to a Hugo git repository.
-Make sure the `themes/` directory is present in your Hugo project.
-
-Use these commands to add the theme into an existing Hugo site:
+The recommended installation method for an existing Hugo site is with a [git submodule](https://git-scm.com/docs/git-submodule).
+Use the commands below to add the theme to an existing Hugo site:
 
 ```bash
+cd /path/to/hugo-site/
+mkdir --parents themes/inventory/
 git submodule add git@github.com:unicef/inventory-hugo-theme.git themes/inventory
-git commit -sm "Add UNICEF Inventory Hugo theme as a git submodule"
+git commit --signoff --message="Add UNICEF Inventory Hugo theme as a git submodule"
 git push
 ```
 
-### Updating a submodule to latest upstream
+### Update a submodule to latest upstream
 
-Alternatively, you may occasionally wish to update your submodule for new changes added upstream.
+Sometimes you will want to update the git submodule with new changes added upstream to this repository.
 To pull newer upstream changes into your pre-existing git submodule, run the following from your Hugo project root directory:
 
 ```bash
 git submodule update --remote --rebase
 ```
 
-### Contributing
+
+## Contributing
 
 If you want to work on this Hugo theme itself, you do not need to use git submodules.
 Fork and clone this repository like you would a normal git repository.
 Then, open a Pull Request when you have changes to propose.
 
 
-## Main features
+## Features
 
 The upstream Dot theme includes the following features:
 
-- Automatic search
-- Search suggestion
-- Syntax highlighting
-- Multilingual mode
+- Multiple language support (Fr, En)
+- Google analytics support
+- CSS and Js bundle with hugo pipe
+- Color and fonts variable in config file
+- Contact form Support
+- Google page speed optimized ( 81% )
+- Open graph meta tag
+- Twitter card meta tag
+- Search suggestions
 - Powered by Bootstrap 4
-- Google Analytics
-- Color schemes
 - Next/Prev buttons in single-post page
-- Contact Page
 - Frequently Asked Questions (F.A.Q.) page
 - Responsive-ready
 
 
 ## Share feedback
 
-[Open a new issue on `unicef/inventory` to report bugs and request new features.](https://github.com/unicef/inventory/issues/new/choose)
+[Open a new issue to report bugs and request new features.](https://github.com/unicef/inventory-hugo-theme/issues/new/choose)
 
 
 ## Legal

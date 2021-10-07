@@ -186,7 +186,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #0076A3;
+    color: #374EA2;
 }
 
 a:hover,
@@ -210,7 +210,7 @@ select:focus {
 .hanchor {
     font-size: 100%;
     visibility: hidden;
-    color: silver;
+    color: #D8D1C9;
 }
 
 h1:hover a,

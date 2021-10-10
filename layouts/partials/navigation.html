@@ -1,14 +1,19 @@
 <nav class="navbar navbar-expand-md {{ if .IsHome }}navbar-dark{{ else }}navigation{{ end }}">
   <div class="container px-2 px-md-0">
-    <a class="navbar-brand px-2" href="{{ site.BaseURL | relLangURL }}">
       {{ $logo:= site.Params.logo }}
       {{ $logoWhite:= site.Params.logo_white }}
+    <a class="navbar-brand px-2" href="{{ if (or $logo $logoWhite) }}https://www.unicef.org/{{else}}{{ site.BaseURL | relLangURL }}{{ end }}">
       {{ if (or $logo $logoWhite) }}
       {{ if .IsHome }}
-      <img class="img-fluid" src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
-        alt="{{ site.Title }}">
+      <div class="text-center">
+      <img class="img-fluid d-inline" src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
+        alt="{{ site.Title }}"> <a class="text-white d-block" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
+      </div>
       {{ else }}
-      <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
+      <div class="text-center">
+      <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}"> 
+      <a class="text-white d-block" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
+      </div>
       {{ end }}
       {{ else }}
       {{ site.Title }}
@@ -65,4 +70,5 @@
       {{ end }}
     </div>
   </div>
+    <p class="text-white h6 unicef-glob">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
 </nav>

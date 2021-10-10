@@ -230,7 +230,7 @@ h4:hover a {
 
 .section,
 section.main-section {
-    padding-top: calc(210px - 4vw);
+    padding-top: calc(250px - 4vw);
 }
 
 @media (max-width: 768px) {
@@ -474,6 +474,10 @@ pre {
 
 .banner .navbar-brand {
     color: var(--white-color) !important;
+}
+
+.unicef-glob {
+    font-size: 12px !important;
 }
 
 

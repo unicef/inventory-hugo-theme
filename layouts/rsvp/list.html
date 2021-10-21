@@ -7,6 +7,7 @@
       <div class="col-12">
         <h2 class="section-title text-dark">{{ .Title }}</h2>
         {{ .Content }}
+	      <img src="https://github.com/unicef/drone-4sdgtoolkit/blob/1d09c73df4b15b0960c5bbfa191e4eeb618a1288/static/images/drone_runway.PNG" width="800" height="400">
         <form action="{{ .Site.Params.rsvp_form.action | safeURL }}" method="POST">
           <input type="text" id="name" name="name" placeholder="Name" class="form-control mb-4 shadow rounded-0">
           <input type="text" id="organization" name="organization" placeholder="Organization" class="form-control mb-4 shadow rounded-0">

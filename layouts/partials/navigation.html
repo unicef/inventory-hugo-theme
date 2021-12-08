@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md {{ if .IsHome }}navbar-dark{{ else }}navigation{{ end }}">
+<nav class="navbar navbar-expand-md navbar-dark" style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: #1CABE2{{ end }}">
   <div class="container px-2 px-md-0">
       {{ $logo:= site.Params.logo }}
       {{ $logoWhite:= site.Params.logo_white }}
@@ -10,9 +10,9 @@
         alt="{{ site.Title }}"> <a class="text-white d-block" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
       </div>
       {{ else }}
-      <div class="text-center">
-      <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}"> 
-      <a class="text-white d-block" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
+      <div class="text-center nav-heading">
+      <img class="img-fluid nav-img" src="{{ $logo | absURL }}" alt="{{ site.Title }}"> 
+      <a class="text-white d-block nav-title" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
       </div>
       {{ end }}
       {{ else }}
@@ -70,5 +70,5 @@
       {{ end }}
     </div>
   </div>
-    <p class="text-white h6 unicef-glob">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
+    <p class="text-white unicef-glob mx-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
 </nav>

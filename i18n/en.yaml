@@ -1,0 +1,5 @@
+---
+- footer:
+    legal: "Find legal information and policies related to {{ $.Site.Params.brand.parent_org_name }}'s digital communications."
+- topics_title: Find your answer by subject
+- send: Send

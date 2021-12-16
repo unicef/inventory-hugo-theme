@@ -1,0 +1,5 @@
+---
+- footer:
+    legal: "Trouvez des informations juridiques et des politiques liées aux communications numériques de l'{{ $.Site.Params.brand.parent_org_name }}."
+- topics_title: Trouvez votre réponse par sujet
+- send: Envoyer

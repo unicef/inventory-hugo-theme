@@ -39,6 +39,11 @@ git submodule update --remote --rebase
 ```
 
 
+## Configuration
+
+See [`sample_config.yaml`](/sample_config.yaml) for a sample Hugo site using this theme.
+
+
 ## Contributing
 
 If you want to work on this Hugo theme itself, you do not need to use git submodules.

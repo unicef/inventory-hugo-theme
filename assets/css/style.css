@@ -333,6 +333,14 @@ pre {
     top: 50px;
 }
 
+nav #site-brand a {
+    color: var(--text-title-color) !important;
+}
+
+nav #site-brand a:focus, nav #site-brand a:hover {
+    color: var(--light-color) !important;
+}
+
 .navbar {
     padding: 0;
 }

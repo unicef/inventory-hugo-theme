@@ -14,7 +14,6 @@ P {
 
 
 /* Alert Box */
-
 .col-fixed {
     width: 75%;
     /* min-height: 9rem;
@@ -38,9 +37,29 @@ P {
         display: grid !important;
     }
 }
-
-
 /* End of alert box */
+
+/* ===[ start: DPG Report styling ]=== */
+#report-dpg #report-dpg-header {
+    background-color: #cccccc;
+    color: var(--white-color);
+    font-weight: bold;
+    text-align: center;
+}
+#report-dpg .report-dpg-status1 {
+    background-color: #66cc00;
+    color: var(--text-color);
+}
+#report-dpg .report-dpg-status2 {
+    background-color: #ffcc00;
+    color: var(--text-color);
+}
+#report-dpg .report-dpg-status3 {
+    background-color: #ff0033;
+    color: var(--white-color);
+}
+/* ===[ end: DPG Report styling ]=== */
+
 
 h1,
 h2,

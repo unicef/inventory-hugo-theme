@@ -5,11 +5,11 @@
       <div class="col-lg-3">
         <div class="sidebar">
         <a class="back-btn" href="{{ .Site.BaseURL | relLangURL }}" aria-label="back"></a>
-          <ul class="list-styled">
+          <ul class="">
             {{ $currentNode := . }}
             {{range .Site.Home.Sections.ByWeight}}
               {{ if eq .FirstSection $currentNode.FirstSection }}
-              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
+              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "index" 0}}
               {{ end }}
             {{ end }}
             {{ if .Content }}
@@ -152,3 +152,5 @@
 </li>
 {{ end }}
 {{ end }}
+
+  

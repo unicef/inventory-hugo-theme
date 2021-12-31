@@ -1,0 +1,185 @@
+---
+###############################################################################
+#                                                                             #
+#                            WEBSITE CONFIGURATION                            #
+#                                                                             #
+###############################################################################
+
+
+# --- base website settings ---
+
+baseURL: https://example.github.io/knowledgebase/
+title: Example Knowledgebase
+theme: inventory
+languageCode: en-us
+enableEmoji: true
+enableGitInfo: true
+
+# Optional: Add Google Analytics tracking support.
+googleAnalytics: ""
+
+
+# --- markup settings ---
+
+markup:
+  asciidocExt:
+    preserveTOC: true
+    sectionNumbers: true
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: murphy
+    tabWidth: 4
+
+
+# --- privacy settings ---
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+  twitter:
+    enableDNT: true
+  vimeo:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
+
+
+# --- navigation menu ---
+
+menu:
+  main:
+    - name: FAQ
+      weight: 10
+      url: faq
+
+    - name: pages
+      weight: 20
+      url: pages
+      hasChildren: true
+
+    # Sub-pages in this drop-down should correspond to categories created in /content/
+    - name: Topic 1
+      parent: pages
+      weight: 10
+      url: topic-1
+
+    - name: Topic 2
+      parent: pages
+      weight: 20
+      url: topic-2
+
+    - name: Topic 3
+      parent: pages
+      weight: 30
+      url: topic-3
+
+    - name: Topic 4
+      parent: pages
+      weight: 40
+      url: topic-4
+
+    - name: Topic 5
+      parent: pages
+      weight: 50
+      url: topic-5
+
+
+# --- custom settings ---
+
+params:
+  logo: "images/logo.png"
+
+  # OpenGraph data
+  description: Template site using the UNICEF Inventory theme. This is from the sample configuration.
+  author: Our Community of Authors
+  image: "images/opengraph.png"
+
+  # customize color
+  primary_color: "#32c6b0"
+  body_color: "#D8D1C9"
+  text_color: "#777779"
+  text_color_dark: "#374EA2"
+  text_title_color: "#ffffff"
+  white_color: "#ffffff"
+  light_color: "#f8f9fa"
+
+  # font family (choose from https://fonts.google.com/)
+  font_family: "Open+Sans"
+
+  # contact form action (works with https://formspree.io)
+  contact_form_action: "#"
+
+  # related article number limit
+  article_count: 3
+
+  # brand and identity information
+  brand:
+    parent_org_name: Example Site
+    parent_org_url: https://example.com/
+    parent_org_url_legal: https://example.com/privacy/
+  footer:
+    mainSite: https://unicef-if.discourse.group/c/projects/5
+    mainSiteName: UNICEF Innovation Fund projects
+    description: Template site using the UNICEF Inventory theme. This is from the sample configuration.
+
+
+# --- social platform settings ---
+# themify icon pack : https://themify.me/themify-icons
+
+  social:
+    - icon: ti-github
+      name: Theme repository on GitHub
+      link: https://github.com/unicef/inventory-hugo-theme
+    - icon: ti-twitter
+      name: "@GoHugoIO on Twitter"
+      link: https://twitter.com/GoHugoIO
+
+
+# --- taxonomy settings ---
+taxonomies:
+  alert: alerts
+  category: categories
+  downloadable: downloadBtn
+
+
+# --- multilingual settings ---
+
+Languages:
+############################# English #############################
+  en:
+    languageName: en
+    languageCode: en-us
+    weight: 1
+    home: Home
+    copyright: Creative Commons BY-SA 4.0. Site theme adapted from UNICEF Inventory theme.
+    params:
+      banner:
+        title: Example Knowledgebase
+        subtitle: Template site using the UNICEF Inventory theme. This is from the sample configuration.
+        bg_image: images/banner.jpg
+        placeholder: Have a question? Search the site here.
+############################# Español / Spanish #############################
+  # es:
+  #   languageName: es
+  #   languageCode: es-mx
+  #   weight: 2
+  #   home: Página principal
+  #   copyright: Creative Commons BY-SA 4.0.
+  #   params:
+  #     banner:
+  #       title: "Inventario de Open Source de UNICEF"
+  #       subtitle: "Una base de conocimientos de innovación mundial del UNICEF sobre mejores prácticas y recursos para trabajar y dirigir Open."
+  #       bg_image: images/banner.jpg
+  #       placeholder: ¿Tienes una pregunta? Busque en el sitio aquí.

@@ -34,6 +34,9 @@ P {
         /* min-height: 12rem;
         max-height: 12rem; */
     }
+    .cohort-cards {
+        display: grid !important;
+    }
 }
 
 
@@ -337,7 +340,8 @@ nav #site-brand a {
     color: var(--text-title-color) !important;
 }
 
-nav #site-brand a:focus, nav #site-brand a:hover {
+nav #site-brand a:focus,
+nav #site-brand a:hover {
     color: var(--light-color) !important;
 }
 

@@ -5,7 +5,7 @@
       <div class="col-lg-3">
         <div class="sidebar">
         <a class="back-btn" href="{{ .Site.BaseURL | relLangURL }}" aria-label="back"></a>
-          <ul class="">
+          <ul>
             {{ $currentNode := . }}
             {{range .Site.Home.Sections.ByWeight}}
               {{ if eq .FirstSection $currentNode.FirstSection }}
@@ -15,7 +15,7 @@
             {{ if .Content }}
               {{ if eq .Params.downloadBtn "true" }}
                 <div>
-                    <button class="btn btn-primary btn-block" id="generatePDF" > Get Pdf  </button>
+                    <button class="btn btn-primary btn-block" id="generatePDF">Get Pdf</button>
                 </div>
               {{ end }}
             {{ end }}

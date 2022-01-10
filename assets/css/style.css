@@ -889,6 +889,12 @@ tbody {
 
 /* side list */
 
+.sidebar-scroll {
+    overflow: auto;
+    height: 33vh !important;
+    padding-left: 0.5rem;
+}
+
 .sidebar {
     background-color: var(--white-color);
     position: sticky;

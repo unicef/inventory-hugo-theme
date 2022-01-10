@@ -389,6 +389,9 @@ nav #site-brand a:hover {
         bottom: 0;
         right: 0;
     }
+    .navigation-bar {
+        display: table !important;
+    }
     .unicef-glob {
         position: absolute;
         bottom: 0;

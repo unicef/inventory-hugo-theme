@@ -354,7 +354,7 @@ nav #site-brand a:hover {
 }
 
 .navigation {
-    background-color: #1CABE2;
+    background-color: var(--primary-color);
 }
 
 .navigation>div>a {

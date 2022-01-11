@@ -13,7 +13,10 @@ Forked from Dot, a Hugo theme by ThemeFisher.
 ## Examples
 
 * [UNICEF Open Source Inventory](https://unicef.github.io/inventory/)
+* [UNICEF Coach Cards](https://unicef.github.io/coach/)
 * [UNICEF Drone DPG Toolkit](https://unicef.github.io/drone-dpgtoolkit/)
+* [UNICEF Software Development Toolkit](https://unicef.github.io/ooi-toolkit-software/)
+* [SustainOSS Design & UX knowledgebase](https://sustainers.github.io/design/)
 
 
 ## Installation
@@ -23,7 +26,6 @@ Use the commands below to add the theme to an existing Hugo site:
 
 ```bash
 cd /path/to/hugo-site/
-mkdir --parents themes/inventory/
 git submodule add git@github.com:unicef/inventory-hugo-theme.git themes/inventory
 git commit --signoff --message="Add UNICEF Inventory Hugo theme as a git submodule"
 git push

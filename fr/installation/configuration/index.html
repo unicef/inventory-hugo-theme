@@ -5,7 +5,7 @@
 		<title>Configuration</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="generator" content="Hugo 0.92.0" />
-		<meta name="description" content="Configuration - UNICEF Inventory ">
+		<meta name="description" content="Configuration - UNICEF Inventory Theme ">
 		<!-- ** CSS Plugins Needed for the Project ** -->
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://unicef.github.io/inventory-hugo-theme/plugins/bootstrap/bootstrap.min.css">
@@ -28,7 +28,7 @@
 			  --body-color:#f9f9f9;
 			  --text-color:#636363;
 			  --text-color-dark:#242738;
-			  --text-title-color:;
+			  --text-title-color:#ffffff;
 			  --white-color:#ffffff;
 			  --light-color:#f8f9fa;
 			  --font-family:Lato;
@@ -46,15 +46,21 @@
 		<!-- match-height JS -->
 		<script src="https://unicef.github.io/inventory-hugo-theme/plugins/match-height/jquery.matchHeight-min.js"></script>
 		<!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+		<meta property="og:image" content="https://unicef.github.io/inventory-hugo-theme/images/banner.jpg" />
+		<meta name="twitter:image" content="https://unicef.github.io/inventory-hugo-theme/images/banner.jpg"/>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="og:image:width" content="1279">
+		<meta property="og:image:height" content="619">
+		<meta property="og:image:type" content="image/jpeg">
 		<meta name="twitter:title" content="Configuration"/>
-		<meta name="twitter:description" content="This is meta description"/>
+		<meta name="twitter:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file."/>
 		<meta property="og:title" content="Configuration" />
-		<meta property="og:description" content="This is meta description" />
+		<meta property="og:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file." />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" />
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="Configuration"/>
-		<meta name="twitter:description" content="This is meta description"/>
+		<meta name="twitter:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file."/>
 	</head>
 	<body>
 		<!-- header -->
@@ -63,7 +69,7 @@
 				<div class="container px-2 px-md-0 navigation-bar">
 					<div id="site-brand">
 						<a class="navbar-brand px-2" href="/inventory-hugo-theme/fr">
-							UNICEF Inventory
+							UNICEF Inventory Theme
 						</a>
 					</div>
 					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
@@ -73,35 +79,35 @@
 					<div class="collapse navbar-collapse text-center" id="navigation">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link text-white" href="https://unicef.github.io/fr/inventory-hugo-theme/">Accueil</a>
+								<a class="nav-link text-white" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">Faq</a>
+								<a class="nav-link text-white" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">contact</a>
+								<a class="nav-link text-white" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-									docs
+									pages
 								</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" href="https://unicef.github.io/inventory-hugo-theme/fr/installation">Installation</a>
-									<a class="dropdown-item" href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing">Billing and Pricing</a>
-									<a class="dropdown-item" href="https://unicef.github.io/inventory-hugo-theme/fr/features">Features</a>
+									<a class="dropdown-item" href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing">Facturation &amp; Tarification</a>
+									<a class="dropdown-item" href="https://unicef.github.io/inventory-hugo-theme/fr/features">Caractéristiques</a>
 								</div>
 							</li>
 						</ul>
 						<select class="lang-list bg-primary dark mb-3 mb-md-0" id="select-language"
         onchange="location = this.value;">
-							<option id="en" value="https://unicef.github.io/inventory-hugo-theme/installation/configuration/">En</option>
-							<option id="fr" value="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" selected>Fr
+							<option id="en" value="https://unicef.github.io/inventory-hugo-theme/installation/configuration/">en</option>
+							<option id="fr" value="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" selected>fr
 							</option>
 						</select>
 					</div>
 				</div>
-				<p class="text-white unicef-glob mx-3">Visit <a href="" class="text-white"> <i class="fas fa-angle-double-right"></i></a></p>
+				<p class="text-white unicef-glob mx-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
 			</nav>
 		</header>
 		<!-- /header -->
@@ -215,19 +221,19 @@
 													<p>On top of <a href="https://gohugo.io/overview/configuration/">Hugo global configuration</a>, <strong>Dot</strong> lets you define the following parameters in your <code>config.toml</code> (here, values are default).</p>
 													<p>Note that some of these parameters are explained in details in other sections of this documentation.</p>
 													<div class="highlight">
-														<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
-  <span style="color:#75715e"># Prefix URL to edit current page. </span>
-  <span style="color:#75715e"># Useful to give opportunity to people to create merge request for your doc.</span>
-  <span style="color:#75715e"># See the config.toml file from this documentation site to have an example.</span>
-  <span style="color:#75715e"># Javascript and CSS cache are automatically busted when new version of site is generated. </span>
-  <span style="color:#75715e"># Order sections in menu by &#34;weight&#34;</span>
-  <span style="color:#75715e"># Call to action is default enabled, if you want to disable it. just change the </span>
-  <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
-  <span style="color:#75715e"># You can change banner title and other text from the config file.</span>
+														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params]
+  <span style="color:#666;font-style:italic"># Prefix URL to edit current page. </span>
+  <span style="color:#666;font-style:italic"># Useful to give opportunity to people to create merge request for your doc.</span>
+  <span style="color:#666;font-style:italic"># See the config.toml file from this documentation site to have an example.</span>
+  <span style="color:#666;font-style:italic"># Javascript and CSS cache are automatically busted when new version of site is generated. </span>
+  <span style="color:#666;font-style:italic"># Order sections in menu by &#34;weight&#34;</span>
+  <span style="color:#666;font-style:italic"># Call to action is default enabled, if you want to disable it. just change the </span>
+  enable = <span style="color:#289;font-weight:bold">false</span>
+  <span style="color:#666;font-style:italic"># You can change banner title and other text from the config file.</span>
 </code></pre>
 													</div>
 												</div>
-												<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
+												<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 31 Oct 2021</p>
 												<nav class="pagination mt-3">
 													<a class="nav nav-prev" href="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Installation</span></a>
 													<a class="nav nav-next" href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" aria-label="Previous page" > <span class="d-none d-md-block">Elements</span><i class="ti-arrow-right ml-2"></i></a>
@@ -252,45 +258,40 @@
 										<ul>
 											<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
 											<li class="nav-item">
-												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/fr/inventory-hugo-theme/">Accueil</a>
+												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">Faq</a>
+												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">contact</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/">docs</a>
+												<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
 											</li>
 										</ul>
 									</div>
 									<div class="col-md-6 text-md-center text-center">
-										<p class="mb-md-0 mb-4 text-white"></p>
+										<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
 									</div>
 									<div class="col-md-3 text-md-right text-center">
 										<ul class="text-white">
 											<li class="nav-item">
-												<a class="nav-link text-white font-weight-bold" href=""></a>
+												<a class="nav-link text-white font-weight-bold" href="https://www.unicef.org/">UNICEF Global</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link text-white font-weight-bold" href=""></a>
+												<a class="nav-link text-white font-weight-bold" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link text-white font-weight-bold" href="">Legal</a>
-												<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;&lt;no value&gt;.</p>
+												<a class="nav-link text-white font-weight-bold" href="https://www.unicef.org/legal">Legal</a>
+												<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
 											</li>
 										</ul>
 										<ul class="list-inline">
-											<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="#" aria-label="Facebook"><i class="ti-facebook"></i></a></li>
-											<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="#" aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
-											<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="#" aria-label="Github"><i class="ti-github"></i></a></li>
-											<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="#" aria-label="Linkedin"><i class="ti-linkedin"></i></a></li>
+											<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
+											<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter"></i></a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
-							<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2021 un thème Hugo par <a href="https://gethugothemes.com/">Gethugothemes</a></p>
+							<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
 						</footer>
 						<!-- /footer -->
 						<!-- Main Script -->

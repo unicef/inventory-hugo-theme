@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Requirments on UNICEF Inventory</title>
+    <title>Requirments on UNICEF Inventory Theme</title>
     <link>https://unicef.github.io/inventory-hugo-theme/installation/requirments/</link>
-    <description>Recent content in Requirments on UNICEF Inventory</description>
+    <description>Recent content in Requirments on UNICEF Inventory Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2021 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)</copyright>
+    <copyright>Copyright &amp;copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright>
     <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://unicef.github.io/inventory-hugo-theme/installation/requirments/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

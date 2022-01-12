@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How to pay your bill on UNICEF Inventory</title>
-    <link>https://examplesite.com/billing-pricing/bill/</link>
+    <link>https://unicef.github.io/inventory-hugo-theme/billing-pricing/bill/</link>
     <description>Recent content in How to pay your bill on UNICEF Inventory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)</copyright>
-    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://examplesite.com/billing-pricing/bill/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/bill/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

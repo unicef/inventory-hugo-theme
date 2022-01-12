@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on UNICEF Inventory</title>
-    <link>https://examplesite.com/categories/</link>
+    <link>https://unicef.github.io/inventory-hugo-theme/categories/</link>
     <description>Recent content in Categories on UNICEF Inventory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2021 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://examplesite.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright &amp;copy; 2021 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

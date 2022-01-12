@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Questions fréquemment posées on UNICEF Inventory</title>
-    <link>https://examplesite.com/fr/faq/</link>
+    <link>https://unicef.github.io/inventory-hugo-theme/fr/faq/</link>
     <description>Recent content in Questions fréquemment posées on UNICEF Inventory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <copyright>Copyright &amp;copy; 2021 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://examplesite.com/fr/faq/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright &amp;copy; 2021 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/fr/faq/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

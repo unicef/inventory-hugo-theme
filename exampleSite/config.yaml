@@ -1,0 +1,229 @@
+---
+###############################################################################
+#                                                                             #
+#                            WEBSITE CONFIGURATION                            #
+#                                                                             #
+###############################################################################
+
+
+# --- base website settings ---
+
+baseURL: https://unicef.github.io/inventory-hugo-theme/
+title: UNICEF Inventory Theme
+theme: inventory
+languageCode: en-us
+enableEmoji: true
+enableGitInfo: true
+
+# Optional: Add Google Analytics tracking support.
+googleAnalytics: ""
+
+
+# --- markup settings ---
+
+markup:
+  asciidocExt:
+    preserveTOC: true
+    sectionNumbers: true
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: murphy
+    tabWidth: 4
+
+
+# --- privacy settings ---
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+  twitter:
+    enableDNT: true
+  vimeo:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
+
+
+# --- custom settings ---
+
+params:
+  # Shown on all pages. When logo is empty, it will show your site title, set above.
+  logo: ""
+
+  # White logo, or any alternate color of logo. Only shown on home page if set.
+  logo_white: ""
+
+  # OpenGraph data
+  description: This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file.
+  author: UNICEF Office of Innovation, and others
+  # find a royalty-free image from unsplash.com for an OpenGraph image
+  image: "images/banner.jpg"
+
+  # customize color
+  primary_color: "#02007e"
+  body_color: "#f9f9f9"
+  text_color: "#636363"
+  text_color_dark: "#242738"
+  text_title_color: "#ffffff"
+  white_color: "#ffffff"
+  light_color: "#f8f9fa"
+
+  # font family (choose from https://fonts.google.com/)
+  font_family: "Lato"
+
+  # contact form action (works with https://formspree.io)
+  contact_form_action: "#"
+
+  # related article number limit
+  article_count: 3
+
+  # brand and identity information
+  brand:
+    parent_org_name: UNICEF Global
+    parent_org_url: https://www.unicef.org/
+    parent_org_url_legal: https://www.unicef.org/legal
+  footer:
+    mainSite: https://www.unicefinnovationfund.org/
+    mainSiteName: UNICEF Innovation Fund
+    description: "This is metadata for the site footer. Set in Hugo config file under \"brand and identity information\"."
+
+
+# --- social platform settings ---
+# themify icon pack : https://themify.me/themify-icons
+
+  social:
+    - icon: ti-github
+      name: UNICEF Inventory theme for Hugo on GitHub
+      link: https://github.com/unicef/inventory-hugo-theme
+    - icon: ti-twitter
+      name: "@UNICEFinnovate on Twitter"
+      link: https://twitter.com/UNICEFinnovate
+
+
+# --- taxonomy settings ---
+taxonomies:
+  alert: alerts
+  category: categories
+  downloadable: downloadBtn
+
+
+# --- multilingual settings ---
+
+Languages:
+############################# English #############################
+  en:
+    languageName: en
+    languageCode: en-us
+    weight: 1
+    home: Home
+    copyright: "Copyright &copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)"
+    params:
+      banner:
+        title: Support Center & Knowledge base
+        subtitle: Find advice and answers from our support team fast or get in touch.
+        bg_image: images/banner.jpg
+        placeholder: Have a question? Search the site here.
+      cta:
+        enable: true
+        title: Didn't find an answer to your question?
+        content: Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam.
+        button:
+          enable: true
+          label: Contact us
+          link: contact
+    # --- navigation menu ---
+    menu:
+      main:
+        - name: Home
+          weight: 10
+          url: .
+        - name: FAQ
+          weight: 20
+          url: faq
+        - name: Contact
+          weight: 30
+          url: contact
+
+        - name: pages
+          weight: 50
+          url: pages
+          hasChildren: true
+
+        # Sub-pages in this drop-down should correspond to categories created in /content/
+        - name: Installation
+          parent: pages
+          weight: 10
+          url: installation
+        - name: Billing & Pricing
+          parent: pages
+          weight: 20
+          url: billing-pricing
+        - name: Features
+          parent: pages
+          weight: 30
+          url: features
+
+############################# français / French #############################
+  fr:
+    languageName: fr
+    languageCode: fr-fr
+    weight: 2
+    home: Page d'accueil
+    copyright: "Copyright &copy; 2020-2022 un thème Hugo par [UNICEF Office of Innovation](https://www.unicef.org/innovation/)"
+    params:
+      banner:
+        title: Comment pouvons nous aider?
+        subtitle: Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous.
+        bg_image: images/banner.jpg
+        placeholder: Avoir une question? Il suffit de demander ici ou de saisir les termes.
+      cta:
+        enable: true
+        title: Vous n'avez pas trouvé de réponse à votre question?
+        content: Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé.
+        button:
+          enable: true
+          label: Contactez nous
+          link: contact
+    # --- navigation menu ---
+    menu:
+      main:
+        - name: Accueil
+          weight: 10
+          url: .
+        - name: FAQ
+          weight: 20
+          url: faq
+        - name: Contacter
+          weight: 30
+          url: contact
+
+        - name: pages
+          weight: 50
+          url: pages
+          hasChildren: true
+
+        # Sub-pages in this drop-down should correspond to categories created in /content/
+        - name: Installation
+          parent: pages
+          weight: 10
+          url: installation
+        - name: Facturation & Tarification
+          parent: pages
+          weight: 20
+          url: billing-pricing
+        - name: Caractéristiques
+          parent: pages
+          weight: 30
+          url: features

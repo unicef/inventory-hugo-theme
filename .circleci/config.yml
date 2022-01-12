@@ -1,0 +1,70 @@
+---
+# https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+
+orbs:
+  hugo: circleci/hugo@1.2.2
+
+workflows:
+  main:
+    jobs:
+      - hugo/build:
+          source: exampleSite/
+          html-proofer: true
+          htmlproofer-http-status-ignore: "'0,999'"
+          htmlproofer-url-ignore: "'/inventory-hugo-theme/'"
+          htmlproofer-timeframe: "'6w'"
+          version: latest
+      - html-tidy:
+          filters:
+            branches:
+              only: main
+          requires:
+            - hugo/build
+      - deploy:
+          filters:
+            branches:
+              only: main
+          requires:
+            - hugo/build
+            - html-tidy
+
+jobs:
+  html-tidy:
+    docker:
+      - image: cimg/ruby:3.0
+    steps:
+      - run: gem install htmlbeautifier
+      - attach_workspace:
+          at: .
+      - run: htmlbeautifier --tab $(find public/ -name '*.html' -print)
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
+  deploy:
+    docker:
+      - image: cimg/base:stable
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/inventory-hugo-theme/exampleSite/public
+    steps:
+      # add repository deploy key (for pull/push access)
+      - add_ssh_keys:
+          fingerprints:
+            - "5c:fa:c0:ac:94:f5:49:83:52:5f:19:27:2e:f2:7c:e2"
+
+      # deploy.sh dependencies
+      - run: sudo apt-get update && sudo apt-get install -y rsync
+
+      # clone repo (required to access `.circleci/deploy.sh`)
+      - run: git clone https://github.com/unicef/inventory-hugo-theme.git
+
+      # checkout generated html
+      - attach_workspace:
+          at: inventory-hugo-theme
+
+      # deploy to production
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: ./inventory-hugo-theme/.circleci/deploy.sh

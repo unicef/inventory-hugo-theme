@@ -1,10 +1,10 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://examplesite.com/"
+baseURL = "https://unicef.github.io/inventory-hugo-theme/"
 # theme
-theme = "dot-hugo"
+theme = "inventory"
 # site title
-title = "Dot"
+title = "UNICEF Inventory"
 # disable language
 disableLanguages = []
 # google analytics
@@ -52,12 +52,12 @@ link = "#"
 icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
 name = "Twitter"
 link = "#"
-  
+
 [[params.social]]
 icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
 name = "Github"
 link = "#"
-  
+
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
 name = "Linkedin"

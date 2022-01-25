@@ -894,7 +894,7 @@ tbody {
 
 .sidebar-scroll {
     overflow: auto;
-    height: 33vh !important;
+    max-height: 33vh !important;
     padding-left: 0.5rem;
 }
 

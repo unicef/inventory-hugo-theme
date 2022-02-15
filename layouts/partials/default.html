@@ -35,7 +35,7 @@
           {{ else }}
           <div class="bg-light p-4">
             <ul class="page-list">
-              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+              {{ template "default-section-tree-nav" dict "sect" . "currentnode" $currentNode }}
             </ul>
           </div>
           {{ end }}
@@ -124,7 +124,7 @@
 {{ "<!-- /details page -->" | safeHTML }}
 
 <!-- templates -->
-{{ define "section-tree-nav" }}
+{{ define "default-section-tree-nav" }}
 {{ $showvisitedlinks := .showvisitedlinks }}
 {{ $currentNode := .currentnode }}
 {{with .sect}}

@@ -59,6 +59,9 @@ privacy:
 # --- custom settings ---
 
 params:
+  # "Edit this page" feature: GitHub content base link
+  editPrefix: https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content
+
   # Shown on all pages. When logo is empty, it will show your site title, set above.
   logo: ""
 

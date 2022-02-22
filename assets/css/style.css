@@ -1070,7 +1070,5 @@ pre code::-webkit-scrollbar-thumb {
 .code-tabs .nav-tabs .nav-item.active .nav-link {
     color: var(--white-color);
 }
-.cardLink:hover{
-    text-decoration: none;
 
-}
+.cardLink:hover { text-decoration: none; }

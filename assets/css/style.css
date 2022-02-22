@@ -901,7 +901,7 @@ tbody {
 .sidebar {
     background-color: var(--white-color);
     position: sticky;
-    top: 50px;
+    top: 110px;
     margin-bottom: 30px;
     padding: 40px 10px 20px 10px;
 }
@@ -1070,3 +1070,5 @@ pre code::-webkit-scrollbar-thumb {
 .code-tabs .nav-tabs .nav-item.active .nav-link {
     color: var(--white-color);
 }
+
+.cardLink:hover { text-decoration: none; }

@@ -30,11 +30,11 @@
   <div class="pdfNav">
     <div class="paginations">
       <button class="pdfBtn" id="prev">
-        <b>&lt</b>
+        <b>&lt;</b>
         </button>
           <b id="currentPageNo"></b>/<b id="totalPages"></b>
           <button class="pdfBtn" id="next">
-            <b> &gt</b>
+            <b>&gt;</b>
            </button>
     </div>
 
@@ -86,22 +86,18 @@
     function renderPage(no) {
       pdf.getPage(no).then((page) => {
         console.log(page);
-        var scale = 1.5;
+        var scale = 3;
         var viewport = page.getViewport({ scale: scale });
-        var outputScale = window.devicePixelRatio || 1;
         var canvas = document.getElementById("the-canvas");
         var context = canvas.getContext("2d");
         canvas.width = viewport.width;
         canvas.height = viewport.height;
         canvas.style.width = "100%";
         canvas.style.height = "100%";
-        var transform =
-          outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
         // Render PDF page into canvas context
         var renderContext = {
           canvasContext: context,
           viewport: viewport,
-          transform: transform,
         };
         var renderTask = page.render(renderContext);
       });

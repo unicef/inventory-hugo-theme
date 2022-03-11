@@ -75,6 +75,7 @@
           </nav>
 
           <!-- Related Articles Section -->
+          {{if .Content}}
           <section class="my-3 py-3" id="related-articles">
             {{ $c := .Section }}
             {{ $p := .Params.Categories }}
@@ -107,6 +108,7 @@
                 {{ end }}
               </div>
           </section>
+          {{end}}
           <!-- End of related articles section -->
 
           </div>

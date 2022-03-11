@@ -190,3 +190,8 @@ Markdown | Less | Pretty
 ##### Youtube video
 
 {{< youtube C0DPdy98e4c >}}
+
+<hr>
+
+##### Embed PDF
+{{< embed-pdf pdfName="sample.pdf">}}

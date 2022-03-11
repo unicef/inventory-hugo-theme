@@ -26,4 +26,3 @@ Note that some of these parameters are explained in details in other sections of
   # You can change banner title and other text from the config file.
 ```
 
-{{< embed-pdf pdfName="sample.pdf">}}

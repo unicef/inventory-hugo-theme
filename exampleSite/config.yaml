@@ -35,8 +35,8 @@ markup:
     hl_Lines: ""
     lineAnchors: ""
     lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
+    lineNos: true
+    lineNumbersInTable: false
     noClasses: true
     style: murphy
     tabWidth: 4
@@ -73,6 +73,7 @@ params:
 
   # customize color
   primary_color: "#02007e"
+  primary_color_light: "#1b66b1"
   body_color: "#f9f9f9"
   text_color: "#636363"
   text_color_dark: "#242738"
@@ -146,9 +147,6 @@ Languages:
     # --- navigation menu ---
     menu:
       main:
-        - name: Home
-          weight: 10
-          url: .
         - name: FAQ
           weight: 20
           url: faq

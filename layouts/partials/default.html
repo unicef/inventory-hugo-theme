@@ -75,38 +75,41 @@
           </nav>
 
           <!-- Related Articles Section -->
-          <section class="my-3 py-3" id="related-articles">
-            {{ $c := .Section }}
-            {{ $p := .Params.Categories }}
-            {{ $t := .Params.Title }}
-            {{ $ignore := "alert"}}
-            <h5 class="text-center">Related Articles</h5>
-            <div class="row">
-                {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
-                  {{ if eq $key $p }}
-                  {{ if ne $key $ignore}}
-                    {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
-                      {{ if ne .Title $t }}
-                        <div class="col-sm-4 my-2">
-                          <a href="{{ .Permalink }}">
-                            <div class="card text-center">
-                              {{ if isset .Params "image" }}
-                                <img class="card-img-top" {{ with .Params.image }} src="{{ . }}"{{ end }} alt="{{ .Params.Title }}">
-                              {{ end }}
-                              <div class="card-body">
-                                <h5 class="card-title">{{ .Title }}</h5>
-                                <p class="card-subtitle mb-2 text-muted">{{ .Params.Description }}</p>
+          {{ $c := .Section }}
+          {{ $p := .Params.Categories }}
+          {{ $t := .Params.Title }}
+          {{ $ignore := "alert"}}
+            {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+              {{ if eq $key $p }}
+              {{ if ne $key $ignore}}
+              {{ if le $taxonomy.Pages 1 }}
+                {{ else }}
+                <section class="my-3 py-3" id="related-articles">
+                  <h5 class="text-center">Related Articles</h5>
+                    <div class="row">
+                          {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
+                            {{ if ne .Title $t }}
+                              <div class="col-sm-4 my-2">
+                                <a href="{{ .Permalink }}">
+                                  <div class="card text-center">
+                                    {{ if isset .Params "image" }}
+                                      <img class="card-img-top" {{ with .Params.image }} src="{{ . }}"{{ end }} alt="{{ .Params.Title }}">
+                                    {{ end }}
+                                    <div class="card-body">
+                                      <h5 class="card-title">{{ .Title }}</h5>
+                                      <p class="card-subtitle mb-2 text-muted">{{ .Params.Description }}</p>
+                                    </div>
+                                  </div>
+                                </a>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                      {{ end }}
-                    {{ end }}
-                  {{ end }}
-                  {{ end }}
-                {{ end }}
-              </div>
-          </section>
+                            {{ end }}
+                          {{ end }}
+                    </div>
+                </section>
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            {{ end }}
           <!-- End of related articles section -->
 
           </div>

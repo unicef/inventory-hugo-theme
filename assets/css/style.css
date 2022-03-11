@@ -14,7 +14,6 @@ P {
 
 
 /* Alert Box */
-
 .col-fixed {
     width: 75%;
     /* min-height: 9rem;
@@ -38,9 +37,29 @@ P {
         display: grid !important;
     }
 }
-
-
 /* End of alert box */
+
+/* ===[ start: DPG Report styling ]=== */
+#report-dpg #report-dpg-header {
+    background-color: #cccccc;
+    color: var(--white-color);
+    font-weight: bold;
+    text-align: center;
+}
+#report-dpg .report-dpg-status1 {
+    background-color: #66cc00;
+    color: var(--text-color);
+}
+#report-dpg .report-dpg-status2 {
+    background-color: #ffcc00;
+    color: var(--text-color);
+}
+#report-dpg .report-dpg-status3 {
+    background-color: #ff0033;
+    color: var(--white-color);
+}
+/* ===[ end: DPG Report styling ]=== */
+
 
 h1,
 h2,
@@ -119,7 +138,7 @@ h6,
 }
 
 .btn-primary:hover {
-    background: var(--primary-color);
+    background: var(--primary-color-light);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -699,6 +718,11 @@ textarea.form-control {
     font-size: 14px;
 }
 
+/* https://github.com/unicef/inventory-hugo-theme/issues/62 | Fixed line spacing */
+.highlight * {
+    margin-bottom: 2px;
+}
+
 blockquote {
     font-size: 20px !important;
     color: var(--text-color-dark);
@@ -824,19 +848,19 @@ tbody {
     padding: 10px;
 }
 
-.notices p::before {
+.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+}
+
+.notices.note p::before {
     position: absolute;
     top: 2px;
     color: #fff;
     font-family: "themify";
     font-weight: 900;
-    content: "\e717";
-    left: 10px;
-}
-
-.notices.note p {
-    border-top: 30px solid #6ab0de;
-    background: #e7f2fa;
+    content: "\e61d";
+    left: 5px;
 }
 
 .notices.note p::after {
@@ -852,6 +876,16 @@ tbody {
     background: #E6F9E6;
 }
 
+.notices.tip p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e63a";
+    left: 5px;
+}
+
 .notices.tip p::after {
     content: 'Tip';
     position: absolute;
@@ -863,6 +897,16 @@ tbody {
 .notices.info p {
     border-top: 30px solid #F0B37E;
     background: #FFF2DB;
+}
+
+.notices.info p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e717";
+    left: 5px;
 }
 
 .notices.info p::after {
@@ -878,8 +922,66 @@ tbody {
     background: #FAE2E2;
 }
 
+.notices.warning p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e607";
+    left: 5px;
+}
+
 .notices.warning p::after {
     content: 'Warning';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: 2rem;
+}
+
+/*Caution Admonition Shortcode*/
+.notices.caution p {
+    border-top: 30px solid #802392;
+    background: #f7cdff;
+}
+
+.notices.caution p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e620";
+    left: 5px;
+}
+
+.notices.caution p::after {
+    content: 'Caution';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: 2rem;
+}
+
+/*Important Admonition Shortcode*/
+.notices.important p {
+    border-top: 30px solid #e40046;
+    background: #f7bacc;
+}
+
+.notices.important p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e6c0";
+    left: 5px;
+}
+
+.notices.important p::after {
+    content: 'Important';
     position: absolute;
     top: 2px;
     color: #fff;
@@ -1072,3 +1174,54 @@ pre code::-webkit-scrollbar-thumb {
 }
 
 .cardLink:hover { text-decoration: none; }
+
+
+/* Table of Contents */
+
+#toc{
+    background-color: #f7f7f7;
+    border: 1px solid #6D6E71;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+#toctitle{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1CABE2;
+    margin: 1.5rem 0rem;
+}
+
+.content > .toc > ul li::before {
+    display:none;
+}
+
+.content > .toc > .sectlevel1 > li a{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #4C4C4C;
+    margin: 0.5rem 0rem;
+}
+
+.content > .toc > .sectlevel1 > li ul li a{
+    color:#677993;
+    font-size:1rem;
+}
+
+.sectlevel2{
+    padding-top:1rem;
+}
+
+@media only screen and (max-width: 768px){
+    .sectlevel2 {
+        display:none;
+    }
+    
+    .content > .toc > .sectlevel1 > li a:hover, a:focus + .sectlevel2 {
+        display:block;
+        padding-top:1rem;
+    }
+
+}

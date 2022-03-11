@@ -1,0 +1,37 @@
+---
+req1:
+  sequence: "1"
+  description: Relevance to Sustainable Development Goals
+req2:
+  sequence: "2"
+  description: Use of Approved Open Licenses
+req3:
+  sequence: "3"
+  description: Clear Ownership
+req4:
+  sequence: "4"
+  description: Platform Independence
+req5:
+  sequence: "5"
+  description: Documentation
+req6:
+  sequence: "6"
+  description: Mechanism for Extracting Data
+req7:
+  sequence: "7"
+  description: Adherence to Privacy and Applicable Laws
+req8:
+  sequence: "8"
+  description: Adherence to Standards & Best Practices
+req9:
+  sequence: "9"
+  description: Do No Harm by Design
+req9a:
+  sequence: "9a"
+  description: Data Privacy & Security
+req9b:
+  sequence: "9b"
+  description: Inappropriate & Illegal Content
+req9c:
+  sequence: "9c"
+  description: Protection from Harassment

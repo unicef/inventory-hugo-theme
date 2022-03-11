@@ -32,6 +32,7 @@
   <style>
   :root{
     --primary-color:{{ .Site.Params.primary_color }};
+    --primary-color-light:{{ .Site.Params.primary_color_light }};
     --body-color:{{ .Site.Params.body_color }};
     --text-color:{{ .Site.Params.text_color }};
     --text-color-dark:{{ .Site.Params.text_color_dark }};
@@ -56,6 +57,9 @@
 
 {{ "<!-- Bootstrap JS -->" | safeHTML }}
 <script src="{{ `plugins/bootstrap/bootstrap.min.js` | absURL }}"></script>
+
+{{ "<!-- PopperJS -->" | safeHTML }}
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 
 {{ "<!-- match-height JS -->" | safeHTML }}
 <script src="{{ `plugins/match-height/jquery.matchHeight-min.js` | absURL }}"></script>

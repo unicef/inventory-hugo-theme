@@ -82,9 +82,7 @@
             {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
               {{ if eq $key $p }}
               {{ if ne $key $ignore}}
-              {{ if le $taxonomy.Pages 1 }}
-                  {{ $ignore }}
-                  {{ else }}
+              {{ if not (le $taxonomy.Pages 1) }}
                 <section class="my-3 py-3" id="related-articles">
                   <h5 class="text-center">Related Articles</h5>
                     <div class="row">

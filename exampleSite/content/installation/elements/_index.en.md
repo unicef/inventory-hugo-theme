@@ -194,4 +194,7 @@ Markdown | Less | Pretty
 <hr>
 
 ##### Embed PDF
+
+Embedded PDFs must be committed as [static files](https://gohugo.io/content-management/static-files/) in `static/pdfs/`:
+
 {{< embed-pdf pdfName="sample.pdf">}}

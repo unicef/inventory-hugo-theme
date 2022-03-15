@@ -190,3 +190,11 @@ Markdown | Less | Pretty
 ##### Youtube video
 
 {{< youtube C0DPdy98e4c >}}
+
+<hr>
+
+##### Embed PDF
+
+Embedded PDFs must be committed as [static files](https://gohugo.io/content-management/static-files/) in `static/pdfs/`:
+
+{{< embed-pdf pdfName="sample.pdf">}}

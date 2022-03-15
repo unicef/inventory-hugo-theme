@@ -1,0 +1,107 @@
+<style>
+  .pdfContainer {
+    width: 100%;
+    height: auto;
+
+  }
+
+  #the-canvas {
+    border: 1px solid black;
+  }
+
+  .pdfNav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+    align-items: center;
+  }
+
+  .pdfBtn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 2px;
+  }
+</style>
+
+<div class="pdfContainer">
+  <hr>
+  <div class="pdfNav">
+    <div class="paginations">
+      <button class="pdfBtn" id="prev">
+        <b>&lt;</b>
+        </button>
+          <b id="currentPageNo"></b>/<b id="totalPages"></b>
+          <button class="pdfBtn" id="next">
+            <b>&gt;</b>
+           </button>
+    </div>
+
+    <a href="{{.Site.BaseURL}}pdfs/{{ .Get "pdfName" }}" target="_blank">View PDF</a>
+  </div>
+  <canvas id="the-canvas"></canvas>
+</div>
+<script>
+  var pdf = "{{.Site.BaseURL}}" + "pdfs/" + "{{ .Get "pdfName" }}";
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  const currentPageNoElement = document.getElementById("currentPageNo");
+  const loadingTask = pdfjsLib.getDocument(pdf);
+
+  loadingTask.promise.then((pdf) => {
+    var currentPage = 1;
+
+    //set toal pages
+    const totalPages = pdf._pdfInfo.numPages;
+    const totalPagesElement = document.getElementById("totalPages");
+    totalPagesElement.innerHTML = totalPages;
+    console.log(totalPages)
+    // function to set current page number
+    setCurrentPageNo();
+    function setCurrentPageNo() {
+      currentPageNoElement.innerHTML = currentPage;
+    }
+    //on clicking prev btn
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        setCurrentPageNo();
+        renderPage(currentPage);
+
+      }
+    });
+    //on clicking next btn
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        setCurrentPageNo();
+        renderPage(currentPage);
+
+      }
+    });
+    renderPage(currentPage);
+
+    //function to render given page number
+    function renderPage(no) {
+      pdf.getPage(no).then((page) => {
+        console.log(page);
+        var scale = 3;
+        var viewport = page.getViewport({ scale: scale });
+        var canvas = document.getElementById("the-canvas");
+        var context = canvas.getContext("2d");
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        // Render PDF page into canvas context
+        var renderContext = {
+          canvasContext: context,
+          viewport: viewport,
+        };
+        var renderTask = page.render(renderContext);
+      });
+    }
+
+  });
+</script>

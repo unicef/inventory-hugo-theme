@@ -718,6 +718,10 @@ textarea.form-control {
     font-size: 14px;
 }
 
+.highlight * {
+    margin-bottom: 2px;
+}
+
 blockquote {
     font-size: 20px !important;
     color: var(--text-color-dark);

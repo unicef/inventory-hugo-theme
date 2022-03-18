@@ -1091,3 +1091,54 @@ pre code::-webkit-scrollbar-thumb {
 }
 
 .cardLink:hover { text-decoration: none; }
+
+
+/* Table of Contents */
+
+#toc{
+    background-color: #f7f7f7;
+    border: 1px solid #6D6E71;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+#toctitle{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1CABE2;
+    margin: 1.5rem 0rem;
+}
+
+.content > .toc > ul li::before {
+    display:none;
+}
+
+.content > .toc > .sectlevel1 > li a{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #4C4C4C;
+    margin: 0.5rem 0rem;
+}
+
+.content > .toc > .sectlevel1 > li ul li a{
+    color:#677993;
+    font-size:1rem;
+}
+
+.sectlevel2{
+    padding-top:1rem;
+}
+
+@media only screen and (max-width: 768px){
+    .sectlevel2 {
+        display:none;
+    }
+    
+    .content > .toc > .sectlevel1 > li a:hover, a:focus + .sectlevel2 {
+        display:block;
+        padding-top:1rem;
+    }
+
+}

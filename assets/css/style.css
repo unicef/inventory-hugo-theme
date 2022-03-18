@@ -855,19 +855,32 @@ tbody {
     font-family: "themify";
     font-weight: 900;
     content: "\e717";
-    left: 10px;
+    left: 5px;
 }
 
+/* https://github.com/unicef/inventory-hugo-theme/issues/63 | Improved Note Admonition */
 .notices.note p {
-    border-top: 30px solid #6ab0de;
-    background: #e7f2fa;
+    border-top: 30px solid #fff;
+    margin-left: 10px;
+}
+
+.notices.note p::before{
+    position: absolute;
+    line-height: 0.75;
+    background-color: #2464a8;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.4em;
 }
 
 .notices.note p::after {
-    content: 'Note';
+    content: 'NOTE';
     position: absolute;
     top: 2px;
     color: #fff;
+    background-color: #2d7dd2;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 0.4em;
+    line-height: 0.75;
     left: 2rem;
 }
 

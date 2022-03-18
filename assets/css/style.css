@@ -718,6 +718,11 @@ textarea.form-control {
     font-size: 14px;
 }
 
+/* https://github.com/unicef/inventory-hugo-theme/issues/62 | Fixed line spacing */
+.highlight * {
+    margin-bottom: 2px;
+}
+
 blockquote {
     font-size: 20px !important;
     color: var(--text-color-dark);

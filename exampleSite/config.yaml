@@ -35,8 +35,8 @@ markup:
     hl_Lines: ""
     lineAnchors: ""
     lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
+    lineNos: true
+    lineNumbersInTable: false
     noClasses: true
     style: murphy
     tabWidth: 4

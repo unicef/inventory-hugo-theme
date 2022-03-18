@@ -229,27 +229,27 @@
 													<p>If your favicon is a png, just drop off your image in your local <code>static/images/</code> folder and name it <code>favicon.png</code></p>
 													<p>If you need to change this default behavior, create a new file in <code>layouts/partials/</code> named <code>head.html</code>. Then write something like this:</p>
 													<div class="highlight">
-														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#070">link</span> <span style="color:#007">rel</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;shortcut icon&#34;</span> <span style="color:#007">href</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;/images/favicon.png&#34;</span> <span style="color:#007">type</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;image/x-icon&#34;</span> /&gt;
+														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#070">link</span> <span style="color:#007">rel</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;shortcut icon&#34;</span> <span style="color:#007">href</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;/images/favicon.png&#34;</span> <span style="color:#007">type</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;image/x-icon&#34;</span> /&gt;
 </span></span></code></pre>
 													</div>
 													<h3 id="change-default-colors">Change default colors&nbsp;<a class="hanchor" href="#change-default-colors">🔗</a> </h3>
 													<p><strong>Dot</strong> support change color. You can change the colors from <code>config.toml</code>. You can change the colors of the template as you want.</p>
 													<div class="highlight">
-														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
-</span></span><span style="display:flex;"><span>  <span style="color:#666;font-style:italic"># Change default color scheme with a color name or color code.</span>
-</span></span><span style="display:flex;"><span>  primary_color = <span style="background-color:#e0e0ff">&#34;#02007e&#34;</span>
-</span></span><span style="display:flex;"><span>  body_color = <span style="background-color:#e0e0ff">&#34;#f9f9f9&#34;</span>
-</span></span><span style="display:flex;"><span>  text_color = <span style="background-color:#e0e0ff">&#34;#636363&#34;</span>
-</span></span><span style="display:flex;"><span>  text_color_dark = <span style="background-color:#e0e0ff">&#34;#242738&#34;</span>
-</span></span><span style="display:flex;"><span>  white_color = <span style="background-color:#e0e0ff">&#34;#ffffff&#34;</span>
-</span></span><span style="display:flex;"><span>  light_color = <span style="background-color:#e0e0ff">&#34;#f8f9fa&#34;</span>
+														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[params]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#666;font-style:italic"># Change default color scheme with a color name or color code.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  primary_color = <span style="background-color:#e0e0ff">&#34;#02007e&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  body_color = <span style="background-color:#e0e0ff">&#34;#f9f9f9&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  text_color = <span style="background-color:#e0e0ff">&#34;#636363&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  text_color_dark = <span style="background-color:#e0e0ff">&#34;#242738&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  white_color = <span style="background-color:#e0e0ff">&#34;#ffffff&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  light_color = <span style="background-color:#e0e0ff">&#34;#f8f9fa&#34;</span>
 </span></span></code></pre>
 													</div>
 													<h3 id="change-default-fonts">Change default Fonts&nbsp;<a class="hanchor" href="#change-default-fonts">🔗</a> </h3>
 													<div class="highlight">
-														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
-</span></span><span style="display:flex;"><span>  <span style="color:#666;font-style:italic"># font family</span>
-</span></span><span style="display:flex;"><span>  font_family = <span style="background-color:#e0e0ff">&#34;lato&#34;</span> <span style="color:#666;font-style:italic"># Choose font family from : https://fonts.google.com/</span>
+														<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[params]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#666;font-style:italic"># font family</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  font_family = <span style="background-color:#e0e0ff">&#34;lato&#34;</span> <span style="color:#666;font-style:italic"># Choose font family from : https://fonts.google.com/</span>
 </span></span></code></pre>
 													</div>
 												</div>

@@ -146,9 +146,6 @@ Languages:
     # --- navigation menu ---
     menu:
       main:
-        - name: Home
-          weight: 10
-          url: .
         - name: FAQ
           weight: 20
           url: faq

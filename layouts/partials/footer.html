@@ -35,7 +35,7 @@
         </ul>
         <ul class="list-inline">
           {{ range .Site.Params.social }}
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="{{ .link | safeURL }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white change-color-on-hover" style="text-transform: none" href="{{ .link | safeURL }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
       </div>

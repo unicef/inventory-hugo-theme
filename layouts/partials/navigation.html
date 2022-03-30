@@ -5,7 +5,7 @@
         {{ $logoWhite:= site.Params.logo_white }}
         {{ $orgName:= site.Params.brand.parent_org_name }}
         {{ $orgUrl:= site.Params.brand.parent_org_url }}
-        <a class="navbar-brand px-2" href="{{ if (or $logo $logoWhite) }}{{ $orgUrl }}{{else}}{{ site.BaseURL | relLangURL }}{{ end }}">
+        <a class="navbar-brand px-2 change-color-on-hover" href="{{ if (or $logo $logoWhite) }}{{ $orgUrl }}{{else}}{{ site.BaseURL | relLangURL }}{{ end }}">
           {{ if (or $logo $logoWhite) }}
             {{ if .IsHome }}
             <div class="text-center">
@@ -33,7 +33,7 @@
         {{ range site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle text-white change-color-on-hover" href="#" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             {{ .Name }}
           </a>
@@ -45,7 +45,7 @@
         </li>
         {{ else }}
         <li class="nav-item">
-          <a class="nav-link text-white" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          <a class="nav-link text-white change-color-on-hover" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         </li>
         {{ end }}
         {{ end }}

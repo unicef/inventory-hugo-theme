@@ -1225,3 +1225,13 @@ pre code::-webkit-scrollbar-thumb {
     }
 
 }
+/* Changes to the footer and header links */
+
+.change-color-on-hover:hover{
+    text-decoration: underline !important;
+}
+.footer-social-icons:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 25%;
+}

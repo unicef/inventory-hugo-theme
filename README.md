@@ -43,7 +43,7 @@ git submodule update --remote --rebase
 
 ## Configuration
 
-See [`sample_config.yaml`](/sample_config.yaml) for a sample Hugo site using this theme.
+See [`exampleSite/config.yaml`](/exampleSite/config.yaml) for an example Hugo site using this theme.
 
 
 ## Contributing

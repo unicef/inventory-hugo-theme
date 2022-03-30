@@ -43,14 +43,12 @@ git submodule update --remote --rebase
 
 ## Configuration
 
-See [`exampleSite/config.yaml`](/exampleSite/config.yaml) for an example Hugo site using this theme.
+See [`exampleSite/config.yaml`](/exampleSite/config.yaml) for an example Hugo site using the UNICEF Inventory theme.
 
 
-## Contributing
+## :busts_in_silhouette: Contributing
 
-If you want to work on this Hugo theme itself, you do not need to use git submodules.
-Fork and clone this repository like you would a normal git repository.
-Then, open a Pull Request when you have changes to propose.
+See [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) for contribution guidelines, conventions and courtesies, and other advice for working on the UNICEF Inventory theme.
 
 
 ## Features
@@ -77,7 +75,7 @@ The upstream Dot theme includes the following features:
 [Open a new issue to report bugs and request new features.](https://github.com/unicef/inventory-hugo-theme/issues/new/choose)
 
 
-## Legal
+## :memo: Legal
 
 Licensed under [MPL-2.0](https://www.mozilla.org/en-US/MPL/ "About the Mozilla Public License").
 From [_choosealicense.com_](https://choosealicense.com/licenses/mpl-2.0/):

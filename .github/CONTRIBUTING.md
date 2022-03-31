@@ -14,8 +14,8 @@ This page is a guide for making successful contributions to the project.
 
 1. [Contribution process](#process)
 1. [Conventions & courtesies](#conventions)
-    1. [Start working on a ticket](#conventions--ticket-start)
-    1. [Inactive tickets](#conventions--ticket-inactive)
+    1. [Start working on an issue](#conventions--issue-start)
+    1. [Inactive issues](#conventions--issue-inactive)
     1. [Submit a pull request](#conventions--submit-pr)
     1. [Maintainer response time](#conventions--maintainer-response)
 1. [Structure & components](#components)
@@ -42,38 +42,45 @@ Since the team is small and our efforts are still early, this project's governan
 This section describes conventions and common courtesies when working on the project.
 Following these steps improves the probability of your change or contribution being accepted.
 
-### <a id="conventions--ticket-start"></a>Start working on a ticket
+### <a id="conventions--issue-start"></a>Start working on an issue
 
-Want to work on a new ticket?
-Follow these three steps:
+Want to work on a new issue?
+Follow these steps:
 
-1. Check if ticket is already assigned
-1. Leave a comment in the ticket to work on it
+1. Check if issue is already assigned
+1. Leave a comment in the issue to work on it
+1. Start a new git feature branch
 
 If someone else is already assigned, it means the task is **already in progress**.
-An assigned ticket is not available to start new work.
-If a ticket has no updates for longer than seven days, you may follow up and ask if the assignee is still working on the ticket.
+An assigned issue is not available to start new work.
+If an issue has no updates for longer than seven days, you may follow up and ask if the assignee is still working on the issue.
 
-Finally, **leave a comment** in the ticket you want to work on.
-A maintainer will reply asking for more information or they will assign the ticket to you.
-When you are assigned a ticket, this means you are approved to work on it.
+Then, **leave a comment** in the issue you want to work on.
+A maintainer will reply asking for more information or they will assign the issue to you.
+When you are assigned an issue, this means you are approved to work on it.
 
-### <a id="conventions--ticket-inactive"></a>Inactive tickets
+Finally, once approved to work on an issue, **create a new [git feature branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)** for the issue you are working on.
+This will help you [make a pull request](#conventions--submit-pr) and make revisions easier.
 
-Sometimes, an assignee of a ticket may no longer have time to work on a ticket.
-**After five days of no updates, a ticket can be reassigned by a project maintainer.**
-This _DOES NOT_ mean all tickets must be solved in five days.
-It _DOES_ mean if an assignee does not respond to new comments in a ticket after five days of their last comment, it can be re-assigned by a maintainer.
-This helps to keep tickets open and available for those who have time to work on them.
+### <a id="conventions--issue-inactive"></a>Inactive issues
 
-If you are working on a ticket and more than five days have passed since your last comment, please give an update when possible.
+Sometimes, an assignee of an issue may no longer have time to work on an issue.
+**After five days of no updates, an issue can be reassigned by a project maintainer.**
+This _DOES NOT_ mean all issues must be solved in five days.
+It _DOES_ mean if an assignee does not respond to new comments in an issue after five days of their last comment, it can be re-assigned by a maintainer.
+This helps to keep issues open and available for those who have time to work on them.
+
+If you are working on an issue and more than five days have passed since your last comment, please give an update when possible.
 
 ### <a id="conventions--submit-pr"></a>Submit a pull request
 
 These guidelines help maintainers review new pull requests.
 Stick to the guidelines for faster pull request reviews.
 
-1. Prefer gradual small changes than sudden big changes
+1. Prefer gradual small changes than sudden big changes.
+1. Write meaningful commit messages.
+   Commit messages should be clear and brief.
+   Tag an issue in your commit message if you are assigned an issue, e.g. `Fixes #123.`
 1. Write a helpful title for your pull request (if someone reads only one sentence, will they understand your change?)
 1. Address the following questions in your pull request:
     1. What is a summary of your change?
@@ -88,7 +95,7 @@ Project maintainers / mentors are committed to **no more than three days for a r
 If more than three days have passed and you have not received a reply, follow up in [our Matrix room](https://matrix.to/#/#unicef-innovation:matrix.org).
 Someone may have missed your comment.
 
-_Remember_, using issue templates and answering the above questions in pull requests reduces response time from a maintainer to your ticket / PR.
+_Remember_, using issue templates and answering the above questions in pull requests reduces response time from a maintainer to your issue / Pull Request.
 
 
 ## <a id="components"></a>Structure & components

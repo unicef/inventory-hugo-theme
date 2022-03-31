@@ -7,6 +7,7 @@
     <div class="row align-items-center">
     <div class="col-md-3 text-md-left text-center">
        <ul>
+           <li><a class="nav-link text-white" href="{{ site.BaseURL | relLangURL }}">HOME</a></li>
         {{ range site.Menus.main }}
           {{if ne .Name "pages"}}
             <li class="nav-item">

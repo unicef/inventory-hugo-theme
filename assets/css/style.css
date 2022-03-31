@@ -377,7 +377,7 @@ nav #site-brand a:hover {
 }
 
 .navigation>div>a {
-    color: white;
+    color: var(--white-color);
 }
 
 .unicef-glob {
@@ -856,7 +856,7 @@ tbody {
 .notices.note p::before {
     position: absolute;
     top: 2px;
-    color: #fff;
+    color: var(--white-color);
     font-family: "themify";
     font-weight: 900;
     content: "\e61d";
@@ -913,7 +913,7 @@ tbody {
     content: 'Info';
     position: absolute;
     top: 2px;
-    color: #fff;
+    color: var(--white-color);
     left: 2rem;
 }
 
@@ -1179,7 +1179,7 @@ pre code::-webkit-scrollbar-thumb {
 /* Table of Contents */
 
 #toc{
-    background-color: #f7f7f7;
+    background-color: var(--white-color);
     border: 1px solid #6D6E71;
     box-sizing: border-box;
     border-radius: 4px;
@@ -1231,7 +1231,7 @@ pre code::-webkit-scrollbar-thumb {
     text-decoration: underline !important;
 }
 .footer-social-icons:hover{
-    color: blue;
-    background-color: white;
+    color: var(--body-color);
+    background-color: var(--white-color);
     border-radius: 25%;
 }

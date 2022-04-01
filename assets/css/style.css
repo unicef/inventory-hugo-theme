@@ -33,10 +33,12 @@ P {
         /* min-height: 12rem;
         max-height: 12rem; */
     }
+
     .cohort-cards {
         display: grid !important;
     }
 }
+
 /* End of alert box */
 
 /* ===[ start: DPG Report styling ]=== */
@@ -46,18 +48,22 @@ P {
     font-weight: bold;
     text-align: center;
 }
+
 #report-dpg .report-dpg-status1 {
     background-color: #66cc00;
     color: var(--text-color);
 }
+
 #report-dpg .report-dpg-status2 {
     background-color: #ffcc00;
     color: var(--text-color);
 }
+
 #report-dpg .report-dpg-status3 {
     background-color: #ff0033;
     color: var(--white-color);
 }
+
 /* ===[ end: DPG Report styling ]=== */
 
 
@@ -143,7 +149,7 @@ h6,
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
+.show > .btn-primary.dropdown-toggle {
     color: var(--white-color);
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -376,7 +382,7 @@ nav #site-brand a:hover {
     background-color: var(--primary-color);
 }
 
-.navigation>div>a {
+.navigation > div > a {
     color: var(--white-color);
 }
 
@@ -388,6 +394,7 @@ nav #site-brand a:hover {
     .navbar {
         padding: 10px 0;
     }
+
     .nav-img {
         width: 11rem;
         display: inline-block;
@@ -395,12 +402,14 @@ nav #site-brand a:hover {
         bottom: 0;
         left: 0;
     }
+
     .nav-heading {
         display: flex;
         position: relative;
         justify-content: space-between;
         width: 100%;
     }
+
     .nav-title {
         font-size: 0.8rem;
         display: inline-block !important;
@@ -408,9 +417,11 @@ nav #site-brand a:hover {
         bottom: 0;
         right: 0;
     }
+
     .navigation-bar {
         display: table !important;
     }
+
     .unicef-glob {
         position: absolute;
         bottom: 0;
@@ -728,8 +739,7 @@ blockquote {
     color: var(--text-color-dark);
     padding: 20px 40px 0;
     margin: 40px 0;
-    font-weight: 300;
-    ;
+    font-weight: 300;;
 }
 
 
@@ -934,7 +944,7 @@ tbody {
     display: block;
 }
 
-li.sidelist>a {
+li.sidelist > a {
     margin-left: 35px;
     margin-bottom: 10px;
     display: block;
@@ -1095,12 +1105,14 @@ pre code::-webkit-scrollbar-thumb {
     color: var(--white-color);
 }
 
-.cardLink:hover { text-decoration: none; }
+.cardLink:hover {
+    text-decoration: none;
+}
 
 
 /* Table of Contents */
 
-#toc{
+#toc {
     background-color: var(--white-color);
     border: 1px solid #6D6E71;
     box-sizing: border-box;
@@ -1109,7 +1121,7 @@ pre code::-webkit-scrollbar-thumb {
     padding-inline-end: 2rem;
 }
 
-#toctitle{
+#toctitle {
     font-weight: 600;
     font-size: 1.5rem;
     color: #1CABE2;
@@ -1117,43 +1129,60 @@ pre code::-webkit-scrollbar-thumb {
 }
 
 .content > .toc > ul li::before {
-    display:none;
+    display: none;
 }
 
-.content > .toc > .sectlevel1 > li a{
+.content > .toc > .sectlevel1 > li a {
     font-weight: 400;
     font-size: 1.2rem;
     color: #4C4C4C;
     margin: 0.5rem 0rem;
 }
 
-.content > .toc > .sectlevel1 > li ul li a{
-    color:#677993;
-    font-size:1rem;
+.content > .toc > .sectlevel1 > li ul li a {
+    color: #677993;
+    font-size: 1rem;
 }
 
-.sectlevel2{
-    padding-top:1rem;
+.sectlevel2 {
+    padding-top: 1rem;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .sectlevel2 {
-        display:none;
+        display: none;
     }
-    
+
     .content > .toc > .sectlevel1 > li a:hover, a:focus + .sectlevel2 {
-        display:block;
-        padding-top:1rem;
+        display: block;
+        padding-top: 1rem;
     }
 
 }
+
 /* Changes to the footer and header links */
 
-.change-color-on-hover:hover{
+.change-color-on-hover:hover {
     text-decoration: underline !important;
 }
-.footer-social-icons:hover{
+
+.footer-social-icons:hover {
     color: var(--body-color);
     background-color: var(--white-color);
     border-radius: 25%;
+}
+
+/* Just a try */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+/* hide close when burger shown */
+.navbar-toggler.collapsed .close-icon>b {
+    display: none !important;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
 }

@@ -177,3 +177,9 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+
+# Other generated files by IDEs
+.idea/
+.history/
+.vscode/

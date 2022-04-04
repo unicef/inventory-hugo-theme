@@ -1,6 +1,7 @@
 body {
     line-height: 1.5;
-    font-family: var(--font-family), sans-serif;
+    font-family: var(--font-family), sans-serif, FontAwesome;
+    ;
     -webkit-font-smoothing: antialiased;
     font-size: 17px;
     color: var(--text-color);
@@ -858,7 +859,7 @@ tbody {
     padding: 10px;
 }
 
-.notices p::before {
+/* .notices p::before {
     position: absolute;
     top: 2px;
     color: var(--white-color);
@@ -866,7 +867,7 @@ tbody {
     font-weight: 900;
     content: "\e717";
     left: 10px;
-}
+} */
 
 .notices.note p {
     border-top: 30px solid #6ab0de;
@@ -874,7 +875,7 @@ tbody {
 }
 
 .notices.note p::after {
-    content: 'Note';
+    content: '\f044 \00a0 \00a0 Note';
     position: absolute;
     top: 2px;
     color: #fff;
@@ -887,7 +888,7 @@ tbody {
 }
 
 .notices.tip p::after {
-    content: 'Tip';
+    content: '\f0eb \00a0 \00a0 Tip';
     position: absolute;
     top: 2px;
     color: #fff;
@@ -900,7 +901,7 @@ tbody {
 }
 
 .notices.info p::after {
-    content: 'Info';
+    content: '\f05a \00a0 \00a0 Info';
     position: absolute;
     top: 2px;
     color: var(--white-color);
@@ -913,7 +914,7 @@ tbody {
 }
 
 .notices.warning p::after {
-    content: 'Warning';
+    content: '\f071 \00a0 \00a0 Warning';
     position: absolute;
     top: 2px;
     color: #fff;

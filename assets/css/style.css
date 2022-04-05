@@ -848,19 +848,19 @@ tbody {
     padding: 10px;
 }
 
-.notices p::before {
+.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+}
+
+.notices.note p::before {
     position: absolute;
     top: 2px;
     color: #fff;
     font-family: "themify";
     font-weight: 900;
-    content: "\e717";
-    left: 10px;
-}
-
-.notices.note p {
-    border-top: 30px solid #6ab0de;
-    background: #e7f2fa;
+    content: "\e61d";
+    left: 5px;
 }
 
 .notices.note p::after {
@@ -876,6 +876,16 @@ tbody {
     background: #E6F9E6;
 }
 
+.notices.tip p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e63a";
+    left: 5px;
+}
+
 .notices.tip p::after {
     content: 'Tip';
     position: absolute;
@@ -887,6 +897,16 @@ tbody {
 .notices.info p {
     border-top: 30px solid #F0B37E;
     background: #FFF2DB;
+}
+
+.notices.info p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e717";
+    left: 5px;
 }
 
 .notices.info p::after {
@@ -902,8 +922,66 @@ tbody {
     background: #FAE2E2;
 }
 
+.notices.warning p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e607";
+    left: 5px;
+}
+
 .notices.warning p::after {
     content: 'Warning';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: 2rem;
+}
+
+/*Caution Admonition Shortcode*/
+.notices.caution p {
+    border-top: 30px solid #802392;
+    background: #f7cdff;
+}
+
+.notices.caution p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e620";
+    left: 5px;
+}
+
+.notices.caution p::after {
+    content: 'Caution';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: 2rem;
+}
+
+/*Important Admonition Shortcode*/
+.notices.important p {
+    border-top: 30px solid #e40046;
+    background: #f7bacc;
+}
+
+.notices.important p::before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "themify";
+    font-weight: 900;
+    content: "\e6c0";
+    left: 5px;
+}
+
+.notices.important p::after {
+    content: 'Important';
     position: absolute;
     top: 2px;
     color: #fff;

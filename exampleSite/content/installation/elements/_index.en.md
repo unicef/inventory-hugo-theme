@@ -96,6 +96,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
   This is a simple warning.
 {{< /notice >}}
 
+{{< notice important >}}
+  This is a simple important.
+{{</ notice >}}
+
+{{< notice caution >}}
+  This is a simple caution.
+{{</ notice >}}
+
 <hr>
 
 #### Tab

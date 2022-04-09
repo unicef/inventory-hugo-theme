@@ -5,37 +5,50 @@
   {{ $orgUrl:= site.Params.brand.parent_org_url }}
   <div class="container">
     <div class="row align-items-center">
-    <div class="col-md-3 text-md-left text-center">
-       <ul>
-        <li><a class="nav-link text-white" href="{{ site.BaseURL | relLangURL }}">HOME</a></li>
-        {{ range site.Menus.main }}
+      <div class="col-md-3 text-md-left text-center">
+        <ul>
+          {{ range site.Menus.main }}
           {{if ne .Name "pages"}}
             <li class="nav-item">
               <a class="nav-link text-white text-uppercase" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
+          {{else if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white text-uppercase" href="#" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"> {{ .Name }} 
+              </a>
+              <div class="dropdown-menu">
+                {{ range .Children }}
+                  <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </li>
           {{ end }}
-        {{ end }}
-       </ul>
+          {{ end }}
+
+        </ul>
       </div>
       <div class="col-md-6 text-md-center text-center">
-       <p class="mb-md-0 mb-4 text-white">{{ .Site.Params.footer.description | markdownify }}</p>
+        <p class="mb-md-0 mb-4 text-white">{{ .Site.Params.footer.description | markdownify }}</p>
       </div>
       <div class="col-md-3 text-md-right text-center">
         <ul class="text-white">
           <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="{{ $orgUrl }}">{{ $orgName }}</a>
+            <a class="nav-link text-white font-weight-bold" href="{{ $orgUrl }}">{{ $orgName }}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="{{ .Site.Params.footer.mainSite }}">{{ .Site.Params.footer.mainSiteName }}</a>
+            <a class="nav-link text-white font-weight-bold" href="{{ .Site.Params.footer.mainSite }}">{{
+              .Site.Params.footer.mainSiteName }}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="{{ $orgLegal }}">Legal</a>
-              <p class="h6 text-md-right font-weight-light">{{ i18n "footer.legal" . }}</p>
+            <a class="nav-link text-white font-weight-bold" href="{{ $orgLegal }}">Legal</a>
+            <p class="h6 text-md-right font-weight-light">{{ i18n "footer.legal" . }}</p>
           </li>
         </ul>
         <ul class="list-inline">
           {{ range .Site.Params.social }}
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="{{ .link | safeURL }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="{{ .link | safeURL }}"
+              aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
       </div>

@@ -144,7 +144,7 @@ h6,
 }
 
 .btn-primary:hover {
-    background: var(--primary-color);
+    background: var(--primary-color-light);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,

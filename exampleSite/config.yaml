@@ -73,6 +73,7 @@ params:
 
   # customize color
   primary_color: "#02007e"
+  primary_color_light: "#1b66b1"
   body_color: "#f9f9f9"
   text_color: "#636363"
   text_color_dark: "#242738"

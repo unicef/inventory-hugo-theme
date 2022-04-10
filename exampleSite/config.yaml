@@ -144,6 +144,7 @@ Languages:
           enable: true
           label: Contact us
           link: contact
+    
     # --- navigation menu ---
     menu:
       main:
@@ -158,6 +159,10 @@ Languages:
           weight: 50
           url: pages
           hasChildren: true
+
+        - name: sdgs
+          weight: 60
+          url: sdgs
 
         # Sub-pages in this drop-down should correspond to categories created in /content/
         - name: Installation
@@ -206,11 +211,13 @@ Languages:
         - name: Contacter
           weight: 30
           url: contact
-
         - name: pages
           weight: 50
           url: pages
           hasChildren: true
+        - name: sdgs
+          weight: 60
+          url: sdgs
 
         # Sub-pages in this drop-down should correspond to categories created in /content/
         - name: Installation

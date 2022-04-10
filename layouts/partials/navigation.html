@@ -30,6 +30,7 @@
 
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
+      
         {{ range site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">
@@ -49,7 +50,8 @@
         </li>
         {{ end }}
         {{ end }}
-      </ul>
+      </ul>      
+      
       <!-- Language List -->
       {{- if site.IsMultiLingual }}
       <select class="lang-list bg-primary {{ if not .IsHome }}mb-3 mb-md-0{{ end }}" id="select-language"
@@ -71,6 +73,18 @@
         {{ end }}
         {{ end }}
       </select>
+      {{ end }}
+      {{ if .Params.externalUrl }}
+        <script>
+          const delay = ms => new Promise(res => setTimeout(res, ms));
+
+          const redirect = async () => {
+            await delay(10000);
+            window.location.replace('https://sdgs.un.org/goals');
+          };
+
+          redirect();
+        </script>
       {{ end }}
     </div>
   </div>

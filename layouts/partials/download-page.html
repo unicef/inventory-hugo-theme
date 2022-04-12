@@ -1,0 +1,35 @@
+<div class="bg-light" style="display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+        <div class="mb-5 rowToCol">
+            <div class="centerP" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <p style="color: #3B32A1;">Author(s)</p>
+                    <p style="color: #636363;">{{ .author }}</p>
+                </div>
+                <div>
+                    <p style="color: #3B32A1;">Publication date</p>
+                    <p style="color: #636363;">{{ .date.Format "January 2, 2006"}}</p>
+                </div>
+                <div>
+                    <p style="color: #3B32A1;">Language</p>
+                    <p style="color: #636363;">{{ .language}}</p>
+                </div>
+            </div>
+                <img width="400em" src="{{ .image }}">
+            </div>
+        </div>
+        <div class="mb-5 responsiveWidth" style="display: flex; flex-direction: column; align-items: center; background-color: #ECEEF2; padding: 1em; border-radius: 3px;">
+            <div class="mb-0">
+                <button onclick="javascript:window.open('{{ .document }}');" style="align-self: center; background-color: #1CABE2; color: #ffffff; border: none; border-radius: 3px; padding: 0.5em 2em; margin-bottom: 0;">
+                    Download
+                </button>
+            </div>
+            <div style="margin: .5em 0; display: flex; justify-content: space-between; width: 100%;">
+                <span style="color: #636363; font-size: small; margin-bottom: 0;">{{ upper (trim (path.Ext .document) ".") }}</span>
+                <span style="color: #636363; font-size: small; margin-bottom: 0;">{{ .size }} MB</span>
+            </div>
+        </div>
+        <p style="color: #636363;">{{ .description }}</p>
+    </div>
+    
+  </div>

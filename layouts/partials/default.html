@@ -50,6 +50,8 @@
           {{end}}
           {{ if .Content }}
           <div class="content mt-5">{{ partial "header-link.html" .Content }}</div>
+          {{ else if eq .Params.doc "download" }}
+          <div class="content">{{ partial "download-page.html" .Params}}</div>
           {{ else }}
           <div class="bg-light p-4">
             <ul class="page-list">

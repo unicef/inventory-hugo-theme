@@ -12,6 +12,21 @@ P {
     font-size: 15px;
 }
 
+.rowToCol {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.centerP > div > p {
+    text-align: center;
+}
+
+.responsiveWidth {
+    width: 50%;
+}
 
 /* Alert Box */
 .col-fixed {
@@ -35,6 +50,12 @@ P {
     }
     .cohort-cards {
         display: grid !important;
+    }
+    .rowToCol {
+        flex-direction: column;
+    }
+    .responsiveWidth {
+        width: 100%;
     }
 }
 /* End of alert box */

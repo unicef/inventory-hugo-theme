@@ -127,7 +127,7 @@ Languages:
   en:
     languageName: en
     languageCode: en-us
-    weight: 2
+    weight: 1
     home: Home
     copyright: "Copyright &copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)"
     params:

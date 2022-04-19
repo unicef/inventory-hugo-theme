@@ -729,9 +729,11 @@ blockquote {
     padding: 20px 40px 0;
     margin: 40px 0;
     font-weight: 300;
-    ;
 }
 
+blockquote p {
+    color: var(--text-color-dark) !imporant;
+}
 
 /* citation Parent div */
 
@@ -1218,7 +1220,7 @@ pre code::-webkit-scrollbar-thumb {
     .sectlevel2 {
         display:none;
     }
-    
+
     .content > .toc > .sectlevel1 > li a:hover, a:focus + .sectlevel2 {
         display:block;
         padding-top:1rem;

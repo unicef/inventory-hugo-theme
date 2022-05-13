@@ -149,3 +149,9 @@
     }
 
 })(jQuery);
+$(document).ready(function(){
+  $('#nav-icon-but').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+

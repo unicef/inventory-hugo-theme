@@ -40,8 +40,8 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
+URLs and URLs in angle brackets will automatically get turned into links.
+http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
@@ -96,6 +96,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
   This is a simple warning.
 {{< /notice >}}
 
+{{< notice important >}}
+  This is a simple important.
+{{</ notice >}}
+
+{{< notice caution >}}
+  This is a simple caution.
+{{</ notice >}}
+
+
 <hr>
 
 #### Tab
@@ -126,14 +135,14 @@ Inline `code` has `back-ticks around` it.
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
 ```python
 s = "Python syntax highlighting"
 print s
 ```
- 
+
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
 
@@ -162,7 +171,9 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
 ##### Tables
 
-Colons can be used to align columns.
+To make a table, create each column's header with three or more hyphens (---), and separate each column with pipes (|).
+
+{{<table "table">}}
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -170,14 +181,20 @@ Colons can be used to align columns.
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
+{{</table>}}
+
+You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row.
+
+{{<table "table">}}
 
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
+
+{{</table>}}
+
+To automatically generate the table by simply assigning values to the cells, use the [Markdown Table Generator Tool](https://www.tablesgenerator.com/markdown_tables).
 
 <hr>
 

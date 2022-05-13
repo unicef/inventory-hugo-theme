@@ -160,9 +160,6 @@ Languages:
           url: pages
           hasChildren: true
 
-        - name: sdgs
-          weight: 60
-          url: sdgs
 
         # Sub-pages in this drop-down should correspond to categories created in /content/
         - name: Installation
@@ -177,6 +174,10 @@ Languages:
           parent: pages
           weight: 30
           url: features
+        - name: SDGs
+          parent: pages
+          weight: 40
+          url: sdgs
 
 ############################# français / French #############################
   fr:
@@ -215,9 +216,6 @@ Languages:
           weight: 50
           url: pages
           hasChildren: true
-        - name: sdgs
-          weight: 60
-          url: sdgs
 
         # Sub-pages in this drop-down should correspond to categories created in /content/
         - name: Installation

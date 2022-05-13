@@ -74,18 +74,6 @@
         {{ end }}
       </select>
       {{ end }}
-      {{ if .Params.externalUrl }}
-        <script>
-          const delay = ms => new Promise(res => setTimeout(res, ms));
-
-          const redirect = async () => {
-            await delay(10000);
-            window.location.replace('https://sdgs.un.org/goals');
-          };
-
-          redirect();
-        </script>
-      {{ end }}
     </div>
   </div>
     <p class="text-white unicef-glob mx-3">Visit <a href="{{ $orgUrl }}" class="text-white">{{ $orgName }} <i class="fas fa-angle-double-right"></i></a></p>

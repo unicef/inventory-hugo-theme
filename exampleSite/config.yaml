@@ -177,7 +177,7 @@ Languages:
         - name: SDGs
           parent: pages
           weight: 40
-          url: sdgs
+          url: https://sdgs.un.org/goals
 
 ############################# français / French #############################
   fr:

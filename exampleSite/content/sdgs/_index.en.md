@@ -1,9 +1,7 @@
 ---
-title: "SDGs"
-date: 2022-05-13T18:16:15+01:00
-lastmod: 2022-05-13T18:16:15+01:00
-weight: ""
-draft: false
-type: redirect
-url: www.sdgs.un.org/goals
+title: "Sustainable Development Goals"
+date: 2018-12-29T11:02:05+06:00
+icon: "ti-link"
+description: "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet"
+type : "docs"
 ---

@@ -22,7 +22,24 @@
           {{ partial "breadcrumb.html" . }}
         </div>
         <!-- end breadcrumb feature -->
-        <div class="p-lg-5 p-4 bg-white" id="content">
+
+        <div class="p-lg-5 p-4 bg-white position-relative" id="content">
+          <!-- begin "Edit This Page" button -->
+          <div class="d-flex flex-row-reverse">
+            {{ $path := "" }}
+            {{ with .File }}
+                {{ $path = .Path }}
+                {{ else }}
+                {{ $path = .Path }}
+            {{ end }}
+            {{ if eq .Params.hide_edit_btn true }}
+                {{ else }}
+                <button id="editBtn" value="{{ .Site.Params.editPrefix }}/{{ $path }}" class="editBtn py-2 px-3">{{ i18n "buttons.edit_page" | safeHTML }}</button>
+            {{ end }}
+          </div>
+          <!-- end "Edit This Page" button -->
+
+        <div class="p-lg-5 p-3 bg-white">
           <h2 class="mb-5" id="title">{{ .Title }}</h2>
           {{ if .Content }}
           <div class="content">{{ partial "header-link.html" .Content }}</div>
@@ -149,5 +166,3 @@
 </li>
 {{ end }}
 {{ end }}
-
-  

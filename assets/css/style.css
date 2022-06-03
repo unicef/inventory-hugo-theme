@@ -1225,3 +1225,8 @@ pre code::-webkit-scrollbar-thumb {
     }
 
 }
+
+.editBtn {
+    border: none;
+    cursor: pointer;
+}

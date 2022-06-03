@@ -34,7 +34,7 @@
             {{ end }}
             {{ if eq .Params.hide_edit_btn true }}
                 {{ else }}
-                <button id="editBtn" value="{{ .Site.Params.editPrefix }}/{{ $path }}" class="editBtn py-2 px-3">Edit this Page</button>
+                <button id="editBtn" value="{{ .Site.Params.editPrefix }}/{{ $path }}" class="editBtn py-2 px-3">{{ i18n "buttons.edit_page" | safeHTML }}</button>
             {{ end }}
           </div>
           <!-- end "Edit This Page" button -->

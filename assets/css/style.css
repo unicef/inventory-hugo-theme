@@ -1218,7 +1218,7 @@ pre code::-webkit-scrollbar-thumb {
     .sectlevel2 {
         display:none;
     }
-    
+
     .content > .toc > .sectlevel1 > li a:hover, a:focus + .sectlevel2 {
         display:block;
         padding-top:1rem;

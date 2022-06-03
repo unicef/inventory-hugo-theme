@@ -149,3 +149,11 @@
     }
 
 })(jQuery);
+
+//Edit button function
+const editBtn = document.getElementById("editBtn");
+editBtn.addEventListener("click",(e)=>{
+  const url=e.target.value;
+  window.location.href=url;
+})
+

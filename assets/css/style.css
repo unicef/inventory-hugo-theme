@@ -1230,3 +1230,10 @@ pre code::-webkit-scrollbar-thumb {
     border: none;
     cursor: pointer;
 }
+
+.startupCard{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+}

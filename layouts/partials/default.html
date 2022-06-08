@@ -40,9 +40,16 @@
           <!-- end "Edit This Page" button -->
 
         <div class="p-lg-5 p-3 bg-white">
-          <h2 class="mb-5" id="title">{{ .Title }}</h2>
+          <h2 id="title">{{ .Title }}</h2>
+          {{if .Params.author}}
+          <span class="text-dark">{{ .Params.author }}</span>
+          {{if .Params.authorEmail}}
+           &nbsp-&nbsp
+          <a href = "mailto:{{ .Params.authorEmail }}">{{.Params.authorEmail}}</a>
+          {{end}}
+          {{end}}
           {{ if .Content }}
-          <div class="content">{{ partial "header-link.html" .Content }}</div>
+          <div class="content mt-5">{{ partial "header-link.html" .Content }}</div>
           {{ else }}
           <div class="bg-light p-4">
             <ul class="page-list">

@@ -76,11 +76,11 @@ params:
   image: "images/banner.jpg"
 
   # customize color
-  primary_color: "#02007e"
+  primary_color: "#1CABE2"
   primary_color_light: "#1b66b1"
-  body_color: "#f9f9f9"
+  body_color: "#f2f4f6"
   text_color: "#636363"
-  text_color_dark: "#242738"
+  text_color_dark: "#374ea2"
   text_title_color: "#ffffff"
   white_color: "#ffffff"
   light_color: "#f8f9fa"

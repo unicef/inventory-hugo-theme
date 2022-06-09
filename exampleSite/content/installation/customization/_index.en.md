@@ -53,3 +53,13 @@ If you need to change this default behavior, create a new file in `layouts/parti
   # font family
   font_family = "lato" # Choose font family from : https://fonts.google.com/
 ```
+
+### Add Author byline 
+
+
+We can add author byline to an article by adding ```author``` and ```authorEmail``` attributes to the frontmatter of that article page. Here is an example -
+
+```yaml
+author: John Doe
+authorEmail: john@example.com
+```

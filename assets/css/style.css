@@ -1175,6 +1175,10 @@ pre code::-webkit-scrollbar-thumb {
     color: var(--white-color);
 }
 
+.cardLink{
+    border-radius: 10px;
+}
+
 .cardLink:hover { text-decoration: none; }
 
 

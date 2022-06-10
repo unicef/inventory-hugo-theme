@@ -1,0 +1,55 @@
+---
+name: New user story
+description: Create a new user story for sprint planning and project management.
+title: "As a [type of user], I want [an action] so that [a benefit/a value]."
+labels: ["C: design thinking", "?: needs triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to propose a new user story! User stories describe new tasks and improvements in the context of how a change impacts users. These are used to plan new development sprints, which work in two-week intervals.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: "_Optional_: Add more context to the user story or why this is important."
+      placeholder: "This helps [type of user] complete [an action] because…"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: "Primary user stories must be completed, while secondary user stories are \"nice to have\" changes."
+      multiple: false
+      options:
+        - primary
+        - secondary
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What domain area does this user story impact?
+      multiple: false
+      options:
+        - CI
+        - design
+        - documentation
+        - front-end
+        - testing
+        - outreach
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: "**Business requirements** define “what” needs to be done (goal) and “why” it is important. **Functional requirements** define “how” the system/person/process needs to behave in order to achieve the goal. See more details [here](https://coara.co/blog/business-requirements-vs-functional-requirements)."
+      multiple: false
+      options:
+        - business
+        - functional
+    validations:
+      required: true

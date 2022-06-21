@@ -1,6 +1,9 @@
 ---
 - buttons:
     edit_page: Edit this Page
+- layouts:
+    redirect_title: This page has moved
+    redirect_body: This page has moved. You will be redirected in five seconds. Please update any bookmarks. If you are not redirected, please follow the link below.
 - footer:
     legal: "Find legal information and policies related to {{ $.Site.Params.brand.parent_org_name }}'s digital communications."
 - topics_title: Find your answer by subject

@@ -138,7 +138,8 @@ h6,
 }
 
 .btn-primary:hover {
-    background: var(--primary-color-light);
+    background: var(--primary-color);
+    opacity: 0.8;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,

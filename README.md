@@ -14,7 +14,7 @@ Forked from Dot, a Hugo theme by ThemeFisher.
 
 * [UNICEF Open Source Inventory](https://unicef.github.io/inventory/)
 * [UNICEF Coach Cards](https://unicef.github.io/coach/)
-* [UNICEF Drone DPG Toolkit](https://unicef.github.io/drone-dpgtoolkit/)
+* [UNICEF Drone DPG Toolkit](https://unicef.github.io/drone-4sdgtoolkit/)
 * [UNICEF Software Development Toolkit](https://unicef.github.io/ooi-toolkit-software/)
 * [SustainOSS Design & UX knowledgebase](https://sustainers.github.io/design/)
 

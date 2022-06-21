@@ -1,18 +1,18 @@
 <div class="sidebar">
     <a class="back-btn" href="{{ .Site.BaseURL | relLangURL }}" aria-label="back"></a>
-      <ul class="">
-        {{ $currentNode := . }}
-        {{range .Site.Home.Sections.ByWeight}}
-          {{ if eq .FirstSection $currentNode.FirstSection }}
-          {{ template "section-tree-nav" (dict "sect" . "currentnode" $currentNode "index" 0)}}
-          {{ end }}
+    <ul class="">
+      {{ $currentNode := . }}
+      {{range .Site.Home.Sections.ByWeight}}
+        {{ if eq .FirstSection $currentNode.FirstSection }}
+        {{ template "section-tree-nav" (dict "sect" . "currentnode" $currentNode "index" 0)}}
         {{ end }}
-        {{ if .Content }}
-        <div>
-            <button class="btn btn-primary btn-block" id="generatePDF" > Get Pdf  </button>
-        </div>
-        {{ end }}
-      </ul>
+      {{ end }}
+      {{ if .Content }}
+      <div>
+          <button class="btn btn-primary btn-block" id="generatePDF" > Get Pdf  </button>
+      </div>
+      {{ end }}
+    </ul>
 </div>
 
 
@@ -51,7 +51,10 @@
     
   </div>
     {{else}}
-  <a href="{{.Permalink}}" class="{{ if eq $index 0}}font-weight-bold{{end}}">
+    <a href="{{ .Site.BaseURL | relLangURL }}" class="d-inline  back-btn">
+      <i class="ti-back-right"></i>
+    </a>
+  <a href="{{.Permalink}}" class="{{ if eq $index 0}}font-weight-bold{{end}} d-inline">
     {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
   </a>
   <div class="accordion" id="accordionExample">

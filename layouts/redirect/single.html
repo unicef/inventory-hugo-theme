@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+{{ "<!-- redirect -->" | safeHTML }}
+<!-- If the page is a redirect layout, use a 301 Redirect to the desired URL defined in the page front-matter. -->
+<meta http-equiv="refresh" content="5; url='{{ .Params.redirectURL }}'"/>
+
+<section class="section">
+  <div class="container text-center">
+    <h2 class="section-title text-dark">{{ i18n "layouts.redirect_title" }}</h2>
+    <p>{{ i18n "layouts.redirect_body" }}</p>
+    <h4><a href="{{ .Params.redirectURL }}">{{ .Params.redirectURL }}</a></h4>
+  </div>
+</section>
+{{ "<!-- /redirect -->" | safeHTML }}
+
+{{ end }}

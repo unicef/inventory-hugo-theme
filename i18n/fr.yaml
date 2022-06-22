@@ -1,6 +1,9 @@
 ---
 - buttons:
     edit_page: Modifier cette page
+- layouts:
+    redirect_title: Cette page a déménagé
+    redirect_body: Cette page a déménagé. Vous allez être redirigé en cinq secondes. Veuillez mettre à jour tous les signets. Si vous n'êtes pas redirigé, veuillez suivre le lien ci-dessous.
 - footer:
     legal: "Trouvez des informations juridiques et des politiques liées aux communications numériques de l'{{ $.Site.Params.brand.parent_org_name }}."
 - topics_title: Trouvez votre réponse par sujet

@@ -1,0 +1,27 @@
+---
+title: Page redirects
+description: Create a special page that redirects the user to a URL hosted on an external website.
+categories: features
+tag: ["layouts"]
+downloadBtn: true
+
+---
+
+The UNICEF Inventory theme includes a feature that allows you to redirect the user to another website.
+Sometimes, a page hosted in your site is moved to another website.
+While Hugo allows you to create https://gohugo.io/content-management/urls/#aliases[aliases] that redirects one page to another in the same site, it is not possible to redirect a page to an external site.
+These *page redirects* solve that problem.
+
+To create a page redirect, define the layout `type` and `redirectUrl` in the page front-matter:
+
+{{< highlight yaml >}}
+---
+title: UNICEF Office of Innovation
+description: The Office of Innovation uses technology to address the biggest challenges facing children today.
+type: redirect
+redirectUrl: https://www.unicef.org/innovation/
+
+---
+{{< /highlight >}}
+
+When the user visits this page on the Hugo site, they are redirected to the `unicef.org` website after a five-second pause.

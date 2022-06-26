@@ -1258,3 +1258,7 @@ pre code::-webkit-scrollbar-thumb {
     color:var(--text-color-dark);
     transition:color 10ms linear;
 }
+
+.copyright a:hover{
+    color: var(--text-color-dark) !important;
+}

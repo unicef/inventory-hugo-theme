@@ -119,7 +119,7 @@ params:
     - icon: ti-github
       name: UNICEF Inventory theme for Hugo on GitHub
       link: https://github.com/unicef/inventory-hugo-theme
-    - icon: ti-twitter
+    - icon: ti-twitter-alt
       name: "@UNICEFinnovate on Twitter"
       link: https://twitter.com/UNICEFinnovate
 

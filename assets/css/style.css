@@ -1244,3 +1244,17 @@ pre code::-webkit-scrollbar-thumb {
     align-items:center;
     justify-content:space-between;
 }
+
+.socialIcon{
+    all:unset !important;
+    cursor: pointer !important;
+}
+.socialIcon i{
+    color:var(--white-color);
+    font-size: 22px;
+    padding: 3px;
+}
+.socialIcon i:hover{
+    color:var(--text-color-dark);
+    transition:color 10ms linear;
+}

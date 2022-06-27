@@ -1,0 +1,39 @@
+---
+title: Key stakeholders
+description: Definition of key stakeholders for the UNICEF Inventory theme and UNICEF Toolkits.
+categories: contributing
+tag: ["unicef"]
+downloadBtn: true
+
+---
+:toc:
+
+This page summarizes and defines the key stakeholders for the UNICEF Inventory theme and UNICEF Toolkits.
+
+
+[[toolkit-open-source]]
+== Open Source Inventory (toolkit)
+
+Found at https://unicef.github.io/inventory/[unicef.github.io/inventory/].
+There are three key stakeholders for this toolkit:
+
+.Open Source Inventory stakeholder comparison
+|===
+|Stakeholder|Team background|Purpose|Needs
+
+|https://www.unicefinnovationfund.org/[*UNICEF Venture Fund team*]
+|Mostly non-software
+|To view progress of startup companies in achieving open source-related goals and milestones.
+|Get quick information about a cohort and specific companies of a cohort, see their progress towards meeting the Digital Public Goods Standard
+
+|*Start-up companies supported by UNICEF Venture Fund*
+|Software
+|To receive guidance on open source-related topics and focuses related to the Digital Public Good Standard.
+|Discover information about DPG Standard indicators, see examples from other open source communities for assignment work, and get questions answered about how to work in an open source-friendly way
+
+|*UNICEF open source developers*
+|Mix of software and non-software
+|To learn more about about open source best practices.
+|Discover information about open source communities and learn about how to work in more transparent and collaborative ways
+
+|===

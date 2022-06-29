@@ -1259,6 +1259,6 @@ pre code::-webkit-scrollbar-thumb {
     transition:color 10ms linear;
 }
 
-.footer a:hover{
+footer a:hover{
     color: var(--text-color-dark) !important;
 }

@@ -23,19 +23,19 @@
       <div class="col-md-3 text-md-right text-center">
         <ul class="text-white">
           <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="{{ $orgUrl }}">{{ $orgName }}</a>
+              <a class="nav-link text-white font-weight-bold px-0" href="{{ $orgUrl }}">{{ $orgName }}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="{{ .Site.Params.footer.mainSite }}">{{ .Site.Params.footer.mainSiteName }}</a>
+              <a class="nav-link text-white font-weight-bold px-0" href="{{ .Site.Params.footer.mainSite }}">{{ .Site.Params.footer.mainSiteName }}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" href="{{ $orgLegal }}">Legal</a>
+              <a class="nav-link text-white font-weight-bold px-0" href="{{ $orgLegal }}">Legal</a>
               <p class="h6 text-md-right font-weight-light">{{ i18n "footer.legal" . }}</p>
           </li>
         </ul>
         <ul class="list-inline">
           {{ range .Site.Params.social }}
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white" href="{{ .link | safeURL }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="{{ .link | safeURL }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
       </div>

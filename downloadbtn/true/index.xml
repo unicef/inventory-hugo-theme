@@ -8,6 +8,18 @@
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/downloadbtn/true/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Key stakeholders</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/contributing/stakeholders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/contributing/stakeholders/</guid>
+      <description>Table of Contents 1. Open Source Inventory (toolkit)   This page summarizes and defines the key stakeholders for the UNICEF Inventory theme and UNICEF Toolkits.
+ 1. Open Source Inventory (toolkit) Found at unicef.github.io/inventory/. There are three key stakeholders for this toolkit:
+ Table 1. Open Source Inventory stakeholder comparison     Stakeholder Team background Purpose Needs     UNICEF Venture Fund team
+ Mostly non-software</description>
+    </item>
+    
+    <item>
       <title>Page redirects</title>
       <link>https://unicef.github.io/inventory-hugo-theme/features/redirect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

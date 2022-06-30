@@ -132,22 +132,10 @@
 					</div>
 					<div class="col-lg-9">
 						<div class="bg-white p-3" style="margin:auto">
-							<script language="JavaScript">
-								String.prototype.capitalizeFirstLetter = function() {
-								   return this.charAt(0).toUpperCase() + this.slice(1);
-								}
-
-								var path = "<a style='margin-left:2%' href='https:\/\/unicef.github.io\/inventory-hugo-theme\/'>Home</a>";
-								var href = document.location.href;
-								var s = href.split("/");
-								for (var i=3;i<(s.length-2);i++) {
-								   path+=" &gt;  <a href=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i].capitalizeFirstLetter()+"</a> ";
-								}
-								i=s.length-1;
-								path+="<a href=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</a>";
-								path+="  &gt;  <b>Categories</b>";
-								document.writeln(path);
-							</script>
+							<div class="breadcrumbs">
+								<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
+								&gt; <a href="https://unicef.github.io/inventory-hugo-theme/categories" class="breadcrumbLink">categories</a>
+							</div>
 						</div>
 						<div class="p-lg-5 p-4 bg-white position-relative" id="content">
 							<div class="d-flex flex-row-reverse">
@@ -173,11 +161,11 @@
 																</a>
 															</div>
 															<div class="col-2 ">
-																<i class="fas fa-chevron-down align-middle" type="button" data-toggle="collapse" data-target="#collapsef143c4e92390fdc518f9c9940a65aafc" aria-expanded="false" aria-controls='collapsef143c4e92390fdc518f9c9940a65aafc'>
+																<i class="fas fa-chevron-down align-middle" type="button" data-toggle="collapse" data-target="#collapsea3dca4cf109cf06539ff25c998a19e44" aria-expanded="false" aria-controls='collapsea3dca4cf109cf06539ff25c998a19e44'>
 																</i>
 															</div>
 														</div>
-														<div id='collapsef143c4e92390fdc518f9c9940a65aafc' class="collapse" aria-labelledby="headingf143c4e92390fdc518f9c9940a65aafc" data-parent="#accordionExample">
+														<div id='collapsea3dca4cf109cf06539ff25c998a19e44' class="collapse" aria-labelledby="headinga3dca4cf109cf06539ff25c998a19e44" data-parent="#accordionExample">
 															<div class="sidebar-scroll">
 																<ul>
 																	<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/contributing/stakeholders/" title="Key stakeholders" class="sidelist
@@ -205,11 +193,11 @@
 																		</a>
 																	</div>
 																	<div class="col-2 ">
-																		<i class="fas fa-chevron-down align-middle" type="button" data-toggle="collapse" data-target="#collapse24cf4c0119895a05ceff6caf3949a3d9" aria-expanded="false" aria-controls='collapse24cf4c0119895a05ceff6caf3949a3d9'>
+																		<i class="fas fa-chevron-down align-middle" type="button" data-toggle="collapse" data-target="#collapsef915ea2c89d4c3a0c934af96c5f09f14" aria-expanded="false" aria-controls='collapsef915ea2c89d4c3a0c934af96c5f09f14'>
 																		</i>
 																	</div>
 																</div>
-																<div id='collapse24cf4c0119895a05ceff6caf3949a3d9' class="collapse" aria-labelledby="heading24cf4c0119895a05ceff6caf3949a3d9" data-parent="#accordionExample">
+																<div id='collapsef915ea2c89d4c3a0c934af96c5f09f14' class="collapse" aria-labelledby="headingf915ea2c89d4c3a0c934af96c5f09f14" data-parent="#accordionExample">
 																	<div class="sidebar-scroll">
 																		<ul>
 																			<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/features/redirect/" title="Page redirects" class="sidelist

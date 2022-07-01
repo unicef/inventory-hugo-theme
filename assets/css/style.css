@@ -752,7 +752,7 @@ blockquote {
 }
 
 blockquote p {
-    color: var(--text-color-dark) !imporant;
+    color: var(--text-color-dark) !important;
 }
 
 /* citation Parent div */
@@ -1285,7 +1285,7 @@ footer a:hover{
 }
 
 .breadcrumbLink{
-    text-transform: capitalize;
+    text-transform: capitalize !important;
 }
 
 /* sidebar media queries*/

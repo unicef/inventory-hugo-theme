@@ -1024,14 +1024,16 @@ tbody {
 
 .sidebarContainer{
     background-color:var(--white-color);
-    width:250px !important;
+    width:280px !important;
+    min-height: auto !important;
+    z-index: -1;
 }
 .sidebar {
     background-color:transparent;
     position:fixed;
     left:0;
     padding:20px;
-    width:270px !important;
+    width:272px !important;
 }
 
 .sidelist {

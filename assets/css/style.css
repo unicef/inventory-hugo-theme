@@ -1026,7 +1026,6 @@ tbody {
     background-color:var(--white-color);
     width:280px !important;
     min-height: auto !important;
-    z-index: -1;
 }
 .sidebar {
     background-color:transparent;

@@ -65,20 +65,23 @@
 		<meta name="twitter:title" content="Customization"/>
 		<meta name="twitter:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file."/>
 	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<body>
 		<!-- header -->
 		<header class="shadow-bottom sticky-top bg-white">
-			<nav class="navbar navbar-expand-md navbar-dark" style=" background-color: #1CABE2">
-				<div class="container px-2 px-md-0 navigation-bar">
+			<nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0" style=" background-color: #1CABE2">
+				<div class="w-100 container mx-0 navigation-bar">
 					<div id="site-brand">
-						<a class="navbar-brand px-2" href="/inventory-hugo-theme/fr">
+						<a class="navbar-brand px-2"
+        href="/inventory-hugo-theme/fr">
 							UNICEF Inventory Theme
 						</a>
 					</div>
-					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+					<a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<span class="sidebarIcon navbarMenu">Menu<i class="fa-solid fa-caret-down d-inline p-1"></i>
+						</span>
+					</a>
 					<div class="collapse navbar-collapse text-center" id="navigation">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
@@ -108,129 +111,208 @@
 							<option id="fr" value="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" selected>fr
 							</option>
 						</select>
+						<p class="text-white unicef-glob ml-4 mt-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i
+        class="fas fa-angle-double-right"></i></a></p>
 					</div>
 				</div>
-				<p class="text-white unicef-glob mx-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
-			</nav>
-		</header>
-		<!-- /header -->
-		<script>
-			remSpace()
-		</script>
-		<script>
-			function remSpace() {
-			  document.getElementById("section").style.paddingTop = "3rem";
-			}
-		</script>
-		<!-- details page -->
-		<section class="single section-sm main-section" id="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="sidebar">
-							<a class="back-btn" href="/inventory-hugo-theme/fr" aria-label="back"></a>
-							<ul>
-								<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/" title="Installation" class="sidelist
+				<div class="w-100 py-2 breadcrumbBar text-light" style=" background-color: #374ea2">
+					<div class="container">
+						<div class="breadcrumbs">
+							<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr" class="breadcrumbLink">fr</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/installation" class="breadcrumbLink">installation</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization" class="breadcrumbLink">customization</a>
+						</div>
+						<a data-toggle="collapse" data-target="#sidebarMobile"  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"> <i class="ti-menu text-light sidebarIcon"></i></a>
+						<div class="text-light text-center sidebarMobile collapse justify-content-center" id="sidebarMobile">
+							<div class="sidebarBox">
+								<ul>
+									<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/" title="Installation" class="sidelist
   ">
-									<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/" class="font-weight-bold">
-										Installation
-									</a>
-									<div class="accordion" id="accordionExample">
-										<ul>
-											<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/" title="Requirments" class="sidelist
-  ">
-												<div class="container">
-													<div class="row">
-														<div class="col-10">
-															<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/" class="">
-																Requirments
-															</a>
-														</div>
-													</div>
-												</li>
-												<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" title="Installation" class="sidelist
+										<a href="/inventory-hugo-theme/fr" class="d-inline  back-btn">
+											<i class="ti-back-right"></i>
+										</a>
+										<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/" class="font-weight-bold d-inline">
+											Installation
+										</a>
+										<div class="accordion" id="accordionExample">
+											<ul>
+												<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/" title="Requirments" class="sidelist
   ">
 													<div class="container">
 														<div class="row">
 															<div class="col-10">
-																<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" class="">
-																	Installation
+																<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/" class="">
+																	Requirments
 																</a>
 															</div>
 														</div>
 													</li>
-													<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" title="Configuration" class="sidelist
+													<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" title="Installation" class="sidelist
   ">
 														<div class="container">
 															<div class="row">
 																<div class="col-10">
-																	<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" class="">
-																		Configuration
+																	<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" class="">
+																		Installation
 																	</a>
 																</div>
 															</div>
 														</li>
-														<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" title="Elements" class="sidelist
+														<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" title="Configuration" class="sidelist
   ">
 															<div class="container">
 																<div class="row">
 																	<div class="col-10">
-																		<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" class="">
-																			Elements
+																		<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" class="">
+																			Configuration
 																		</a>
 																	</div>
 																</div>
 															</li>
-															<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" title="Customization" class="sidelist
-  active">
+															<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" title="Elements" class="sidelist
+  ">
 																<div class="container">
 																	<div class="row">
 																		<div class="col-10">
-																			<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" class="">
-																				Customization
+																			<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" class="">
+																				Elements
 																			</a>
 																		</div>
 																	</div>
 																</li>
-															</ul>
-														</div>
-													</li>
-												</ul>
+																<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" title="Customization" class="sidelist
+  active">
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-10">
+																				<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" class="">
+																					Customization
+																				</a>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-										<div class="col-lg-9">
-											<div class="bg-white p-3" style="margin:auto">
-												<div class="breadcrumbs">
-													<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
-													&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr" class="breadcrumbLink">fr</a>
-													&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/installation" class="breadcrumbLink">installation</a>
-													&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization" class="breadcrumbLink">customization</a>
-												</div>
-											</div>
-											<div class="p-lg-5 p-4 bg-white position-relative" id="content">
-												<div class="d-flex flex-row-reverse">
-													<button id="editBtn" value="https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content/installation/customization/_index.fr.md" class="editBtn py-2 px-3">Modifier cette page</button>
-												</div>
-												<div class="p-lg-5 p-3 bg-white">
-													<h2 id="title">Customization</h2>
-													<div class="content mt-5">
-														<p><strong>Dot</strong> has been built to be as configurable as possible.</p>
-														<h3 id="change-the-logo">Change the logo&nbsp;<a class="hanchor" href="#change-the-logo">🔗</a> </h3>
-														<p>In <code>config.toml</code> you will find a logo variable. you can change your logo there.</p>
-														<div class="notices tip" >
-															<p>The size of the logo will adapt automatically</p>
+									</div>
+								</nav>
+							</header>
+							<!-- /header -->
+							<script>
+								remSpace()
+							</script>
+							<script>
+								function remSpace() {
+								  document.getElementById("section").style.paddingTop = "3rem";
+								}
+							</script>
+							<!-- details page -->
+							<section class="single section-sm" id="section">
+								<div class="d-flex w-100">
+									<div class="sidebarContainer">
+										<div class="sidebar">
+											<ul>
+												<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/" title="Installation" class="sidelist
+  ">
+													<a href="/inventory-hugo-theme/fr" class="d-inline  back-btn">
+														<i class="ti-back-right"></i>
+													</a>
+													<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/" class="font-weight-bold d-inline">
+														Installation
+													</a>
+													<div class="accordion" id="accordionExample">
+														<ul>
+															<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/" title="Requirments" class="sidelist
+  ">
+																<div class="container">
+																	<div class="row">
+																		<div class="col-10">
+																			<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/" class="">
+																				Requirments
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" title="Installation" class="sidelist
+  ">
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-10">
+																				<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/" class="">
+																					Installation
+																				</a>
+																			</div>
+																		</div>
+																	</li>
+																	<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" title="Configuration" class="sidelist
+  ">
+																		<div class="container">
+																			<div class="row">
+																				<div class="col-10">
+																					<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/" class="">
+																						Configuration
+																					</a>
+																				</div>
+																			</div>
+																		</li>
+																		<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" title="Elements" class="sidelist
+  ">
+																			<div class="container">
+																				<div class="row">
+																					<div class="col-10">
+																						<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" class="">
+																							Elements
+																						</a>
+																					</div>
+																				</div>
+																			</li>
+																			<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" title="Customization" class="sidelist
+  active">
+																				<div class="container">
+																					<div class="row">
+																						<div class="col-10">
+																							<a href="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/" class="">
+																								Customization
+																							</a>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</li>
+																</ul>
+															</div>
 														</div>
-														<h3 id="change-the-favicon">Change the favicon&nbsp;<a class="hanchor" href="#change-the-favicon">🔗</a> </h3>
-														<p>If your favicon is a png, just drop off your image in your local <code>static/images/</code> folder and name it <code>favicon.png</code></p>
-														<p>If you need to change this default behavior, create a new file in <code>layouts/partials/</code> named <code>head.html</code>. Then write something like this:</p>
-														<div class="highlight">
-															<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#070">link</span> <span style="color:#007">rel</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;shortcut icon&#34;</span> <span style="color:#007">href</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;/images/favicon.png&#34;</span> <span style="color:#007">type</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;image/x-icon&#34;</span> /&gt;
+														<div class="contentContainer py-5 px-5">
+															<div class="p-lg-5 p-4 bg-white position-relative mx-5 my-3 w-100 contentBox" id="content">
+																<div class="d-flex flex-row-reverse p-absolute">
+																	<button id="editBtn" value="https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content/installation/customization/_index.fr.md" class="editBtn py-2 px-3">Modifier cette page</button>
+																</div>
+																<div class="p-lg-5 p-3 bg-white">
+																	<h2 id="title">Customization</h2>
+																	<div class="content mt-5">
+																		<p><strong>Dot</strong> has been built to be as configurable as possible.</p>
+																		<h3 id="change-the-logo">Change the logo&nbsp;<a class="hanchor" href="#change-the-logo">🔗</a> </h3>
+																		<p>In <code>config.toml</code> you will find a logo variable. you can change your logo there.</p>
+																		<div class="notices tip" >
+																			<p>The size of the logo will adapt automatically</p>
+																		</div>
+																		<h3 id="change-the-favicon">Change the favicon&nbsp;<a class="hanchor" href="#change-the-favicon">🔗</a> </h3>
+																		<p>If your favicon is a png, just drop off your image in your local <code>static/images/</code> folder and name it <code>favicon.png</code></p>
+																		<p>If you need to change this default behavior, create a new file in <code>layouts/partials/</code> named <code>head.html</code>. Then write something like this:</p>
+																		<div class="highlight">
+																			<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#070">link</span> <span style="color:#007">rel</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;shortcut icon&#34;</span> <span style="color:#007">href</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;/images/favicon.png&#34;</span> <span style="color:#007">type</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;image/x-icon&#34;</span> /&gt;
 </span></span></code></pre>
-														</div>
-														<h3 id="change-default-colors">Change default colors&nbsp;<a class="hanchor" href="#change-default-colors">🔗</a> </h3>
-														<p><strong>Dot</strong> support change color. You can change the colors from <code>config.toml</code>. You can change the colors of the template as you want.</p>
-														<div class="highlight">
-															<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[params]
+																		</div>
+																		<h3 id="change-default-colors">Change default colors&nbsp;<a class="hanchor" href="#change-default-colors">🔗</a> </h3>
+																		<p><strong>Dot</strong> support change color. You can change the colors from <code>config.toml</code>. You can change the colors of the template as you want.</p>
+																		<div class="highlight">
+																			<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[params]
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#666;font-style:italic"># Change default color scheme with a color name or color code.</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  primary_color = <span style="background-color:#e0e0ff">&#34;#02007e&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  body_color = <span style="background-color:#e0e0ff">&#34;#f9f9f9&#34;</span>
@@ -239,72 +321,71 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  white_color = <span style="background-color:#e0e0ff">&#34;#ffffff&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  light_color = <span style="background-color:#e0e0ff">&#34;#f8f9fa&#34;</span>
 </span></span></code></pre>
-														</div>
-														<h3 id="change-default-fonts">Change default Fonts&nbsp;<a class="hanchor" href="#change-default-fonts">🔗</a> </h3>
-														<div class="highlight">
-															<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[params]
+																		</div>
+																		<h3 id="change-default-fonts">Change default Fonts&nbsp;<a class="hanchor" href="#change-default-fonts">🔗</a> </h3>
+																		<div class="highlight">
+																			<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[params]
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#666;font-style:italic"># font family</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  font_family = <span style="background-color:#e0e0ff">&#34;lato&#34;</span> <span style="color:#666;font-style:italic"># Choose font family from : https://fonts.google.com/</span>
 </span></span></code></pre>
+																		</div>
+																	</div>
+																	<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 31 Oct 2021</p>
+																	<nav class="pagination mt-3">
+																		<a class="nav nav-prev" href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Elements</span></a>
+																		<a class="nav nav-next" href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" aria-label="Previous page" > <span class="d-none d-md-block">Billing &amp; Pricing</span><i class="ti-arrow-right ml-2"></i></a>
+																	</nav>
+																</div>
+															</div>
 														</div>
 													</div>
-													<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 31 Oct 2021</p>
-													<nav class="pagination mt-3">
-														<a class="nav nav-prev" href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Elements</span></a>
-														<a class="nav nav-next" href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" aria-label="Previous page" > <span class="d-none d-md-block">Billing &amp; Pricing</span><i class="ti-arrow-right ml-2"></i></a>
-													</nav>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- /details page -->
-							<!-- footer -->
-							<footer class="section bg-primary p-4 mt-5">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-3 text-md-left text-center">
-											<ul>
-												<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
-												<li class="nav-item">
-													<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-6 text-md-center text-center">
-											<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
-										</div>
-										<div class="col-md-3 text-md-right text-center">
-											<ul class="text-white">
-												<li class="nav-item">
-													<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
-													<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
-												</li>
-											</ul>
-											<ul class="list-inline">
-												<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
-												<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
-							</footer>
-							<!-- /footer -->
-							<!-- Main Script -->
-							<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
-						</body>
-					</html>
+												</section>
+												<!-- /details page -->
+												<!-- footer -->
+												<footer class="section bg-primary p-4 mt-5">
+													<div class="container">
+														<div class="row align-items-center">
+															<div class="col-md-3 text-md-left text-center">
+																<ul>
+																	<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="col-md-6 text-md-center text-center">
+																<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
+															</div>
+															<div class="col-md-3 text-md-right text-center">
+																<ul class="text-white">
+																	<li class="nav-item">
+																		<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
+																		<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
+																	</li>
+																</ul>
+																<ul class="list-inline">
+																	<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
+																	<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
+												</footer>
+												<!-- /footer -->
+												<!-- Main Script -->
+												<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
+											</body>
+										</html>

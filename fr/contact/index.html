@@ -65,20 +65,23 @@
 		<meta name="twitter:title" content="Vous avez des questions"/>
 		<meta name="twitter:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file."/>
 	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<body>
 		<!-- header -->
 		<header class="shadow-bottom sticky-top bg-white">
-			<nav class="navbar navbar-expand-md navbar-dark" style=" background-color: #1CABE2">
-				<div class="container px-2 px-md-0 navigation-bar">
+			<nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0" style=" background-color: #1CABE2">
+				<div class="w-100 container mx-0 navigation-bar">
 					<div id="site-brand">
-						<a class="navbar-brand px-2" href="/inventory-hugo-theme/fr">
+						<a class="navbar-brand px-2"
+        href="/inventory-hugo-theme/fr">
 							UNICEF Inventory Theme
 						</a>
 					</div>
-					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+					<a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<span class="sidebarIcon navbarMenu">Menu<i class="fa-solid fa-caret-down d-inline p-1"></i>
+						</span>
+					</a>
 					<div class="collapse navbar-collapse text-center" id="navigation">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
@@ -108,78 +111,105 @@
 							<option id="fr" value="https://unicef.github.io/inventory-hugo-theme/fr/contact/" selected>fr
 							</option>
 						</select>
+						<p class="text-white unicef-glob ml-4 mt-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i
+        class="fas fa-angle-double-right"></i></a></p>
 					</div>
 				</div>
-				<p class="text-white unicef-glob mx-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
-			</nav>
-		</header>
-		<!-- /header -->
-		<!-- contact -->
-		<section class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="section-title text-dark">Vous avez des questions</h2>
-						<p>Envoyez le formulaire et confirmez votre adresse e-mail à l&rsquo;adresse<a href="https://formspree.io/">Formspree</a>.</p>
-						<form action="#" method="POST">
-							<input type="text" id="name" name="name" placeholder="Name" class="form-control mb-4 shadow rounded-0">
-							<input type="email" id="mail" name="mail" placeholder="Email" class="form-control mb-4 shadow rounded-0">
-							<input type="text" id="subject" name="subject" placeholder="Subject"
+				<div class="w-100 py-2 breadcrumbBar text-light" style=" background-color: #374ea2">
+					<div class="container">
+						<div class="breadcrumbs">
+							<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr" class="breadcrumbLink">fr</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/contact" class="breadcrumbLink">contact</a>
+						</div>
+						<a data-toggle="collapse" data-target="#sidebarMobile"  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"> <i class="ti-menu text-light sidebarIcon"></i></a>
+						<div class="text-light text-center sidebarMobile collapse justify-content-center" id="sidebarMobile">
+							<div class="sidebarBox">
+								<ul>
+									<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/contact/" title="Vous avez des questions" class="sidelist
+  active">
+										<a href="/inventory-hugo-theme/fr" class="d-inline  back-btn">
+											<i class="ti-back-right"></i>
+										</a>
+										<a href="https://unicef.github.io/inventory-hugo-theme/fr/contact/" class="font-weight-bold d-inline">
+											Vous avez des questions
+										</a>
+										<div class="accordion" id="accordionExample">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!-- /header -->
+			<!-- contact -->
+			<section class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="section-title text-dark">Vous avez des questions</h2>
+							<p>Envoyez le formulaire et confirmez votre adresse e-mail à l&rsquo;adresse<a href="https://formspree.io/">Formspree</a>.</p>
+							<form action="#" method="POST">
+								<input type="text" id="name" name="name" placeholder="Name" class="form-control mb-4 shadow rounded-0">
+								<input type="email" id="mail" name="mail" placeholder="Email" class="form-control mb-4 shadow rounded-0">
+								<input type="text" id="subject" name="subject" placeholder="Subject"
             class="form-control mb-4 shadow rounded-0">
-							<textarea name="message" id="message" placeholder="Message"
+								<textarea name="message" id="message" placeholder="Message"
             class="form-control mb-4 shadow rounded-0"></textarea>
-							<button type="submit" value="send" class="btn btn-primary">Envoyer</button>
-						</form>
+								<button type="submit" value="send" class="btn btn-primary">Envoyer</button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- /contact -->
-		<!-- footer -->
-		<footer class="section bg-primary p-4 mt-5">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-3 text-md-left text-center">
-						<ul>
-							<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
-							<li class="nav-item">
-								<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-6 text-md-center text-center">
-						<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
-					</div>
-					<div class="col-md-3 text-md-right text-center">
-						<ul class="text-white">
-							<li class="nav-item">
-								<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
-								<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
-							</li>
-						</ul>
-						<ul class="list-inline">
-							<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
-							<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
-						</ul>
+			</section>
+			<!-- /contact -->
+			<!-- footer -->
+			<footer class="section bg-primary p-4 mt-5">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-3 text-md-left text-center">
+							<ul>
+								<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
+								<li class="nav-item">
+									<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-center text-center">
+							<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
+						</div>
+						<div class="col-md-3 text-md-right text-center">
+							<ul class="text-white">
+								<li class="nav-item">
+									<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
+									<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
+								</li>
+							</ul>
+							<ul class="list-inline">
+								<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
+								<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
-		</footer>
-		<!-- /footer -->
-		<!-- Main Script -->
-		<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
-	</body>
-</html>
+				<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
+			</footer>
+			<!-- /footer -->
+			<!-- Main Script -->
+			<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
+		</body>
+	</html>

@@ -65,20 +65,23 @@
 		<meta name="twitter:title" content="Questions fréquemment posées"/>
 		<meta name="twitter:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file."/>
 	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<body>
 		<!-- header -->
 		<header class="shadow-bottom sticky-top bg-white">
-			<nav class="navbar navbar-expand-md navbar-dark" style=" background-color: #1CABE2">
-				<div class="container px-2 px-md-0 navigation-bar">
+			<nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0" style=" background-color: #1CABE2">
+				<div class="w-100 container mx-0 navigation-bar">
 					<div id="site-brand">
-						<a class="navbar-brand px-2" href="/inventory-hugo-theme/fr">
+						<a class="navbar-brand px-2"
+        href="/inventory-hugo-theme/fr">
 							UNICEF Inventory Theme
 						</a>
 					</div>
-					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+					<a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<span class="sidebarIcon navbarMenu">Menu<i class="fa-solid fa-caret-down d-inline p-1"></i>
+						</span>
+					</a>
 					<div class="collapse navbar-collapse text-center" id="navigation">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
@@ -108,151 +111,178 @@
 							<option id="fr" value="https://unicef.github.io/inventory-hugo-theme/fr/faq/" selected>fr
 							</option>
 						</select>
+						<p class="text-white unicef-glob ml-4 mt-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i
+        class="fas fa-angle-double-right"></i></a></p>
 					</div>
 				</div>
-				<p class="text-white unicef-glob mx-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
-			</nav>
-		</header>
-		<!-- /header -->
-		<!-- faq -->
-		<section class="section pb-0">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="section-title text-primary">Questions fréquemment posées</h2>
-						<!-- accordion -->
-						<div id="accordion">
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#0326ec6f39903b51ee050739a8f9b8adefb8cce9">
-										<span>Will updates also be free?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
-								</div>
-								<div id="0326ec6f39903b51ee050739a8f9b8adefb8cce9" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, <a href="https://examplesite.com">link</a> ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
-								</div>
-							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#ed191c9cc2f5865aa0a22580240bd0135649bd06">
-										<span>Discounts for students and Non Profit Organizations?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
-								</div>
-								<div id="ed191c9cc2f5865aa0a22580240bd0135649bd06" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+				<div class="w-100 py-2 breadcrumbBar text-light" style=" background-color: #374ea2">
+					<div class="container">
+						<div class="breadcrumbs">
+							<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr" class="breadcrumbLink">fr</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/faq" class="breadcrumbLink">faq</a>
+						</div>
+						<a data-toggle="collapse" data-target="#sidebarMobile"  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"> <i class="ti-menu text-light sidebarIcon"></i></a>
+						<div class="text-light text-center sidebarMobile collapse justify-content-center" id="sidebarMobile">
+							<div class="sidebarBox">
+								<ul>
+									<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/faq/" title="Questions fréquemment posées" class="sidelist
+  active">
+										<a href="/inventory-hugo-theme/fr" class="d-inline  back-btn">
+											<i class="ti-back-right"></i>
+										</a>
+										<a href="https://unicef.github.io/inventory-hugo-theme/fr/faq/" class="font-weight-bold d-inline">
+											Questions fréquemment posées
+										</a>
+										<div class="accordion" id="accordionExample">
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#78a7db97c2a4630f6e045d0058a2f985fec5ccac">
-										<span>I need something unique, Can you make it?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!-- /header -->
+			<!-- faq -->
+			<section class="section pb-0">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="section-title text-primary">Questions fréquemment posées</h2>
+							<!-- accordion -->
+							<div id="accordion">
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#0326ec6f39903b51ee050739a8f9b8adefb8cce9">
+											<span>Will updates also be free?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="0326ec6f39903b51ee050739a8f9b8adefb8cce9" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, <a href="https://examplesite.com">link</a> ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-								<div id="78a7db97c2a4630f6e045d0058a2f985fec5ccac" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#ed191c9cc2f5865aa0a22580240bd0135649bd06">
+											<span>Discounts for students and Non Profit Organizations?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="ed191c9cc2f5865aa0a22580240bd0135649bd06" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#7ef82d75bb6a2313898d53ac5de220b4e60c0777">
-										<span>Is there any documentation and support?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#78a7db97c2a4630f6e045d0058a2f985fec5ccac">
+											<span>I need something unique, Can you make it?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="78a7db97c2a4630f6e045d0058a2f985fec5ccac" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-								<div id="7ef82d75bb6a2313898d53ac5de220b4e60c0777" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#7ef82d75bb6a2313898d53ac5de220b4e60c0777">
+											<span>Is there any documentation and support?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="7ef82d75bb6a2313898d53ac5de220b4e60c0777" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#cacc29ce4f0d0c3010e275ef418d63b39fe71907">
-										<span>Any refunds?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#cacc29ce4f0d0c3010e275ef418d63b39fe71907">
+											<span>Any refunds?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="cacc29ce4f0d0c3010e275ef418d63b39fe71907" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-								<div id="cacc29ce4f0d0c3010e275ef418d63b39fe71907" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#9ac02e09bdb205e521b81a025590f8fb4f758c94">
+											<span>What is a product key?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="9ac02e09bdb205e521b81a025590f8fb4f758c94" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#9ac02e09bdb205e521b81a025590f8fb4f758c94">
-										<span>What is a product key?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#e5c9cf9fe6058422a8e934aae843322a6ace298f">
+											<span>Where do I download the file to?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="e5c9cf9fe6058422a8e934aae843322a6ace298f" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
-								<div id="9ac02e09bdb205e521b81a025590f8fb4f758c94" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
-								</div>
-							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#e5c9cf9fe6058422a8e934aae843322a6ace298f">
-										<span>Where do I download the file to?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
-								</div>
-								<div id="e5c9cf9fe6058422a8e934aae843322a6ace298f" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
-								</div>
-							</div>
-							<div class="card mb-4 rounded-0 shadow border-0">
-								<div class="card-header rounded-0 bg-white border p-0 border-0">
-									<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#499244e52dfee43c02cdeb4b692bc6bbf6007a31">
-										<span>What happens after I download?</span> <i class="ti-plus text-primary text-right"></i>
-									</a>
-								</div>
-								<div id="499244e52dfee43c02cdeb4b692bc6bbf6007a31" class="collapse" data-parent="#accordion">
-									<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+								<div class="card mb-4 rounded-0 shadow border-0">
+									<div class="card-header rounded-0 bg-white border p-0 border-0">
+										<a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#499244e52dfee43c02cdeb4b692bc6bbf6007a31">
+											<span>What happens after I download?</span> <i class="ti-plus text-primary text-right"></i>
+										</a>
+									</div>
+									<div id="499244e52dfee43c02cdeb4b692bc6bbf6007a31" class="collapse" data-parent="#accordion">
+										<div class="card-body font-secondary text-color pt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus <a href="https://examplesite.com">link</a> ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- /faq -->
-		<!-- footer -->
-		<footer class="section bg-primary p-4 mt-5">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-3 text-md-left text-center">
-						<ul>
-							<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
-							<li class="nav-item">
-								<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-6 text-md-center text-center">
-						<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
-					</div>
-					<div class="col-md-3 text-md-right text-center">
-						<ul class="text-white">
-							<li class="nav-item">
-								<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
-								<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
-							</li>
-						</ul>
-						<ul class="list-inline">
-							<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
-							<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
-						</ul>
+			</section>
+			<!-- /faq -->
+			<!-- footer -->
+			<footer class="section bg-primary p-4 mt-5">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-3 text-md-left text-center">
+							<ul>
+								<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
+								<li class="nav-item">
+									<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-center text-center">
+							<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
+						</div>
+						<div class="col-md-3 text-md-right text-center">
+							<ul class="text-white">
+								<li class="nav-item">
+									<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
+									<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
+								</li>
+							</ul>
+							<ul class="list-inline">
+								<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
+								<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
-		</footer>
-		<!-- /footer -->
-		<!-- Main Script -->
-		<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
-	</body>
-</html>
+				<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
+			</footer>
+			<!-- /footer -->
+			<!-- Main Script -->
+			<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
+		</body>
+	</html>

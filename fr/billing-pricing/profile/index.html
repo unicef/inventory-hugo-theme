@@ -65,20 +65,23 @@
 		<meta name="twitter:title" content="Understand the different levels of profile"/>
 		<meta name="twitter:description" content="This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file."/>
 	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<body>
 		<!-- header -->
 		<header class="shadow-bottom sticky-top bg-white">
-			<nav class="navbar navbar-expand-md navbar-dark" style=" background-color: #1CABE2">
-				<div class="container px-2 px-md-0 navigation-bar">
+			<nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0" style=" background-color: #1CABE2">
+				<div class="w-100 container mx-0 navigation-bar">
 					<div id="site-brand">
-						<a class="navbar-brand px-2" href="/inventory-hugo-theme/fr">
+						<a class="navbar-brand px-2"
+        href="/inventory-hugo-theme/fr">
 							UNICEF Inventory Theme
 						</a>
 					</div>
-					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+					<a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<span class="sidebarIcon navbarMenu">Menu<i class="fa-solid fa-caret-down d-inline p-1"></i>
+						</span>
+					</a>
 					<div class="collapse navbar-collapse text-center" id="navigation">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
@@ -108,145 +111,224 @@
 							<option id="fr" value="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" selected>fr
 							</option>
 						</select>
+						<p class="text-white unicef-glob ml-4 mt-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i
+        class="fas fa-angle-double-right"></i></a></p>
 					</div>
 				</div>
-				<p class="text-white unicef-glob mx-3">Visit <a href="https://www.unicef.org/" class="text-white">UNICEF Global <i class="fas fa-angle-double-right"></i></a></p>
-			</nav>
-		</header>
-		<!-- /header -->
-		<script>
-			remSpace()
-		</script>
-		<script>
-			function remSpace() {
-			  document.getElementById("section").style.paddingTop = "3rem";
-			}
-		</script>
-		<!-- details page -->
-		<section class="single section-sm main-section" id="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="sidebar">
-							<a class="back-btn" href="/inventory-hugo-theme/fr" aria-label="back"></a>
-							<ul>
-								<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" title="Billing &amp; Pricing" class="sidelist
+				<div class="w-100 py-2 breadcrumbBar text-light" style=" background-color: #374ea2">
+					<div class="container">
+						<div class="breadcrumbs">
+							<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr" class="breadcrumbLink">fr</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing" class="breadcrumbLink">billing-pricing</a>
+							&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile" class="breadcrumbLink">profile</a>
+						</div>
+						<a data-toggle="collapse" data-target="#sidebarMobile"  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"> <i class="ti-menu text-light sidebarIcon"></i></a>
+						<div class="text-light text-center sidebarMobile collapse justify-content-center" id="sidebarMobile">
+							<div class="sidebarBox">
+								<ul>
+									<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" title="Billing &amp; Pricing" class="sidelist
   ">
-									<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" class="font-weight-bold">
-										Billing &amp; Pricing
-									</a>
-									<div class="accordion" id="accordionExample">
-										<ul>
-											<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/" title="Customer instructions for change of ownership" class="sidelist
-  ">
-												<div class="container">
-													<div class="row">
-														<div class="col-10">
-															<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/" class="">
-																Customer instructions for change of ownership
-															</a>
-														</div>
-													</div>
-												</li>
-												<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/" title="Manage My Sprint account" class="sidelist
+										<a href="/inventory-hugo-theme/fr" class="d-inline  back-btn">
+											<i class="ti-back-right"></i>
+										</a>
+										<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" class="font-weight-bold d-inline">
+											Billing &amp; Pricing
+										</a>
+										<div class="accordion" id="accordionExample">
+											<ul>
+												<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/" title="Customer instructions for change of ownership" class="sidelist
   ">
 													<div class="container">
 														<div class="row">
 															<div class="col-10">
-																<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/" class="">
-																	Manage My Sprint account
+																<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/" class="">
+																	Customer instructions for change of ownership
 																</a>
 															</div>
 														</div>
 													</li>
-													<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/" title="How to pay your bill" class="sidelist
+													<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/" title="Manage My Sprint account" class="sidelist
   ">
 														<div class="container">
 															<div class="row">
 																<div class="col-10">
-																	<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/" class="">
-																		How to pay your bill
+																	<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/" class="">
+																		Manage My Sprint account
 																	</a>
 																</div>
 															</div>
 														</li>
-														<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" title="Payment arrangements" class="sidelist
+														<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/" title="How to pay your bill" class="sidelist
   ">
 															<div class="container">
 																<div class="row">
 																	<div class="col-10">
-																		<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" class="">
-																			Payment arrangements
+																		<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/" class="">
+																			How to pay your bill
 																		</a>
 																	</div>
 																</div>
 															</li>
-															<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" title="Understand the different levels of profile" class="sidelist
-  active">
+															<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" title="Payment arrangements" class="sidelist
+  ">
 																<div class="container">
 																	<div class="row">
 																		<div class="col-10">
-																			<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" class="">
-																				Understand the different levels of profile
+																			<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" class="">
+																				Payment arrangements
 																			</a>
 																		</div>
 																	</div>
 																</li>
-															</ul>
-														</div>
-													</li>
-												</ul>
+																<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" title="Understand the different levels of profile" class="sidelist
+  active">
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-10">
+																				<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" class="">
+																					Understand the different levels of profile
+																				</a>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-										<div class="col-lg-9">
-											<div class="bg-white p-3" style="margin:auto">
-												<div class="breadcrumbs">
-													<a href="https://unicef.github.io/inventory-hugo-theme/">Home</a>
-													&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr" class="breadcrumbLink">fr</a>
-													&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing" class="breadcrumbLink">billing-pricing</a>
-													&gt; <a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile" class="breadcrumbLink">profile</a>
-												</div>
-											</div>
-											<div class="p-lg-5 p-4 bg-white position-relative" id="content">
-												<div class="d-flex flex-row-reverse">
-													<button id="editBtn" value="https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content/billing-pricing/profile/_index.fr.md" class="editBtn py-2 px-3">Modifier cette page</button>
-												</div>
-												<div class="p-lg-5 p-3 bg-white">
-													<h2 id="title">Understand the different levels of profile</h2>
-													<div class="content mt-5">
-														<p>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.</p>
-														<div class="notices note" >
-															<p>This is a simple note.</p>
-														</div>
-														<div class="notices tip" >
-															<p>This is a simple tip.</p>
-														</div>
-														<div class="notices info" >
-															<p>This is a simple info.</p>
-														</div>
-														<div class="code-tabs">
-															<ul class="nav nav-tabs"></ul>
-															<div class="tab-content">
-																<div class="tab-pane" title="first">
-																	This is first tab
-																</div>
-																<div class="tab-pane" title="second">
-																	this is second tab
-																</div>
-																<div class="tab-pane" title="third">
-																	this is third tab
-																</div>
+									</div>
+								</nav>
+							</header>
+							<!-- /header -->
+							<script>
+								remSpace()
+							</script>
+							<script>
+								function remSpace() {
+								  document.getElementById("section").style.paddingTop = "3rem";
+								}
+							</script>
+							<!-- details page -->
+							<section class="single section-sm" id="section">
+								<div class="d-flex w-100">
+									<div class="sidebarContainer">
+										<div class="sidebar">
+											<ul>
+												<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" title="Billing &amp; Pricing" class="sidelist
+  ">
+													<a href="/inventory-hugo-theme/fr" class="d-inline  back-btn">
+														<i class="ti-back-right"></i>
+													</a>
+													<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/" class="font-weight-bold d-inline">
+														Billing &amp; Pricing
+													</a>
+													<div class="accordion" id="accordionExample">
+														<ul>
+															<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/" title="Customer instructions for change of ownership" class="sidelist
+  ">
+																<div class="container">
+																	<div class="row">
+																		<div class="col-10">
+																			<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/" class="">
+																				Customer instructions for change of ownership
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/" title="Manage My Sprint account" class="sidelist
+  ">
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-10">
+																				<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/" class="">
+																					Manage My Sprint account
+																				</a>
+																			</div>
+																		</div>
+																	</li>
+																	<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/" title="How to pay your bill" class="sidelist
+  ">
+																		<div class="container">
+																			<div class="row">
+																				<div class="col-10">
+																					<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/" class="">
+																						How to pay your bill
+																					</a>
+																				</div>
+																			</div>
+																		</li>
+																		<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" title="Payment arrangements" class="sidelist
+  ">
+																			<div class="container">
+																				<div class="row">
+																					<div class="col-10">
+																						<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" class="">
+																							Payment arrangements
+																						</a>
+																					</div>
+																				</div>
+																			</li>
+																			<li data-nav-id="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" title="Understand the different levels of profile" class="sidelist
+  active">
+																				<div class="container">
+																					<div class="row">
+																						<div class="col-10">
+																							<a href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/" class="">
+																								Understand the different levels of profile
+																							</a>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</li>
+																</ul>
 															</div>
 														</div>
-														<p>Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</p>
-														<h3 id="image-example">Image Example&nbsp;<a class="hanchor" href="#image-example">🔗</a> </h3>
-														<p>Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.</p>
-														<p><img src="img-1.jpg" alt="image example" title="image"></p>
-														<p>Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.</p>
-														<h3 id="example-of-code-block">Example Of Code Block&nbsp;<a class="hanchor" href="#example-of-code-block">🔗</a> </h3>
-														<p>In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-														<div class="highlight">
-															<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#070">head</span>&gt;
+														<div class="contentContainer py-5 px-5">
+															<div class="p-lg-5 p-4 bg-white position-relative mx-5 my-3 w-100 contentBox" id="content">
+																<div class="d-flex flex-row-reverse p-absolute">
+																	<button id="editBtn" value="https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content/billing-pricing/profile/_index.fr.md" class="editBtn py-2 px-3">Modifier cette page</button>
+																</div>
+																<div class="p-lg-5 p-3 bg-white">
+																	<h2 id="title">Understand the different levels of profile</h2>
+																	<div class="content mt-5">
+																		<p>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.</p>
+																		<div class="notices note" >
+																			<p>This is a simple note.</p>
+																		</div>
+																		<div class="notices tip" >
+																			<p>This is a simple tip.</p>
+																		</div>
+																		<div class="notices info" >
+																			<p>This is a simple info.</p>
+																		</div>
+																		<div class="code-tabs">
+																			<ul class="nav nav-tabs"></ul>
+																			<div class="tab-content">
+																				<div class="tab-pane" title="first">
+																					This is first tab
+																				</div>
+																				<div class="tab-pane" title="second">
+																					this is second tab
+																				</div>
+																				<div class="tab-pane" title="third">
+																					this is third tab
+																				</div>
+																			</div>
+																		</div>
+																		<p>Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</p>
+																		<h3 id="image-example">Image Example&nbsp;<a class="hanchor" href="#image-example">🔗</a> </h3>
+																		<p>Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.</p>
+																		<p><img src="img-1.jpg" alt="image example" title="image"></p>
+																		<p>Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.</p>
+																		<h3 id="example-of-code-block">Example Of Code Block&nbsp;<a class="hanchor" href="#example-of-code-block">🔗</a> </h3>
+																		<p>In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+																		<div class="highlight">
+																			<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#070">head</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  &lt;<span style="color:#070">meta</span> <span style="color:#007">charset</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;utf-8&#34;</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  &lt;<span style="color:#070">meta</span> <span style="color:#007">http-equiv</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;X-UA-Compatible&#34;</span> <span style="color:#007">content</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;IE=edge&#34;</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  &lt;<span style="color:#070">meta</span> <span style="color:#007">name</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;viewport&#34;</span> <span style="color:#007">content</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
@@ -255,71 +337,70 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  &lt;<span style="color:#070">script</span> <span style="color:#007">src</span><span style="color:#333">=</span><span style="background-color:#e0e0ff">&#34;/assets/js/main.js&#34;</span>&gt;&lt;/<span style="color:#070">script</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>&lt;/<span style="color:#070">head</span>&gt;
 </span></span></code></pre>
+																		</div>
+																		<h3 id="text-and-quote">Text and Quote&nbsp;<a class="hanchor" href="#text-and-quote">🔗</a> </h3>
+																		<p>Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.</p>
+																		<blockquote>
+																			<p>Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet</p>
+																		</blockquote>
+																		<p>Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.</p>
+																	</div>
+																	<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 31 Oct 2021</p>
+																	<nav class="pagination mt-3">
+																		<a class="nav nav-prev" href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Payment arrangements</span></a>
+																		<a class="nav nav-next" href="https://unicef.github.io/inventory-hugo-theme/fr/features/" aria-label="Previous page" > <span class="d-none d-md-block">Features</span><i class="ti-arrow-right ml-2"></i></a>
+																	</nav>
+																</div>
+															</div>
 														</div>
-														<h3 id="text-and-quote">Text and Quote&nbsp;<a class="hanchor" href="#text-and-quote">🔗</a> </h3>
-														<p>Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.</p>
-														<blockquote>
-															<p>Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet</p>
-														</blockquote>
-														<p>Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.</p>
 													</div>
-													<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 31 Oct 2021</p>
-													<nav class="pagination mt-3">
-														<a class="nav nav-prev" href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Payment arrangements</span></a>
-														<a class="nav nav-next" href="https://unicef.github.io/inventory-hugo-theme/fr/features/" aria-label="Previous page" > <span class="d-none d-md-block">Features</span><i class="ti-arrow-right ml-2"></i></a>
-													</nav>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- /details page -->
-							<!-- footer -->
-							<footer class="section bg-primary p-4 mt-5">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-3 text-md-left text-center">
-											<ul>
-												<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
-												<li class="nav-item">
-													<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-6 text-md-center text-center">
-											<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
-										</div>
-										<div class="col-md-3 text-md-right text-center">
-											<ul class="text-white">
-												<li class="nav-item">
-													<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
-													<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
-												</li>
-											</ul>
-											<ul class="list-inline">
-												<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
-												<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
-							</footer>
-							<!-- /footer -->
-							<!-- Main Script -->
-							<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
-						</body>
-					</html>
+												</section>
+												<!-- /details page -->
+												<!-- footer -->
+												<footer class="section bg-primary p-4 mt-5">
+													<div class="container">
+														<div class="row align-items-center">
+															<div class="col-md-3 text-md-left text-center">
+																<ul>
+																	<li><a class="nav-link text-white" href="/inventory-hugo-theme/fr">HOME</a></li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr">Accueil</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/faq">FAQ</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white text-uppercase" href="https://unicef.github.io/inventory-hugo-theme/fr/contact">Contacter</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="col-md-6 text-md-center text-center">
+																<p class="mb-md-0 mb-4 text-white">This is metadata for the site footer. Set in Hugo config file under &ldquo;brand and identity information&rdquo;.</p>
+															</div>
+															<div class="col-md-3 text-md-right text-center">
+																<ul class="text-white">
+																	<li class="nav-item">
+																		<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/">UNICEF Global</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicefinnovationfund.org/">UNICEF Innovation Fund</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link text-white font-weight-bold px-0" href="https://www.unicef.org/legal">Legal</a>
+																		<p class="h6 text-md-right font-weight-light">Trouvez des informations juridiques et des politiques liées aux communications numériques de l&#39;UNICEF Global.</p>
+																	</li>
+																</ul>
+																<ul class="list-inline">
+																	<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://github.com/unicef/inventory-hugo-theme" aria-label="UNICEF Inventory theme for Hugo on GitHub"><i class="ti-github"></i></a></li>
+																	<li class="list-inline-item"><a class="text-color d-inline-block p-2 text-white socialIcon" href="https://twitter.com/UNICEFinnovate" aria-label="@UNICEFinnovate on Twitter"><i class="ti-twitter-alt"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<p class="text-md-center text-center text-white mt-3 h6 font-italic">Copyright © 2020-2022 un thème Hugo par <a href="https://www.unicef.org/innovation/">UNICEF Office of Innovation</a></p>
+												</footer>
+												<!-- /footer -->
+												<!-- Main Script -->
+												<script src="https://unicef.github.io/inventory-hugo-theme/js/script.min.js"></script>
+											</body>
+										</html>

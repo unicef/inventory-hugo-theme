@@ -1,10 +1,8 @@
 {{ "<!-- details page -->" | safeHTML }}
-<section class="single section-sm main-section" id="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
+<section class="single section-sm" id="section">
+    <div class="d-flex w-100">
+      <div class="sidebarContainer">
         <div class="sidebar">
-        <a class="back-btn" href="{{ .Site.BaseURL | relLangURL }}" aria-label="back"></a>
           <ul>
             {{ $currentNode := . }}
             {{range .Site.Home.Sections.ByWeight}}
@@ -16,16 +14,10 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-9">
-        <!-- begin breadcrumb feature -->
-        <div class="bg-white p-3" style="margin:auto">
-          {{ partial "breadcrumb.html" . }}
-        </div>
-        <!-- end breadcrumb feature -->
-
-        <div class="p-lg-5 p-4 bg-white position-relative" id="content">
+      <div class="contentContainer py-5 px-5">
+        <div class="p-lg-5 p-4 bg-white position-relative mx-5 my-3 w-100 contentBox" id="content">
           <!-- begin "Edit This Page" button -->
-          <div class="d-flex flex-row-reverse">
+          <div class="d-flex flex-row-reverse p-absolute">
             {{ $path := "" }}
             {{ with .File }}
                 {{ $path = .Path }}
@@ -135,12 +127,11 @@
               {{ end }}
             {{ end }}
           <!-- End of related articles section -->
-
+          
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 {{ "<!-- /details page -->" | safeHTML }}
 
@@ -154,7 +145,7 @@
 {{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
 {{ $currentNodeFileUniqueID := "" }}
 {{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
-<li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist
+<li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="
   {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
   <a href="{{.Permalink}}">
     {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}

@@ -1,18 +1,21 @@
-{{ "<!-- details page -->" | safeHTML }}
-<section class="section single section-sm pt-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        {{ partial "sidebar.html" . }}
+<section class="single section-sm" id="section">
+  <div class="d-flex w-100">
+    <div class="sidebarContainer">
+      <div class="sidebar">
+        <ul>
+          {{ $currentNode := . }}
+          {{range .Site.Home.Sections.ByWeight}}
+            {{ if eq .FirstSection $currentNode.FirstSection }}
+            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "index" 0}}
+            {{ end }}
+          {{ end }}
+          {{ partial "download-pdf.html" .}}
+        </ul>
       </div>
-      <div class="col-lg-9">
-        
-        <div>
-          <div class="bg-white" style="margin:auto">
-            {{ partial "breadcrumb.html" . }}
-          </div>
-          <div class="p-lg-5 p-4 bg-white" id="content">
-            <h2 class="mb-5" id="title">{{ .Title }}</h2>
+    </div>
+    <div class="contentContainer py-5 px-5">
+      <div class="p-lg-5 p-4 bg-white position-relative mx-5 my-3 w-100 contentBox" id="content">
+        <h2 class="mb-5" id="title">{{ .Title }}</h2>
             {{ if .Content }}
              <div class="content">
               <h2>About</h2>
@@ -195,11 +198,39 @@
                   </div>
               </section>
             <!-- End of related articles section-->
-
-          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 {{ "<!-- /details page -->" | safeHTML }}
+
+<!-- templates -->
+{{ define "default-section-tree-nav" }}
+{{ $showvisitedlinks := .showvisitedlinks }}
+{{ $currentNode := .currentnode }}
+{{with .sect}}
+{{safeHTML .Params.head}}
+{{ $fileUniqueID := "" }}
+{{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
+{{ $currentNodeFileUniqueID := "" }}
+{{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
+<li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="
+{{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
+<a href="{{.Permalink}}">
+  {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+</a>
+{{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+{{ if ne $numberOfPages 0 }}
+  <ul>
+    {{ range .Pages.ByWeight }}
+      {{ if and .Params.hidden (not $.showhidden) }}
+      {{else}}
+        {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+      {{end}}
+    {{end}}
+  </ul>
+{{ end }}
+</li>
+{{ end }}
+{{ end }}

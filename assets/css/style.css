@@ -1285,6 +1285,10 @@ footer a:hover{
     text-transform: capitalize !important;
 }
 
+.dpgCard {
+    background-color: var(--body-color);
+}
+
 /* sidebar media queries*/
 @media (max-width:1100px ){
     .sidebarContainer{
@@ -1335,6 +1339,8 @@ footer a:hover{
     }
 }
 
-.dpgCard{
-    background-color: var(--body-color);
+@media (max-width: 350px) {
+    .globalLogoImg{
+        width:170px !important;
+    }
 }

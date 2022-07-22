@@ -1,0 +1,56 @@
+---
+title: Admonitions
+description: Call out specific information and details in an article using an admonition.
+categories: features
+tag: ["content"]
+downloadBtn: true
+
+---
+:toc:
+
+*Admonitions* are a technical writing tool to call out specific information and details in an article.
+This may be a note, general information, a tip, or a warning.
+The UNICEF Inventory supports multiple admonitions.
+These are used with _shortcodes_ and work with any markup language (e.g. Markdown and AsciiDoc).
+
+_One caveat_:
+AsciiDoc is not supported inside an admonition.
+Admonition content only renders Markdown and HTML.
+
+See the examples below:
+
+{{< notice note >}}
+**A notice admonition**.
+A note can clarify a detail or expand on something mentioned in the article.
+It provides context and more detail.
+{{< /notice >}}
+
+{{< notice tip >}}
+**A notice admonition**.
+A tip can offer a suggestion or give a best practice to follow.
+It offers something instructional to the reader.
+{{< /notice >}}
+
+{{< notice info >}}
+**An info admonition**.
+Calling out extra information is helpful if there are extra details, but might not relate to the topic at hand.
+It can be supplementary reading or a reference to other material.
+{{< /notice >}}
+
+{{< notice caution >}}
+**A caution admonition**.
+A caution is a light warning to a reader to take extra care when reading some information.
+Dismissing a caution might cause an inconvenience for a reader.
+{{</ notice >}}
+
+{{< notice warning >}}
+**A warning admonition**.
+A warning is a stern warning to a reader about something that could be harmful or damaging.
+There could be negative or severe consequences if the warning is dismissed.
+{{< /notice >}}
+
+{{< notice important >}}
+**An important admonition**.
+This calls out anything of critical importance within an article.
+These admonitions demand the most attention from the reader and should be used sparingly.
+{{</ notice >}}

@@ -1,0 +1,304 @@
+---
+title: "Example: Lorem ipsum"
+description: A page used for quickly seeing several different features and markup of the UNICEF Inventory theme.
+categories: about
+tag: ["content", "developers"]
+downloadBtn: true
+# search related keywords
+keywords: [""]
+
+---
+:toc:
+
+_Note_:
+This page is used for two purposes:
+
+. *For Hugo webmasters*:
+  See examples of how the theme renders different kinds of content.
+  It shows most of the elements and various markup that can be used across the theme.
+. *For theme developers*:
+  A quick and fast way to see many elements on a single page at once.
+  This is helpful for testing for regressions when introducing new front-end changes.
+
+The text used for the remainder of the article is default "lorem ipsum" text.
+It has no meaning and is used only to show different features.
+
+
+== Text formatting
+
+*Quisque quis eleifend lectus*.
+_Curabitur scelerisque, ex ac elementum pulvinar, nisl lorem pellentesque risus, in tempor magna leo ac orci_.
+`In consectetur ornare maximus`.
+*_In blandit libero purus_*.
+`*_Quisque quis eleifend lectus_*`.
+#Curabitur scelerisque, ex ac elementum pulvinar, nisl lorem pellentesque risus, in tempor magna leo ac orci#.
+[.underline]#In consectetur ornare maximus#.
+[.line-through]#In blandit libero purus#.
+
+=== Hyperlinks
+
+https://asciidoctor.org[Etiam consequat], ipsum ac cursus malesuada, https://example.com[tortor ante cursus mi], in facilisis justo eros eget nunc.
+https://www.unicef.org/[Quisque tempus tempor erat], vitae tincidunt leo ultricies et.
+
+=== Lists
+
+Morbi eget lectus vitae erat mattis auctor eget et lorem.
+
+==== Unordered
+
+* Nulla sed lorem pellentesque, tincidunt magna eu, mollis velit.
+** Nunc congue scelerisque erat at lacinia.
+** Nunc velit magna, pellentesque vitae sagittis vitae, vulputate vel arcu.
+** Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+*** Donec interdum libero a risus aliquet sollicitudin.
+* Proin eleifend efficitur urna in pharetra.
+** In hac habitasse platea dictumst.
+*** Integer arcu leo, finibus et eros ut, dapibus condimentum risus.
+
+==== Ordered
+
+. Nulla sed lorem pellentesque, tincidunt magna eu, mollis velit.
+.. Nunc congue scelerisque erat at lacinia.
+.. Nunc velit magna, pellentesque vitae sagittis vitae, vulputate vel arcu.
+.. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+... Donec interdum libero a risus aliquet sollicitudin.
+. Proin eleifend efficitur urna in pharetra.
+.. In hac habitasse platea dictumst.
+... Integer arcu leo, finibus et eros ut, dapibus condimentum risus.
+
+=== Quotes
+
+Pellentesque a interdum arcu.
+Donec sed dictum dolor.
+Mauris posuere, odio a molestie tincidunt, libero dolor porttitor nisl, quis pulvinar ante ante at ex.
+Nulla ultricies dictum magna, id congue erat hendrerit quis.
+Vivamus euismod magna vel nulla sagittis, a imperdiet lectus sodales.
+Proin finibus nunc sed est sollicitudin porttitor.
+
+[quote,Jane Doe,Pellentesque nec lobortis purus.]
+____
+Sed sollicitudin nulla mauris, at consequat quam finibus quis.
+Ut rhoncus nisl a mauris ornare, eget auctor felis ultrices.
+Nulla fermentum lorem non elementum pulvinar.
+Aenean congue et massa nec egestas.
+Nullam in leo tortor.
+____
+
+Mauris et luctus lacus, id pharetra arcu.
+Vestibulum euismod rutrum libero, vel mollis justo porta sed.
+Duis semper felis et semper mollis.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+Etiam non varius diam, eu venenatis purus.
+Integer ac ipsum gravida, feugiat lacus non, accumsan enim.
+Sed a nibh dui.
+
+
+== Admonitions
+
+Phasellus id lectus in sem posuere dictum congue quis urna.
+Nunc et vehicula urna.
+Vivamus id erat a sem fermentum euismod.
+Nunc suscipit lectus id rutrum dapibus.
+
+{{< notice note >}}
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit**.
+Phasellus nec lacus imperdiet, placerat velit a, volutpat ex.
+Aliquam malesuada velit nisl, eu iaculis dolor bibendum sed.
+{{< /notice >}}
+
+{{< notice tip >}}
+**Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos**.
+Praesent in urna libero.
+Cras non lacus eget nulla scelerisque fringilla vitae in mauris.
+{{< /notice >}}
+
+{{< notice info >}}
+**Integer efficitur fringilla purus, a volutpat arcu vestibulum nec**.
+Fusce euismod sapien nibh, vitae laoreet nulla ultricies sed.
+Duis venenatis libero non risus bibendum bibendum.
+{{< /notice >}}
+
+{{< notice caution >}}
+**Sed fringilla neque quis faucibus molestie**.
+Vivamus ultrices urna id justo pellentesque, et placerat elit rhoncus.
+Nam urna mauris, dignissim sed rhoncus eu, commodo non nulla.
+{{</ notice >}}
+
+{{< notice warning >}}
+**Ut ornare tristique nibh, vitae consequat massa elementum maximus**.
+Suspendisse vitae neque aliquet augue bibendum viverra.
+Sed nec odio ipsum.
+{{< /notice >}}
+
+{{< notice important >}}
+**Integer congue, nisi et convallis tempor, libero ipsum aliquet lectus, eu ullamcorper purus diam placerat ipsum**.
+Pellentesque urna nulla, tincidunt ut magna ut, lacinia ultricies nibh.
+{{</ notice >}}
+
+
+== Code highlighting
+
+Phasellus pellentesque massa rutrum ultricies ullamcorper.
+Nullam rutrum nisl a metus ullamcorper suscipit.
+Duis semper sodales dui nec vehicula.
+Pellentesque et ex mi.
+
+{{< highlight html >}}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
+  <script src="/assets/js/main.js"></script>
+</head>
+{{< /highlight >}}
+
+
+== Tab tables
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Maecenas rutrum ullamcorper accumsan.
+Curabitur dolor ex, laoreet a purus id, sodales malesuada mi.
+Curabitur ut felis malesuada, lobortis dolor eu, consequat lacus.
+Etiam semper vehicula odio sit amet commodo.
+Fusce id ante nec felis semper vulputate id eu nibh.
+Praesent quis urna et nibh consequat sollicitudin.
+
+{{< tabs >}}
+  {{< tab "Vivamus laoreet mauris ut rutrum porta." >}}
+  <div class="text-center">
+    Photo by <a href="https://unsplash.com/@marisahowenstine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marisa Howenstine</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+  </div>
+
+  <img src="{{< ref "/features/tab-tables/" >}}/tab-1.jpg" alt="A nanny plays with blocks together with two children" width="75%">
+  {{</ tab >}}
+
+  {{< tab "Sed fringilla felis a augue venenatis tincidunt." >}}
+  <div class="text-center">
+    Photo by <a href="https://unsplash.com/@profwicks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Wicks</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+  </div>
+
+  <img src="{{< ref "/features/tab-tables/" >}}/tab-2.jpg" alt="Four children stand together wearing boots covered with mud" width="75%">
+  {{</ tab >}}
+
+  {{< tab "Praesent semper justo sed nulla imperdiet vulputate sed eu diam." >}}
+  <div class="text-center">
+    Photo by <a href="https://unsplash.com/@robbie36?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Collins</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+  </div>
+
+  <img src="{{< ref "/features/tab-tables/" >}}/tab-3.jpg" alt="Four boys sit in a field, one of them holding a small stringed instrument" width="75%">
+  {{</ tab >}}
+{{< /tabs >}}
+
+
+== Images
+
+Cras sagittis ipsum purus, a dapibus elit suscipit ut.
+Aliquam tempor molestie scelerisque.
+Quisque facilisis vestibulum velit, sed porttitor nunc faucibus at.
+Pellentesque vitae sapien at dui sodales mattis ac faucibus neque.
+Fusce eu lacus sapien.
+Etiam tristique est ex, eget cursus lorem mollis quis.
+
+.Quisque placerat dignissim varius.
+[#example-image]
+[link=https://www.unicef.org/]
+image::{{< ref "/features/tab-tables/" >}}/tab-2.jpg[Four children stand together wearing boots covered with mud,50%]
+
+Mauris eleifend elit in erat feugiat, sed volutpat nulla porta.
+Cras quis sapien quis turpis facilisis venenatis.
+Integer fringilla metus vel tristique porttitor.
+Pellentesque ex sapien, lacinia id ante eu, maximus vehicula ligula.
+
+
+== Heading 2
+
+Morbi nisl ante, pharetra ut augue ac, tincidunt viverra sem.
+Quisque eleifend enim metus, eu tristique est placerat eget.
+Maecenas a nisl luctus, blandit dui ut, tempor lacus.
+Suspendisse leo urna, porta a facilisis vel, rhoncus vitae justo.
+Sed accumsan est non neque suscipit tempus.
+In molestie hendrerit mauris ac commodo.
+In hac habitasse platea dictumst.
+
+=== Heading 3
+
+In hac habitasse platea dictumst.
+Maecenas ac tortor viverra quam tempor varius sit amet sit amet neque.
+Nam laoreet sodales ultrices.
+Curabitur blandit metus non justo ornare, eu varius purus luctus.
+
+==== Heading 4
+
+Donec pellentesque lobortis nulla non viverra.
+Aenean mollis ante arcu, faucibus pellentesque dui eleifend sed.
+Cras quis lacus faucibus, pulvinar libero non, consectetur sem.
+Morbi magna sapien, varius non sodales sit amet, bibendum at metus.
+
+===== Heading 5
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Phasellus dapibus, justo id tempor dictum, lorem urna viverra felis, sit amet tincidunt purus tortor in justo.
+Quisque lobortis nulla id leo pretium elementum.
+Nam lacinia nunc ante, placerat facilisis felis tempor nec.
+
+====== Heading 6
+
+Donec commodo non metus eget viverra.
+Vestibulum non elit varius, suscipit turpis vel, elementum turpis.
+Sed ex metus, placerat at felis non, ultricies sollicitudin arcu.
+Ut rhoncus rhoncus erat vel efficitur.
+Sed sed tincidunt massa, in egestas justo.
+
+
+== Tables
+
+Donec vel nisi est.
+Cras sit amet eros et purus consectetur convallis.
+Donec imperdiet ut urna ac vestibulum.
+
+{{<table "table">}}
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+{{</table>}}
+
+Vivamus at ligula nec lorem dapibus lobortis sit amet vitae massa.
+Sed dignissim dolor at turpis eleifend semper.
+Maecenas fringilla ex quis leo sollicitudin ultricies.
+
+{{<table "table">}}
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+{{</table>}}
+
+In non ullamcorper lectus, sit amet iaculis nisl.
+Quisque mattis sit amet ex id varius.
+Vivamus varius sollicitudin diam interdum interdum.
+Nulla nec hendrerit nisl.
+
+== Embedded media
+
+In pulvinar velit maximus, dignissim velit et, vehicula erat.
+Integer mattis nibh ac interdum lacinia.
+Nunc ac mauris sed nulla fringilla porttitor.
+
+=== YouTube video
+
+Nulla eu turpis in odio scelerisque facilisis.
+Pellentesque in nulla semper, laoreet lorem non, fringilla massa.
+Praesent in ex a arcu interdum eleifend ut in quam.
+
+{{< youtube C0DPdy98e4c >}}
+
+=== PDFs
+
+Ut enim quam, accumsan volutpat tellus sollicitudin, elementum fringilla diam.
+Vivamus non vestibulum libero.
+
+{{< embed-pdf pdfName="sample.pdf">}}

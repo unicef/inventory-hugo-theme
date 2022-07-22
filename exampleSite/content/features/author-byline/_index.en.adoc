@@ -1,0 +1,28 @@
+---
+title: Author byline
+description: Identify the author and author contact information of a page.
+categories: features
+tag: ["content"]
+downloadBtn: true
+
+---
+:toc:
+
+Every article can be given an author byline.
+A byline is an attribution that appears prominently in the article.
+The byline can have two pieces of data:
+
+. Author name
+. Author email address
+
+The data is specified by adding front-matter to article.
+See the example below:
+
+{{< highlight yaml >}}
+author: Jane Doe
+authorEmail: jane@example.com
+{{< /highlight >}}
+
+.Byline in an article
+[#img-sunset]
+image::byline-example.png[Screenshot of a byline for Jane Doe (jane@example.com) is shown on this page.,85%]

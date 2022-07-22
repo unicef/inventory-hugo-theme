@@ -1,0 +1,45 @@
+---
+draft: true
+title: To be published
+description: These are features that need to be drafted.
+categories: features
+tag: [""]
+downloadBtn: true
+
+---
+:toc:
+
+== Tables
+
+To make a table, create each column's header with three or more hyphens (---), and separate each column with pipes (|).
+
+{{<table "table">}}
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+{{</table>}}
+
+You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row.
+
+{{<table "table">}}
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+{{</table>}}
+
+To automatically generate the table by simply assigning values to the cells, use the [Markdown Table Generator Tool](https://www.tablesgenerator.com/markdown_tables).
+
+== Embedded media
+
+=== YouTube video
+
+{{< youtube C0DPdy98e4c >}}
+
+=== PDFs
+
+Embedded PDFs must be committed as [static files](https://gohugo.io/content-management/static-files/) in `static/pdfs/`:
+
+{{< embed-pdf pdfName="sample.pdf">}}

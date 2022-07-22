@@ -1,0 +1,87 @@
+---
+title: Brand & identity
+description: Change text and visual appearance to better represent the brand and identity of the site owner.
+categories: features
+tag: ["design"]
+downloadBtn: true
+
+---
+:toc:
+
+The UNICEF Inventory theme includes several options to change text and visual appearance of the site.
+These options allow for greater customization of the Hugo theme for different brands and identities.
+This is done so that the UNICEF Inventory theme can be used in many different contexts as a knowledge management tool.
+
+
+[[logos]]
+== Logos
+
+A UNICEF Inventory site can use two logos: a primary logo and an alternate logo.
+Two logos are supported for the case when one logo color has poor contrast against some backgrounds.
+In that case, the `logo_alt` should be set in the site config.
+
+See an excerpt from the `config.yaml` file of the example site:
+
+{{< highlight yaml >}}
+# --- custom settings ---
+
+params:
+  # Shown on all pages. When logo is empty, it will show your site title, set above.
+  logo: ""
+
+  # White logo, or any alternate color of logo. Only shown on home page if set.
+  logo_alt: ""
+{{< /highlight >}}
+
+{{% notice tip %}}
+The logo size will adapt automatically.
+{{% /notice %}}
+
+
+[[favicon]]
+== Favicon
+
+In order to use a custom favicon, the favicon file must be committed to a specific path in the Hugo site.
+Additionally, the favicon must be a *PNG file*.
+*Save the favicon in the repository to `/static/images/favicon.png`*.
+
+
+[[colors]]
+== Default colors
+
+The UNICEF Inventory theme supports custom colors.
+The colors are set in the site config.
+Note that the default colors in the example site align with UNICEF brand and identity guidelines.
+
+See an excerpt from the `config.yaml` file of the example site:
+
+{{< highlight yaml >}}
+# --- custom settings ---
+
+params:
+  # customize color
+  primary_color: "#1CABE2"
+  primary_color_light: "#1b66b1"
+  body_color: "#f2f4f6"
+  text_color: "#636363"
+  text_color_dark: "#374ea2"
+  text_title_color: "#ffffff"
+  white_color: "#ffffff"
+  light_color: "#f8f9fa"
+{{< /highlight >}}
+
+
+[[font]]
+== Font
+
+The font family used across the theme is managed in the site config.
+The https://fonts.google.com/[Google Font API] is used for retrieving fonts.
+The font family name used in the site config must be an exact match of the font name in the API.
+
+{{< highlight yaml >}}
+# --- custom settings ---
+
+params:
+  # font family (choose from https://fonts.google.com/)
+  font_family: "Lato"
+{{< /highlight >}}

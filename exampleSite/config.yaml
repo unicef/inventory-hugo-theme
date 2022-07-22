@@ -109,7 +109,6 @@ params:
   footer:
     mainSite: https://www.unicef.org/innovation/
     mainSiteName: UNICEF Office of Innovation
-    description: UNICEF Inventory Theme documentation and example site. Powered by Hugo, a static site generator. An open source tool from the UNICEF Office of Innovation, Ventures Team.
 
 
 # --- social platform settings ---
@@ -155,6 +154,8 @@ Languages:
           enable: true
           label: See the form
           link: contact
+      footer:
+        description: UNICEF Inventory Theme documentation and example site. Powered by Hugo, a static site generator. An open source tool from the UNICEF Office of Innovation, Ventures Team.
     # --- navigation menu ---
     menu:
       main:
@@ -209,6 +210,8 @@ Languages:
           enable: true
           label: Ver el formulario
           link: contact
+      footer:
+        description: Documentación de la plantilla de UNICEF Inventory y sitio de ejemplo. Desarrollado por Hugo, un generador de sitio estático. Una herramienta de open source de la Oficina de Innovación de UNICEF, Ventures Team.
     # --- navigation menu ---
     menu:
       main:

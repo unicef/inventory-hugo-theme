@@ -10,7 +10,7 @@
         <a class="navbar-brand" href="{{ if (or $logo $logoAlt) }}{{ $orgUrl }}{{ else }}{{ site.BaseURL | relLangURL }}{{ end }}">
         {{ if (or $logo $logoAlt) }}
         <img class="img-fluid d-inline globalLogoImg"
-          src="{{ if $logoAlt }}{{ $logoAlt | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
+          src="{{ if $logoAlt }}{{ $logoAlt | absURL }}{{ else }}{{ $logo | absURL }}{{ end }}"
           alt="{{ site.Title }}">
           </a>
         {{ end }}

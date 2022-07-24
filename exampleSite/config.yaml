@@ -71,7 +71,7 @@ params:
   editPrefix: https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content
 
   # Shown on all pages. When logo is empty, it will show your site title, set above.
-  logo: "images/unicef-logo.png"
+  logo: ""
 
   # White logo, or any alternate color of logo. Only shown on home page if set.
   logo_alt: ""

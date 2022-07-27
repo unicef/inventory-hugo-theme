@@ -2,208 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/billing-pricing/ownership/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/ownership/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/ownership/"
-                />
-  </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/features/linux/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/features/linux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/linux/"
-                />
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/installation/requirments/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/installation/requirments/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/installation/requirments/"
-                />
+    <loc>https://unicef.github.io/inventory-hugo-theme/install/requirments/</loc>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/installation/install/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/installation/install/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/installation/install/"
-                />
+    <loc>https://unicef.github.io/inventory-hugo-theme/install/install/</loc>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/features/mac/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/features/mac/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/mac/"
-                />
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/billing-pricing/manage/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/manage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/manage/"
-                />
-  </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/installation/configuration/</loc>
-    <lastmod>2022-03-15T18:27:42+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/installation/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/installation/configuration/"
-                />
-  </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/billing-pricing/bill/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/bill/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/bill/"
-                />
+    <loc>https://unicef.github.io/inventory-hugo-theme/install/configuration/</loc>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/features/routing/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/features/routing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/routing/"
-                />
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/installation/customization/</loc>
-    <lastmod>2022-06-10T08:54:56+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/installation/customization/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/installation/customization/"
-                />
-  </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/billing-pricing/payment/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/payment/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/payment/"
-                />
+    <loc>https://unicef.github.io/inventory-hugo-theme/install/customization/</loc>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/features/ubuntu/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/features/ubuntu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/ubuntu/"
-                />
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/installation/elements/</loc>
-    <lastmod>2022-04-09T00:43:05+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/installation/elements/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/installation/elements/"
-                />
-  </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/billing-pricing/profile/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/profile/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/profile/"
-                />
+    <loc>https://unicef.github.io/inventory-hugo-theme/install/elements/</loc>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/features/windows/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/features/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/windows/"
-                />
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/</loc>
-    <lastmod>2022-07-11T18:29:30+05:30</lastmod>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -211,50 +46,30 @@
                 href="https://unicef.github.io/inventory-hugo-theme/"
                 />
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/installation/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/installation/"
-                />
-  </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/billing-pricing/</loc>
-    <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/billing-pricing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/billing-pricing/"
-                />
+    <loc>https://unicef.github.io/inventory-hugo-theme/install/</loc>
+    <lastmod>2022-07-27T11:11:06+02:00</lastmod>
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/features/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
+  </url><url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/about/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/features/"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/"
+                href="https://unicef.github.io/inventory-hugo-theme/about/"
                 />
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/alerts/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/alerts/"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/alerts/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -266,8 +81,8 @@
     <lastmod>2022-06-28T23:06:05-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/categories/"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -285,8 +100,8 @@
     <lastmod>2022-06-28T23:06:05-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/downloadbtn/"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/downloadbtn/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -299,29 +114,9 @@
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/faq/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/faq/"
-                />
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/contact/</loc>
     <lastmod>2021-10-31T10:31:58+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://unicef.github.io/inventory-hugo-theme/fr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/contact/"
-                />
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/contributing/stakeholders/</loc>
     <lastmod>2022-06-28T23:06:05-04:00</lastmod>

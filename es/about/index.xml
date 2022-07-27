@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UNICEF Inventory Theme</title>
+    <link>https://unicef.github.io/inventory-hugo-theme/es/about/</link>
+    <description>Recent content on UNICEF Inventory Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-mx</language>
+    <copyright>Copyright &amp;copy; 2020-2022 una plantilla de [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/es/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

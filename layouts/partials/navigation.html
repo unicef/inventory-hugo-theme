@@ -2,16 +2,16 @@
   <div class="w-100 container mx-0 navigation-bar">
     <div id="site-brand">
       {{ $logo:= site.Params.logo }}
-      {{ $logoWhite:= site.Params.logo_white }}
+      {{ $logoAlt:= site.Params.logo_alt }}
       {{ $orgName:= site.Params.brand.parent_org_name }}
       {{ $orgUrl:= site.Params.brand.parent_org_url }}
       <a class="navbar-brand px-2"
-        href="{{ if (or $logo $logoWhite) }}{{ $orgUrl }}{{else}}{{ site.BaseURL | relLangURL }}{{ end }}">
-        {{ if (or $logo $logoWhite) }}
+        href="{{ if (or $logo $logoAlt) }}{{ $orgUrl }}{{else}}{{ site.BaseURL | relLangURL }}{{ end }}">
+        {{ if (or $logo $logoAlt) }}
         {{ if .IsHome }}
         <div class="text-center">
           <img class="img-fluid d-inline"
-            src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
+            src="{{if $logoAlt }}{{ $logoAlt | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
             alt="{{ site.Title }}"> <a class="text-white d-block" href="{{ site.BaseURL | relLangURL }}">{{ site.Title
             }}</a>
         </div>

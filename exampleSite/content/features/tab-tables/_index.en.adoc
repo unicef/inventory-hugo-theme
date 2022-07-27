@@ -1,0 +1,46 @@
+---
+title: Tab tables
+description: Tab tables organize complex information into tabbed sections within an article.
+categories: features
+tag: ["content"]
+downloadBtn: true
+
+---
+:toc:
+
+Tab tables are an advanced way of organizing complex information.
+It creates small, tabbed pages within an article.
+A user can click through them to view different information in each pane.
+This is especially useful when working with images to reduce vertical length.
+
+_One caveat_:
+Tab tables only render HTML.
+Markdown and AsciiDoc are not supported.
+
+See how they are used within an article below:
+
+{{< tabs >}}
+  {{< tab "Part 1: Kids with blocks" >}}
+  <div class="text-center">
+    Photo by <a href="https://unsplash.com/@marisahowenstine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marisa Howenstine</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+  </div>
+
+  <img src="tab-1.jpg" alt="A nanny plays with blocks together with two children" width="75%">
+  {{</ tab >}}
+
+  {{< tab "Part 2: In the mud" >}}
+  <div class="text-center">
+    Photo by <a href="https://unsplash.com/@profwicks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Wicks</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+  </div>
+
+  <img src="tab-2.jpg" alt="Four children stand together wearing boots covered with mud" width="75%">
+  {{</ tab >}}
+
+  {{< tab "Part 3: Playing music" >}}
+  <div class="text-center">
+    Photo by <a href="https://unsplash.com/@robbie36?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Collins</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+  </div>
+
+  <img src="tab-3.jpg" alt="Four boys sit in a field, one of them holding a small stringed instrument" width="75%">
+  {{</ tab >}}
+{{</ tabs >}}

@@ -74,7 +74,7 @@ params:
   logo: ""
 
   # White logo, or any alternate color of logo. Only shown on home page if set.
-  logo_white: ""
+  logo_alt: ""
 
   # OpenGraph data
   description: UNICEF Inventory Theme. This Hugo-powered static site is documentation for and an example of the UNICEF Inventory Theme.
@@ -124,6 +124,7 @@ params:
 
 
 # --- taxonomy settings ---
+
 taxonomies:
   alert: alerts
   category: categories
@@ -156,6 +157,7 @@ Languages:
           link: contact
       footer:
         description: UNICEF Inventory Theme documentation and example site. Powered by Hugo, a static site generator. An open source tool from the UNICEF Office of Innovation, Ventures Team.
+
     # --- navigation menu ---
     menu:
       main:
@@ -170,7 +172,6 @@ Languages:
           weight: 50
           url: pages
           hasChildren: true
-
         # Sub-pages in this drop-down should correspond to categories created in /content/
         - name: 1. About
           parent: pages
@@ -212,6 +213,7 @@ Languages:
           link: contact
       footer:
         description: Documentación de la plantilla de UNICEF Inventory y sitio de ejemplo. Desarrollado por Hugo, un generador de sitio estático. Una herramienta de open source de la Oficina de Innovación de UNICEF, Ventures Team.
+
     # --- navigation menu ---
     menu:
       main:
@@ -226,7 +228,6 @@ Languages:
           weight: 50
           url: pages
           hasChildren: true
-
         # Sub-pages in this drop-down should correspond to categories created in /content/
         - name: 1. Sobre
           parent: pages

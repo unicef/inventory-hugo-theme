@@ -27,6 +27,19 @@
                 href="https://unicef.github.io/inventory-hugo-theme/es/alerts/"
                 />
   </url><url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/es/features/</loc>
+    <lastmod>2022-07-27T12:18:09+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://unicef.github.io/inventory-hugo-theme/features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/features/"
+                />
+  </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -52,6 +65,7 @@
                 />
   </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/es/</loc>
+    <lastmod>2022-07-27T12:18:09+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

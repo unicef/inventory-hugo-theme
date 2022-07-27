@@ -8,6 +8,51 @@
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/categories/features/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Admonitions</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/features/admonitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/features/admonitions/</guid>
+      <description>Admonitions are a technical writing tool to call out specific information and details in an article. This may be a note, general information, a tip, or a warning. The UNICEF Inventory supports multiple admonitions. These are used with shortcodes and work with any markup language (e.g. Markdown and AsciiDoc).
+ One caveat: AsciiDoc is not supported inside an admonition. Admonition content only renders Markdown and HTML.
+ See the examples below:</description>
+    </item>
+    
+    <item>
+      <title>Author byline</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/features/author-byline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/features/author-byline/</guid>
+      <description>Every article can be given an author byline. A byline is an attribution that appears prominently in the article. The byline can have two pieces of data:
+  Author name
+  Author email address
+   The data is specified by adding front-matter to article. See the example below:
+ 1author:Jane Doe2authorEmail:jane@example.com   Figure 1. Byline in an article  </description>
+    </item>
+    
+    <item>
+      <title>Brand &amp; identity</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/features/brand-identity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/features/brand-identity/</guid>
+      <description>Table of Contents 1. Logos 2. Favicon 3. Default colors 4. Font   The UNICEF Inventory theme includes several options to change text and visual appearance of the site. These options allow for greater customization of the Hugo theme for different brands and identities. This is done so that the UNICEF Inventory theme can be used in many different contexts as a knowledge management tool.
+ 1. Logos A UNICEF Inventory site can use two logos: a primary logo and an alternate logo.</description>
+    </item>
+    
+    <item>
+      <title>Code highlighting</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/features/code-highlighting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/features/code-highlighting/</guid>
+      <description>Code highlighting can be used with the Hugo highlight function. The highlight function uses the Chroma syntax highlighter, supporting over 200 languages with more than 40 available styles.
+ See an HTML example below:
+ 1&amp;lt;head&amp;gt; 2 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; 3 &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; 4 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; 5 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;/assets/css/main.css&amp;#34;&amp;gt; 6 &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/png&amp;#34; href=&amp;#34;/assets/img/favicon.png&amp;#34; &amp;gt; 7 &amp;lt;script src=&amp;#34;/assets/js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 8&amp;lt;/head&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>Page redirects</title>
       <link>https://unicef.github.io/inventory-hugo-theme/features/redirect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15,6 +60,18 @@
       <guid>https://unicef.github.io/inventory-hugo-theme/features/redirect/</guid>
       <description>The UNICEF Inventory theme includes a feature that allows you to redirect the user to another website. Sometimes, a page hosted in your site is moved to another website. While Hugo allows you to create aliases that redirects one page to another in the same site, it is not possible to redirect a page to an external site. These page redirects solve that problem.
  To create a page redirect, define the layout type and redirectUrl in the page front-matter:</description>
+    </item>
+    
+    <item>
+      <title>Tab tables</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/features/tab-tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/features/tab-tables/</guid>
+      <description>Tab tables are an advanced way of organizing complex information. It creates small, tabbed pages within an article. A user can click through them to view different information in each pane. This is especially useful when working with images to reduce vertical length.
+ One caveat: Tab tables only render HTML. Markdown and AsciiDoc are not supported.
+ See how they are used within an article below:
+ Photo by Marisa Howenstine on Unsplash.</description>
     </item>
     
   </channel>

@@ -6,17 +6,6 @@
     <description>Recent content in Features on UNICEF Inventory Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright>
-    <lastBuildDate>Fri, 28 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://unicef.github.io/inventory-hugo-theme/features/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Page redirects</title>
-      <link>https://unicef.github.io/inventory-hugo-theme/features/redirect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://unicef.github.io/inventory-hugo-theme/features/redirect/</guid>
-      <description>The UNICEF Inventory theme includes a feature that allows you to redirect the user to another website. Sometimes, a page hosted in your site is moved to another website. While Hugo allows you to create aliases that redirects one page to another in the same site, it is not possible to redirect a page to an external site. These page redirects solve that problem.
- To create a page redirect, define the layout type and redirectUrl in the page front-matter:</description>
-    </item>
-    
+    <copyright>Copyright &amp;copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/features/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on UNICEF Inventory Theme</title>
+    <link>https://unicef.github.io/inventory-hugo-theme/categories/about/</link>
+    <description>Recent content in about on UNICEF Inventory Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)</copyright><atom:link href="https://unicef.github.io/inventory-hugo-theme/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example: Lorem ipsum</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/about/lorem-ipsum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/about/lorem-ipsum/</guid>
+      <description>Table of Contents 1. Text formatting 1.1. Hyperlinks 1.2. Lists 1.3. Quotes   2. Admonitions 3. Code highlighting 4. Tab tables 5. Images 6. Heading 2 6.1. Heading 3   7. Tables 8. Embedded media 8.1. YouTube video 8.2. PDFs     Note: This page is used for two purposes:
+  For Hugo webmasters: See examples of how the theme renders different kinds of content. It shows most of the elements and various markup that can be used across the theme.</description>
+    </item>
+    
+  </channel>
+</rss>

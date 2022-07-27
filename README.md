@@ -57,7 +57,7 @@ See [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) for contribution guidelines, c
 
 The upstream Dot theme includes the following features:
 
-- Multiple language support (Fr, En)
+- Support for translated content (English and Spanish built-in)
 - Google analytics support
 - CSS and Js bundle with hugo pipe
 - Color and fonts variable in config file

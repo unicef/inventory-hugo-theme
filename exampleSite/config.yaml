@@ -77,9 +77,9 @@ params:
   logo_white: ""
 
   # OpenGraph data
-  description: This is metadata for OpenGraph and Twitter Cards. Set in Hugo config file.
+  description: UNICEF Inventory Theme. This Hugo-powered static site is documentation for and an example of the UNICEF Inventory Theme.
   author: UNICEF Office of Innovation, and others
-  # find a royalty-free image from unsplash.com for an OpenGraph image
+  # Tip: Find a royalty-free image from unsplash.com for an OpenGraph image.
   image: "images/banner.jpg"
 
   # customize color
@@ -107,9 +107,8 @@ params:
     parent_org_url: https://www.unicef.org/
     parent_org_url_legal: https://www.unicef.org/legal
   footer:
-    mainSite: https://www.unicefinnovationfund.org/
-    mainSiteName: UNICEF Innovation Fund
-    description: "This is metadata for the site footer. Set in Hugo config file under \"brand and identity information\"."
+    mainSite: https://www.unicef.org/innovation/
+    mainSiteName: UNICEF Office of Innovation
 
 
 # --- social platform settings ---
@@ -117,7 +116,7 @@ params:
 
   social:
     - icon: ti-github
-      name: UNICEF Inventory theme for Hugo on GitHub
+      name: UNICEF Inventory Theme on GitHub
       link: https://github.com/unicef/inventory-hugo-theme
     - icon: ti-twitter-alt
       name: "@UNICEFinnovate on Twitter"
@@ -143,26 +142,28 @@ Languages:
     copyright: "Copyright &copy; 2020-2022 a Hugo theme by [UNICEF Office of Innovation](https://www.unicef.org/innovation/)"
     params:
       banner:
-        title: Support Center & Knowledge base
-        subtitle: Find advice and answers from our support team fast or get in touch.
+        title: UNICEF Inventory Theme
+        subtitle: Documentation and an example site of the UNICEF Inventory Theme. Built for Hugo, a static site generator.
         bg_image: images/banner.jpg
         placeholder: Have a question? Search the site here.
       cta:
         enable: true
-        title: Didn't find an answer to your question?
-        content: Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam.
+        title: Formspree integration
+        content: Create a quick and easy contact form for site visitors to get in touch using built-in Formspree integration.
         button:
           enable: true
-          label: Contact us
+          label: See the form
           link: contact
+      footer:
+        description: UNICEF Inventory Theme documentation and example site. Powered by Hugo, a static site generator. An open source tool from the UNICEF Office of Innovation, Ventures Team.
     # --- navigation menu ---
     menu:
       main:
         - name: FAQ
-          weight: 20
+          weight: 10
           url: faq
         - name: Contact
-          weight: 30
+          weight: 20
           url: contact
 
         - name: pages
@@ -171,51 +172,54 @@ Languages:
           hasChildren: true
 
         # Sub-pages in this drop-down should correspond to categories created in /content/
-        - name: Installation
+        - name: 1. About
           parent: pages
           weight: 10
-          url: installation
-        - name: Billing & Pricing
+          url: about
+        - name: 2. Features
           parent: pages
           weight: 20
-          url: billing-pricing
-        - name: Features
+          url: features
+        - name: 3. Installation
           parent: pages
           weight: 30
-          url: features
+          url: install
+        - name: 4. Contributing
+          parent: pages
+          weight: 50
+          url: contributing
 
-############################# français / French #############################
-  fr:
-    languageName: fr
-    languageCode: fr-fr
+############################# español / Spanish #############################
+  es:
+    languageName: es
+    languageCode: es-mx
     weight: 2
-    home: Page d'accueil
-    copyright: "Copyright &copy; 2020-2022 un thème Hugo par [UNICEF Office of Innovation](https://www.unicef.org/innovation/)"
+    home: Página principal
+    copyright: "Copyright &copy; 2020-2022 una plantilla de [UNICEF Office of Innovation](https://www.unicef.org/innovation/)"
     params:
       banner:
-        title: Comment pouvons nous aider?
-        subtitle: Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous.
+        title: Plantilla de UNICEF Inventory
+        subtitle: Documentación y un sitio de ejemplo de la plantilla de UNICEF Inventory. Construido para Hugo, un generador de sitios estáticos.
         bg_image: images/banner.jpg
-        placeholder: Avoir une question? Il suffit de demander ici ou de saisir les termes.
+        placeholder: ¿Ud. tiene una pregunta? Usted busca el sitio aquí.
       cta:
         enable: true
-        title: Vous n'avez pas trouvé de réponse à votre question?
-        content: Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé.
+        title: Integración de Formspree
+        content: Cree un formulario de contacto rápido y fácil para que los visitantes del sitio se comuniquen con la integración integrada de Formspree.
         button:
           enable: true
-          label: Contactez nous
+          label: Ver el formulario
           link: contact
+      footer:
+        description: Documentación de la plantilla de UNICEF Inventory y sitio de ejemplo. Desarrollado por Hugo, un generador de sitio estático. Una herramienta de open source de la Oficina de Innovación de UNICEF, Ventures Team.
     # --- navigation menu ---
     menu:
       main:
-        - name: Accueil
-          weight: 10
-          url: .
         - name: FAQ
-          weight: 20
+          weight: 10
           url: faq
-        - name: Contacter
-          weight: 30
+        - name: Contactar
+          weight: 20
           url: contact
 
         - name: pages
@@ -224,15 +228,19 @@ Languages:
           hasChildren: true
 
         # Sub-pages in this drop-down should correspond to categories created in /content/
-        - name: Installation
+        - name: 1. Sobre
           parent: pages
           weight: 10
-          url: installation
-        - name: Facturation & Tarification
+          url: about
+        - name: 2. Características
           parent: pages
           weight: 20
-          url: billing-pricing
-        - name: Caractéristiques
+          url: features
+        - name: 3. Instalación
           parent: pages
           weight: 30
-          url: features
+          url: install
+        - name: 4. Contribuyendo
+          parent: pages
+          weight: 50
+          url: contributing

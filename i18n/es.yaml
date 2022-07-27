@@ -1,0 +1,10 @@
+---
+- buttons:
+    edit_page: Edita esta página
+- layouts:
+    redirect_title: Esta página se ha movido
+    redirect_body: Esta página se ha movido. Seras redireccionado en cinco segundos. Actualice cualquier los marcadores. Si no es redirigido, siga el enlace a continuación.
+- footer:
+    legal: "Encuentre información legal y políticas relacionadas con las comunicaciones digitales de {{ $.Site.Params.brand.parent_org_name }}."
+- topics_title: Encuentra tu respuesta por tema
+- send: Enviar

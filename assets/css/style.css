@@ -1029,8 +1029,6 @@ tbody {
 }
 .sidebar {
     background-color:transparent;
-    position:fixed;
-    left:0;
     padding:20px;
     width:272px !important;
 }

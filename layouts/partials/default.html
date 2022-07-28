@@ -38,11 +38,14 @@
           {{if .Params.authorEmail}}
            <span>-</span>
           <a href="mailto:{{ .Params.authorEmail }}">{{.Params.authorEmail}}</a>
+          <br/>
           {{end}}
           {{end}}
           {{ if .Content }}
+          {{.Description}}
           <div class="content mt-5">{{ partial "header-link.html" .Content }}</div>
           {{ else }}
+          {{.Description}}
           <div class="bg-light p-4">
             <ul class="page-list">
               {{ template "default-section-tree-nav" dict "sect" . "currentnode" $currentNode }}

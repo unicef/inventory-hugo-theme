@@ -1334,3 +1334,9 @@ footer a:hover{
         display: none !important;
     }
 }
+
+@media (max-width: 350px) {
+    .globalLogoImg{
+        width:170px !important;
+    }
+}

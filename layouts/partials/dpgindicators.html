@@ -22,7 +22,7 @@
                     <div class="mt-4">
                         <a href="{{ .Permalink }}" class="px-4 py-5 d-block match-height shadow cardLink dpgCard">
                             <h3 class="mb-2 mt-0">{{ .Title }}</h3>
-                            {{with .Params.description}}<p class="mb-0">{{. | markdownify}}</p>{{end}}
+                            {{ with .Params.description }}<p class="mb-0">{{ . }}</p>{{ end }}
                         </a>
                     </div>
                     {{ end }}

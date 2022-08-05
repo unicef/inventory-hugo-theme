@@ -1,0 +1,151 @@
+{{ "<!-- details page -->" | safeHTML }}
+<section class="single section-sm" id="section">
+    <div class="d-flex w-100">
+        <div class="sidebarContainer">
+            <div class="sidebar">
+                <ul>
+                    {{ $currentNode := . }}
+                    {{range .Site.Home.Sections.ByWeight}}
+                    {{ if eq .FirstSection $currentNode.FirstSection }}
+                    {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "index" 0}}
+                    {{ end }}
+                    {{ end }}
+                    {{ partial "download-pdf.html" .}}
+                </ul>
+            </div>
+        </div>
+        <div class="contentContainer py-5 px-5">
+            <div class="p-lg-5 p-4 bg-white position-relative mx-5 my-3 w-100 contentBox" id="content">
+                <div class="p-lg-5 p-3 bg-white">
+                    <h2 id="title">{{ .Title }}</h2>
+                    {{ range (where .Pages "Type" "indicator") }}
+                    <div class="mt-4">
+                        <a href="{{ .Permalink }}" class="px-4 py-5 d-block match-height shadow cardLink dpgCard">
+                            <h3 class="mb-2 mt-0">{{ .Title }}</h3>
+                            {{ with .Params.description }}<p class="mb-0">{{ . }}</p>{{ end }}
+                        </a>
+                    </div>
+                    {{ end }}
+                    {{if eq .Type "indicator"}}
+                    <div class="bg-light p-4">
+                        <ul class="page-list">
+                            {{ template "default-section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                    <nav class="pagination mt-3">
+                        <!-- Next prev page -->
+                        {{ $currentNode := . }}
+                        {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
+                        {{ define "menu-nextprev" }}
+                        {{$currentNode := .currentnode }}
+                        {{ if ne .menu.Params.hidden true}}
+                        {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
+                        {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+                        {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+                        {{else}}
+                        {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
+                        {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+                        {{ $currentNode.Scratch.Set "nextPage" .menu }}
+                        {{end}}
+                        {{end}}
+                        {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
+
+                        {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
+                        {{ if .menu.IsHome}}
+                        {{ $currentNode.Scratch.Set "pages" .menu.Sections }}
+                        {{ else if .menu.Sections}}
+                        {{ $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) }}
+                        {{end}}
+                        {{ $pages := ($currentNode.Scratch.Get "pages") }}
+
+                        {{ range $pages.ByWeight }}
+                        {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
+                        {{end}}
+                        {{ end }}
+                        {{ end }}
+
+                        {{with ($.Scratch.Get "prevPage")}}
+                        <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page"><i
+                                class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
+                        {{end}}
+                        {{with ($.Scratch.Get "nextPage")}}
+                        <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page"> <span
+                                class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
+                        {{end}}
+                    </nav>
+
+                    <!-- Related Articles Section -->
+                    {{ $c := .Section }}
+                    {{ $p := .Params.Categories }}
+                    {{ $t := .Params.Title }}
+                    {{ $ignore := "alert"}}
+                    {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+                    {{ if eq $key $p }}
+                    {{ if ne $key $ignore}}
+                    {{ if le $taxonomy.Pages 1 }}
+                    {{ else }}
+                    <section class="my-3 py-3" id="related-articles">
+                        <h5 class="text-center">Related Articles</h5>
+                        <div class="row">
+                            {{ range shuffle ($taxonomy.Pages) | first $.Site.Params.article_count }}
+                            {{ if ne .Title $t }}
+                            <div class="col-sm-4 my-2">
+                                <a href="{{ .Permalink }}">
+                                    <div class="card text-center">
+                                        {{ if isset .Params "image" }}
+                                        <img class="card-img-top" {{ with .Params.image }} src="{{ . }}" {{ end }}
+                                            alt="{{ .Params.Title }}">
+                                        {{ end }}
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ .Title }}</h5>
+                                            <p class="card-subtitle mb-2 text-muted">{{ .Params.Description }}</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </section>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    <!-- End of related articles section -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /details page -->" | safeHTML }}
+
+<!-- templates -->
+{{ define "default-section-tree-nav" }}
+{{ $showvisitedlinks := .showvisitedlinks }}
+{{ $currentNode := .currentnode }}
+{{with .sect}}
+{{safeHTML .Params.head}}
+{{ $fileUniqueID := "" }}
+{{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
+{{ $currentNodeFileUniqueID := "" }}
+{{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
+<li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="
+  {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
+    <a href="{{.Permalink}}">
+        {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+    </a>
+    {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+    {{ if ne $numberOfPages 0 }}
+    <ul>
+        {{ range .Pages.ByWeight }}
+        {{ if and .Params.hidden (not $.showhidden) }}
+        {{else}}
+        {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+        {{end}}
+        {{end}}
+    </ul>
+    {{ end }}
+</li>
+{{ end }}
+{{ end }}

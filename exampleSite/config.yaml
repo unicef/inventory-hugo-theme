@@ -73,9 +73,6 @@ params:
   # Shown on all pages. When logo is empty, it will show your site title, set above.
   logo: ""
 
-  # White logo, or any alternate color of logo. Only shown on home page if set.
-  logo_alt: ""
-
   # OpenGraph data
   description: UNICEF Inventory Theme. This Hugo-powered static site is documentation for and an example of the UNICEF Inventory Theme.
   author: UNICEF Office of Innovation, and others

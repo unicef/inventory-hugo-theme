@@ -89,6 +89,16 @@
               <p><a href="{{ .Params.community }}"><i class="fa fa-users fa-2x"></i></a> Join our <a href="{{ .Params.community }}">community</a> and ask us your questions </p>
               </div>
               {{end}}
+              {{ if .Params.instagram }}
+              <div>
+              <p><a href="{{ .Params.instagram }}"><i class="fa-brands fa-instagram fa-2x"></i></a> Follow us on <a href="{{ .Params.instagram }}">instagram</a> </p>
+              </div>
+              {{end}}
+              {{ if .Params.facebook }}
+              <div>
+              <p><a href="{{ .Params.facebook }}"><i class="fa-brands fa-facebook fa-2x"></i></a> Follow us on <a href="{{ .Params.facebooko }}">facebook</a> </p>
+              </div>
+              {{end}}
               
               <div>
                 

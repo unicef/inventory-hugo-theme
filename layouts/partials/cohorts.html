@@ -69,24 +69,14 @@
               <p><a href="{{ .Params.gitlab }}"><i class="fa fa-gitlab fa-2x"></i></a> Checkout our GitLab <a href="{{ .Params.gitlab }}">repo</a>  </p>
               </div>
               {{end}}
-              {{ if .Params.twitter }}
-              <div>
-              <p><a href="{{ .Params.twitter }}"><i class="fa fa-twitter fa-2x"></i></a> Follow us on <a href="{{ .Params.twitter }}">twitter</a>  </p>
-              </div>
-              {{end}}
               {{ if .Params.linkedin }}
               <div>
               <p><a href="{{ .Params.linkedin }}"><i class="fa fa-linkedin fa-2x"></i></a> Connect with us on <a href="{{ .Params.linkedin }}">linkedin</a>  </p>
               </div>
               {{end}}
-              {{ if .Params.website }}
+              {{ if .Params.twitter }}
               <div>
-              <p><a href="{{ .Params.website }}"><i class="fa fa-globe fa-2x"></i></a> Visit our <a href="{{ .Params.website }}">website</a>  </p>
-              </div>
-              {{end}}
-              {{ if .Params.community }}
-              <div>
-              <p><a href="{{ .Params.community }}"><i class="fa fa-users fa-2x"></i></a> Join our <a href="{{ .Params.community }}">community</a> and ask us your questions </p>
+              <p><a href="{{ .Params.twitter }}"><i class="fa fa-twitter fa-2x"></i></a> Follow us on <a href="{{ .Params.twitter }}">twitter</a>  </p>
               </div>
               {{end}}
               {{ if .Params.instagram }}
@@ -99,6 +89,17 @@
               <p><a href="{{ .Params.facebook }}"><i class="fa-brands fa-facebook fa-2x"></i></a> Follow us on <a href="{{ .Params.facebooko }}">facebook</a> </p>
               </div>
               {{end}}
+              {{ if .Params.website }}
+              <div>
+              <p><a href="{{ .Params.website }}"><i class="fa fa-globe fa-2x"></i></a> Visit our <a href="{{ .Params.website }}">website</a>  </p>
+              </div>
+              {{end}}
+              {{ if .Params.community }}
+              <div>
+              <p><a href="{{ .Params.community }}"><i class="fa fa-users fa-2x"></i></a> Join our <a href="{{ .Params.community }}">community</a> and ask us your questions </p>
+              </div>
+              {{end}}
+              
               
               <div>
                 

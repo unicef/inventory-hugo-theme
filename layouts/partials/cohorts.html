@@ -51,7 +51,7 @@
                   {{ $ext:= ".png" }}
 
                   {{ $sdg:= printf "%s" $ext | printf "%s%s" $num | printf "%s%s" $base | printf "%s" }}
-                  
+
                   <img src="{{ $sdg | absURL }}" class="w-25 h-25" alt="SDG {{ . }}" />
                 {{ end }}
               </div>
@@ -61,49 +61,45 @@
               <h2>Learn more</h2>
               {{ if .Params.github }}
               <div>
-              <p><a href="{{ .Params.github }}"><i class="fa fa-github fa-2x"></i></a> Checkout our GitHub <a href="{{ .Params.github }}">repo</a>  </p>
+              <p><a href="{{ .Params.github }}"><i class="fa fa-github fa-2x"></i></a>Check out our <a href="{{ .Params.github }}">GitHub repo</a>  </p>
               </div>
               {{end}}
               {{ if .Params.gitlab }}
               <div>
-              <p><a href="{{ .Params.gitlab }}"><i class="fa fa-gitlab fa-2x"></i></a> Checkout our GitLab <a href="{{ .Params.gitlab }}">repo</a>  </p>
-              </div>
-              {{end}}
-              {{ if .Params.linkedin }}
-              <div>
-              <p><a href="{{ .Params.linkedin }}"><i class="fa fa-linkedin fa-2x"></i></a> Connect with us on <a href="{{ .Params.linkedin }}">linkedin</a>  </p>
-              </div>
-              {{end}}
-              {{ if .Params.twitter }}
-              <div>
-              <p><a href="{{ .Params.twitter }}"><i class="fa fa-twitter fa-2x"></i></a> Follow us on <a href="{{ .Params.twitter }}">twitter</a>  </p>
-              </div>
-              {{end}}
-              {{ if .Params.instagram }}
-              <div>
-              <p><a href="{{ .Params.instagram }}"><i class="fa-brands fa-instagram fa-2x"></i></a> Follow us on <a href="{{ .Params.instagram }}">instagram</a> </p>
+              <p><a href="{{ .Params.gitlab }}"><i class="fa fa-gitlab fa-2x"></i></a>Check out our <a href="{{ .Params.gitlab }}">GitLab repo</a></p>
               </div>
               {{end}}
               {{ if .Params.facebook }}
               <div>
-              <p><a href="{{ .Params.facebook }}"><i class="fa-brands fa-facebook fa-2x"></i></a> Follow us on <a href="{{ .Params.facebook }}">facebook</a> </p>
+              <p><a href="{{ .Params.facebook }}"><i class="fa-brands fa-facebook fa-2x"></i></a>Like us on <a href="{{ .Params.facebook }}">Facebook</a></p>
               </div>
-              {{end}}
+              {{ end }}
+              {{ if .Params.twitter }}
+              <div>
+              <p><a href="{{ .Params.twitter }}"><i class="fa fa-twitter fa-2x"></i></a>Follow us on <a href="{{ .Params.twitter }}">Twitter</a></p>
+              </div>
+              {{ end }}
+              {{ if .Params.linkedin }}
+              <div>
+              <p><a href="{{ .Params.linkedin }}"><i class="fa fa-linkedin fa-2x"></i></a>Connect with us on <a href="{{ .Params.linkedin }}">LinkedIn</a></p>
+              </div>
+              {{ end }}
+              {{ if .Params.instagram }}
+              <div>
+              <p><a href="{{ .Params.instagram }}"><i class="fa-brands fa-instagram fa-2x"></i></a>Follow us on <a href="{{ .Params.instagram }}">Instagram</a></p>
+              </div>
+              {{ end }}
               {{ if .Params.website }}
               <div>
-              <p><a href="{{ .Params.website }}"><i class="fa fa-globe fa-2x"></i></a> Visit our <a href="{{ .Params.website }}">website</a>  </p>
+              <p><a href="{{ .Params.website }}"><i class="fa fa-globe fa-2x"></i></a> Visit our <a href="{{ .Params.website }}">website</a></p>
               </div>
-              {{end}}
+              {{ end }}
               {{ if .Params.community }}
               <div>
-              <p><a href="{{ .Params.community }}"><i class="fa fa-users fa-2x"></i></a> Join our <a href="{{ .Params.community }}">community</a> and ask us your questions </p>
+              <p><a href="{{ .Params.community }}"><i class="fa fa-users fa-2x"></i></a> Join <a href="{{ .Params.community }}">our community</a> and ask us your questions!</p>
               </div>
-              {{end}}
-              
-              
-              <div>
-                
-              </div>
+              {{ end }}
+
              </div>
             {{ else }}
             <div class="bg-light row pt-3">
@@ -114,10 +110,10 @@
                                 <div class="w-25 float-left m-2">
                                     <img src="{{.Params.logo}}"  alt="{{ .Params.Title }} Logo" srcset="" class="rounded-circle img-fluid">
                                 </div>
-                                
+
                                     <h4>{{ .Params.Title }}</h4>
                                     <p class="text-left" style="font-size: 0.8rem">{{ .Params.Description }}</p>
-                              
+
                             </div>
                             <div class="row d-flex justify-content-between mx-3 my-2" style="font-size: 0.75rem">
                                 <span><i class="fa fa-map-marker mr-1"></i>{{ .Params.country }}</span>

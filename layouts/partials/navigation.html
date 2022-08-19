@@ -5,15 +5,13 @@
       {{ $orgName:= site.Params.brand.parent_org_name }}
       {{ $orgUrl:= site.Params.brand.parent_org_url }}
 
-      <div class="text-center">
+      <div class="navbar-brand">
         {{ if $logo }}
-          <p class="navbar-brand">
-          <img class="img-fluid d-inline globalLogoImg"
-            src="{{ $logo | absURL }}"
-            alt="{{ site.Title }}">
-          </p>
+        <img class="img-fluid d-inline globalLogoImg"
+          src="{{ $logo | absURL }}"
+          alt="{{ site.Title }}">
         {{ end }}
-        <a class="navbar-brand text-white d-block px-1" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
+        <a class="text-center text-white d-block px-1" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
       </div>
       
     </div>

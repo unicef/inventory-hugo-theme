@@ -171,6 +171,26 @@ h6,
     color: var(--white-color);
 }
 
+/* page tags */
+.page-tags-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-tags {
+    background-color: #1CABE2;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 0.25rem;
+    white-space: normal;
+    overflow: hidden;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0 10px 20px;
+}
 
 /* preloader */
 

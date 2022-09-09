@@ -33,6 +33,9 @@
 
         <div class="p-lg-5 p-3 bg-white">
           <h2 id="title">{{ .Title }}</h2>
+          <div>
+            {{ partial "page-tags.html" . }}
+          </div>
           <div class="container">
             {{if .Params.author}}
             <span class="text-dark">{{ .Params.author }}</span>

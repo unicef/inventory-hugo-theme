@@ -53,6 +53,26 @@
     </item>
     
     <item>
+      <title>Create a new Hugo site</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/install/new-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/install/new-site/</guid>
+      <description>This page documents how to create a new Hugo website using the UNICEF Inventory theme. You need to already understand the basics of Hugo. If you do not know about Hugo, review the Hugo documentation on getting started to learn more about the basics.
+Overview This guide assumes you will use GitHub to host the source content for your website and GitHub Pages to deploy the generated HTML built by Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Create a new UNICEF Toolkit</title>
+      <link>https://unicef.github.io/inventory-hugo-theme/install/unicef-toolkit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://unicef.github.io/inventory-hugo-theme/install/unicef-toolkit/</guid>
+      <description>This guide provides supplementary information about creating a new UNICEF Toolkit with the UNICEF Inventory theme. Before reading this page, you should read &amp;ldquo;Create a new Hugo site&amp;rdquo; on how to set up a new Hugo website with the UNICEF Inventory theme.
+UNICEF GitHub The recommended way to create a new UNICEF Toolkit is to create a new GitHub repository on github.com/unicef. Creating a repository here allows you to leverage the unicef.</description>
+    </item>
+    
+    <item>
       <title>Example: Lorem ipsum</title>
       <link>https://unicef.github.io/inventory-hugo-theme/about/lorem-ipsum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

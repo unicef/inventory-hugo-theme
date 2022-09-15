@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/es/install/new-site/</loc>
+    <lastmod>2022-09-16T01:17:59+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://unicef.github.io/inventory-hugo-theme/install/new-site/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/install/new-site/"
+                />
+  </url><url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/es/install/unicef-toolkit/</loc>
+    <lastmod>2022-09-16T01:17:59+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://unicef.github.io/inventory-hugo-theme/install/unicef-toolkit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/install/unicef-toolkit/"
+                />
+  </url><url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/es/install/</loc>
+    <lastmod>2022-09-16T01:17:59+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://unicef.github.io/inventory-hugo-theme/install/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/install/"
+                />
+  </url><url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/es/features/</loc>
+    <lastmod>2022-09-16T01:17:59+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://unicef.github.io/inventory-hugo-theme/features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/features/"
+                />
+  </url><url>
+    <loc>https://unicef.github.io/inventory-hugo-theme/es/</loc>
+    <lastmod>2022-09-16T01:17:59+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://unicef.github.io/inventory-hugo-theme/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://unicef.github.io/inventory-hugo-theme/es/"
+                />
+  </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/es/about/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -27,19 +92,6 @@
                 href="https://unicef.github.io/inventory-hugo-theme/es/alerts/"
                 />
   </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/es/features/</loc>
-    <lastmod>2022-07-27T12:18:09+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/features/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://unicef.github.io/inventory-hugo-theme/es/features/"
-                />
-  </url><url>
     <loc>https://unicef.github.io/inventory-hugo-theme/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -62,19 +114,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://unicef.github.io/inventory-hugo-theme/es/downloadbtn/"
-                />
-  </url><url>
-    <loc>https://unicef.github.io/inventory-hugo-theme/es/</loc>
-    <lastmod>2022-07-27T12:18:09+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://unicef.github.io/inventory-hugo-theme/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://unicef.github.io/inventory-hugo-theme/es/"
                 />
   </url>
 </urlset>

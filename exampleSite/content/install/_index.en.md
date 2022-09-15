@@ -1,7 +1,8 @@
 ---
-title: "Installation"
-date: 2018-12-29T11:02:05+06:00
-icon: "ti-panel"
-description: "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet"
-type : "docs"
+title: Installation
+icon: ti-panel
+description: How to use this Hugo theme to create a new website or UNICEF Toolkit.
+type: docs
+weight: 20
+
 ---

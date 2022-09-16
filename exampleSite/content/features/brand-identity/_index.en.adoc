@@ -13,13 +13,10 @@ These options allow for greater customization of the Hugo theme for different br
 This is done so that the UNICEF Inventory theme can be used in many different contexts as a knowledge management tool.
 
 
-[[logos]]
-== Logos
+[[logo]]
+== Logo
 
-A UNICEF Inventory site can use two logos: a primary logo and an alternate logo.
-Two logos are supported for the case when one logo color has poor contrast against some backgrounds.
-In that case, the `logo_alt` should be set in the site config.
-
+A UNICEF Inventory site can also use a logo in the site navigation.
 See an excerpt from the `config.yaml` file of the example site:
 
 {{< highlight yaml >}}
@@ -27,14 +24,14 @@ See an excerpt from the `config.yaml` file of the example site:
 
 params:
   # Shown on all pages. When logo is empty, it will show your site title, set above.
-  logo: ""
-
-  # White logo, or any alternate color of logo. Only shown on home page if set.
-  logo_alt: ""
+  logo: "https://example.org/static/some-logo.png"  # hosted externally
+  # …or…
+  logo: "/inventory-hugo-theme/images/favicon.png"  # hosted internally
 {{< /highlight >}}
 
 {{% notice tip %}}
-The logo size will adapt automatically.
+The logo size will adapt horizontally automatically.
+Manual vertical scaling may be needed to properly fit logos in a portrait orientation.
 {{% /notice %}}
 
 

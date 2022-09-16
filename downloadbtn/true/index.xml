@@ -37,8 +37,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://unicef.github.io/inventory-hugo-theme/features/brand-identity/</guid>
-      <description>Table of Contents 1. Logos 2. Favicon 3. Default colors 4. Font   The UNICEF Inventory theme includes several options to change text and visual appearance of the site. These options allow for greater customization of the Hugo theme for different brands and identities. This is done so that the UNICEF Inventory theme can be used in many different contexts as a knowledge management tool.
- 1. Logos A UNICEF Inventory site can use two logos: a primary logo and an alternate logo.</description>
+      <description>Table of Contents 1. Logo 2. Favicon 3. Default colors 4. Font   The UNICEF Inventory theme includes several options to change text and visual appearance of the site. These options allow for greater customization of the Hugo theme for different brands and identities. This is done so that the UNICEF Inventory theme can be used in many different contexts as a knowledge management tool.
+ 1. Logo A UNICEF Inventory site can also use a logo in the site navigation.</description>
     </item>
     
     <item>

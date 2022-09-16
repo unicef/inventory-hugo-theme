@@ -321,7 +321,7 @@
 																				<div id="toc" class="toc">
 																					<div id="toctitle">Table of Contents</div>
 																					<ul class="sectlevel1">
-																						<li><a href="#logos">1. Logos</a></li>
+																						<li><a href="#logo">1. Logo</a></li>
 																						<li><a href="#favicon">2. Favicon</a></li>
 																						<li><a href="#colors">3. Default colors</a></li>
 																						<li><a href="#font">4. Font</a></li>
@@ -333,15 +333,11 @@
 																						This is done so that the UNICEF Inventory theme can be used in many different contexts as a knowledge management tool.</p>
 																				</div>
 																				<div class="sect1">
-																					<h2 id="logos">1. Logos&nbsp;<a class="hanchor" href="#logos">🔗</a> </h2>
+																					<h2 id="logo">1. Logo&nbsp;<a class="hanchor" href="#logo">🔗</a> </h2>
 																					<div class="sectionbody">
 																						<div class="paragraph">
-																							<p>A UNICEF Inventory site can use two logos: a primary logo and an alternate logo.
-																								Two logos are supported for the case when one logo color has poor contrast against some backgrounds.
-																								In that case, the <code>logo_alt</code> should be set in the site config.</p>
-																						</div>
-																						<div class="paragraph">
-																							<p>See an excerpt from the <code>config.yaml</code> file of the example site:</p>
+																							<p>A UNICEF Inventory site can also use a logo in the site navigation.
+																								See an excerpt from the <code>config.yaml</code> file of the example site:</p>
 																						</div>
 																						<div class="paragraph">
 																							<div class="highlight">
@@ -349,17 +345,17 @@
 </span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#bbb"></span><span style="color:#070">params</span>:<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#bbb">  </span><span style="color:#666;font-style:italic"># Shown on all pages. When logo is empty, it will show your site title, set above.</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#bbb">  </span><span style="color:#070">logo</span>:<span style="color:#bbb"> </span><span style="background-color:#e0e0ff">&#34;&#34;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#bbb">  </span><span style="color:#666;font-style:italic"># White logo, or any alternate color of logo. Only shown on home page if set.</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#bbb">  </span><span style="color:#070">logo_alt</span>:<span style="color:#bbb"> </span><span style="background-color:#e0e0ff">&#34;&#34;</span></span></span></code></pre>
+</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#bbb">  </span><span style="color:#070">logo</span>:<span style="color:#bbb"> </span><span style="background-color:#e0e0ff">&#34;https://example.org/static/some-logo.png&#34;</span><span style="color:#bbb">  </span><span style="color:#666;font-style:italic"># hosted externally</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#bbb">  </span><span style="color:#666;font-style:italic"># …or…</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#bbb">  </span><span style="color:#070">logo</span>:<span style="color:#bbb"> </span><span style="background-color:#e0e0ff">&#34;/inventory-hugo-theme/images/favicon.png&#34;</span><span style="color:#bbb">  </span><span style="color:#666;font-style:italic"># hosted internally</span></span></span></code></pre>
 																							</div>
 																						</div>
 																						<div class="paragraph">
 																							<div class="notices tip" >
 																								<p>
 																									<div class="paragraph">
-																										<p>The logo size will adapt automatically.</p>
+																										<p>The logo size will adapt horizontally automatically.
+																											Manual vertical scaling may be needed to properly fit logos in a portrait orientation.</p>
 																									</div>
 																								</p>
 																							</div>
@@ -425,7 +421,7 @@
 																					</div>
 																				</div>
 																			</div>
-																			<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 27 Jul 2022</p>
+																			<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 16 Sep 2022</p>
 																			<nav class="pagination mt-3">
 																				<a class="nav nav-prev" href="https://unicef.github.io/inventory-hugo-theme/features/author-byline/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Author byline</span></a>
 																				<a class="nav nav-next" href="https://unicef.github.io/inventory-hugo-theme/features/code-highlighting/" aria-label="Previous page" > <span class="d-none d-md-block">Code highlighting</span><i class="ti-arrow-right ml-2"></i></a>
@@ -434,21 +430,21 @@
 																				<h5 class="text-center">Related Articles</h5>
 																				<div class="row">
 																					<div class="col-sm-4 my-2">
-																						<a href="https://unicef.github.io/inventory-hugo-theme/features/author-byline/">
-																							<div class="card text-center">
-																								<div class="card-body">
-																									<h5 class="card-title">Author byline</h5>
-																									<p class="card-subtitle mb-2 text-muted">Identify the author and author contact information of a page.</p>
-																								</div>
-																							</div>
-																						</a>
-																					</div>
-																					<div class="col-sm-4 my-2">
 																						<a href="https://unicef.github.io/inventory-hugo-theme/features/tab-tables/">
 																							<div class="card text-center">
 																								<div class="card-body">
 																									<h5 class="card-title">Tab tables</h5>
 																									<p class="card-subtitle mb-2 text-muted">Tab tables organize complex information into tabbed sections within an article.</p>
+																								</div>
+																							</div>
+																						</a>
+																					</div>
+																					<div class="col-sm-4 my-2">
+																						<a href="https://unicef.github.io/inventory-hugo-theme/features/code-highlighting/">
+																							<div class="card text-center">
+																								<div class="card-body">
+																									<h5 class="card-title">Code highlighting</h5>
+																									<p class="card-subtitle mb-2 text-muted">Render code with a syntax highlighter.</p>
 																								</div>
 																							</div>
 																						</a>

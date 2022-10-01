@@ -2,7 +2,7 @@
 title: Code highlighting
 description: Render code with a syntax highlighter.
 categories: features
-tag: ["content"]
+tags: ["content"]
 downloadBtn: true
 
 ---

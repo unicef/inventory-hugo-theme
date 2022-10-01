@@ -2,7 +2,7 @@
 title: Page redirects
 description: Create a special page that redirects the user to a URL hosted on an external website.
 categories: features
-tag: ["layouts"]
+tags: ["layouts"]
 downloadBtn: true
 
 ---

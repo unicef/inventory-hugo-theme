@@ -2,7 +2,7 @@
 title: Key stakeholders
 description: Definition of key stakeholders for the UNICEF Inventory theme and UNICEF Toolkits.
 categories: contributing
-tag: ["unicef"]
+tags: ["unicef"]
 downloadBtn: true
 
 ---

@@ -2,7 +2,7 @@
 title: "Example: Lorem ipsum"
 description: A page used for quickly seeing several different features and markup of the UNICEF Inventory theme.
 categories: about
-tag: ["content", "developers"]
+tags: ["content", "developers"]
 downloadBtn: true
 # search related keywords
 keywords: [""]

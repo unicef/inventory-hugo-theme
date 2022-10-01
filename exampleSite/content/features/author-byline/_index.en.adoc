@@ -2,7 +2,7 @@
 title: Author byline
 description: Identify the author and author contact information of a page.
 categories: features
-tag: ["content"]
+tags: ["content"]
 downloadBtn: true
 
 ---

@@ -2,7 +2,7 @@
 title: Brand & identity
 description: Change text and visual appearance to better represent the brand and identity of the site owner.
 categories: features
-tag: ["design"]
+tags: ["design"]
 downloadBtn: true
 
 ---

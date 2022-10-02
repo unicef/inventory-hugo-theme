@@ -2,7 +2,7 @@
 title: Tab tables
 description: Tab tables organize complex information into tabbed sections within an article.
 categories: features
-tag: ["content"]
+tags: ["content"]
 downloadBtn: true
 
 ---

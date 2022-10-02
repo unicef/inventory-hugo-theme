@@ -2,7 +2,7 @@
 title: Admonitions
 description: Call out specific information and details in an article using an admonition.
 categories: features
-tag: ["content"]
+tags: ["content"]
 downloadBtn: true
 
 ---

@@ -32,7 +32,7 @@ features = [
     "search"]
 
 [author]
-    name = UNICEF Office of Innovation, Ventures Team"
+    name = "UNICEF Office of Innovation, Ventures Team"
     homepage = "https://www.unicef.org/innovation/ventures"
 
 [original]

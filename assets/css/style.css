@@ -273,7 +273,7 @@ h4:hover a {
 
 .section,
 section.main-section {
-    padding-top: calc(250px - 4vw);
+    padding-top: 10vh;
 }
 
 @media (max-width: 768px) {

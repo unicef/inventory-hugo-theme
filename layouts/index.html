@@ -1,14 +1,14 @@
 {{ define "main" }}
 
-  {{ if .Content }}
-  <section class="section text-center pb-0">
-    <div class="container">
-    {{ .Content }}
-    </div>
-  </section>
-  {{ end }}
-  {{ "<!-- topics -->" | safeHTML }}
   <section class="section">
+    {{ if .Content }}
+      {{ "<!-- index page text -->" | safeHTML }}
+      <div class="container text-center pb-5">
+        {{ .Content }}
+      </div>
+      {{ "<!-- /index page text -->" | safeHTML }}
+    {{ end }}
+    {{ "<!-- topics -->" | safeHTML }}
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">

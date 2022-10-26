@@ -1,95 +1,131 @@
-<nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0" style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: {{ site.Params.primary_color }}{{ end }}">
-  <div class="w-100 container mx-0 navigation-bar">
-    <div id="site-brand">
-      {{ $logo:= site.Params.logo }}
-      {{ $orgName:= site.Params.brand.parent_org_name }}
-      {{ $orgUrl:= site.Params.brand.parent_org_url }}
+<div>
+  <nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0"
+    style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: {{ site.Params.primary_color }}{{ end }}">
+    <div class="w-100 container mx-0 navigation-bar">
+      <div id="site-brand">
+        {{ $logo:= site.Params.logo }}
+        {{ $orgName:= site.Params.brand.parent_org_name }}
+        {{ $orgUrl:= site.Params.brand.parent_org_url }}
 
-      <div class="navbar-brand">
-        {{ if $logo }}
-        <img class="img-fluid d-inline globalLogoImg"
-          src="{{ $logo | absURL }}"
-          alt="{{ site.Title }}">
-        {{ end }}
-        <a class="text-center text-white d-block px-1" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
-      </div>
-      
-    </div>
-
-    <a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="sidebarIcon navbarMenu">Menu<i class="fa-solid fa-caret-down d-inline p-1"></i>
-      </span>
-  </a>
-
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        {{ range site.Menus.main }}
-        {{ if .HasChildren }}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            {{ .Name }}
-          </a>
-          <div class="dropdown-menu">
-            {{ range .Children }}
-            <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            {{ end }}
+        <div class="navbar-brand">
+          {{ if $logo }}
+          <img class="img-fluid d-inline globalLogoImg" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
+          {{ end }}
+          <div id="navbarHeading">
+            <a class="text-center text-white d-block px-1" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
           </div>
-        </li>
-        {{ else }}
-        <li class="nav-item">
-          <a class="nav-link text-white" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-        </li>
+          <div id="navbarBreadcrumb" style="display: none">{{ partial "breadcrumb.html" . }}</div>
+        </div>
+
+      </div>
+
+      <a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sidebarIcon navbarMenu">Menu<i class="fa-solid fa-caret-down d-inline p-1"></i>
+        </span>
+      </a>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          {{ range site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        <!-- Language List -->
+        {{- if site.IsMultiLingual }}
+        <select class="lang-list bg-primary {{ if not .IsHome }}mb-3 mb-md-0{{ end }}" id="select-language"
+          onchange="location = this.value;">
+          {{ $siteLanguages := site.Languages}}
+          {{ $pageLang := .Page.Lang}}
+          {{ range .Page.AllTranslations }}
+          {{ $translation := .}}
+          {{ range $siteLanguages }}
+          {{ if eq $translation.Lang .Lang }}
+          {{ $selected := false }}
+          {{ if eq $pageLang .Lang}}
+          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+          </option>
+          {{ else }}
+          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </select>
         {{ end }}
-        {{ end }}
-      </ul>
-      <!-- Language List -->
-      {{- if site.IsMultiLingual }}
-      <select class="lang-list bg-primary {{ if not .IsHome }}mb-3 mb-md-0{{ end }}" id="select-language"
-        onchange="location = this.value;">
-        {{ $siteLanguages := site.Languages}}
-        {{ $pageLang := .Page.Lang}}
-        {{ range .Page.AllTranslations }}
-        {{ $translation := .}}
-        {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-        {{ $selected := false }}
-        {{ if eq $pageLang .Lang}}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-        </option>
-        {{ else }}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </select>
-      {{ end }}
-      <p class="text-white unicef-glob ml-4 mt-3">Visit <a href="{{ $orgUrl }}" class="text-white">{{ $orgName }} <i
-        class="fas fa-angle-double-right"></i></a></p>
+        <p class="text-white unicef-glob ml-4 mt-3">Visit <a href="{{ $orgUrl }}" class="text-white">{{ $orgName }} <i
+              class="fas fa-angle-double-right"></i></a></p>
+      </div>
     </div>
-  </div>
-  {{ if not .IsHome }}
-  <div class="w-100 py-2 breadcrumbBar text-light" style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: {{ site.Params.text_color_dark }}{{ end }}">  
-    <div class="container">
-      {{ partial "breadcrumb.html" . }}
-      <a data-toggle="collapse" data-target="#sidebarMobile"  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"> <i class="ti-menu text-light sidebarIcon"></i></a>
-      <div class="text-light text-center sidebarMobile collapse justify-content-center" id="sidebarMobile">
-        <div class="sidebarBox">
-          <ul>
-            {{ $currentNode := . }}
-            {{range .Site.Home.Sections.ByWeight}}
+    {{ if not .IsHome }}
+    {{ end }}
+  </nav>
+  <nav id="breadcrumbNav">
+    <div class="w-100 py-2 breadcrumbBar text-light"
+      style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: {{ site.Params.text_color_dark }}{{ end }}">
+      <div class="container">
+        {{ partial "breadcrumb.html" . }}
+        <a data-toggle="collapse" data-target="#sidebarMobile" aria-controls="navigation" aria-expanded="false"
+          aria-label="Toggle navigation"> <i class="ti-menu text-light sidebarIcon"></i></a>
+        <div class="text-light text-center sidebarMobile collapse justify-content-center" id="sidebarMobile">
+          <div class="sidebarBox">
+            <ul>
+              {{ $currentNode := . }}
+              {{range .Site.Home.Sections.ByWeight}}
               {{ if eq .FirstSection $currentNode.FirstSection }}
               {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "index" 0}}
               {{ end }}
-            {{ end }}
-            {{ partial "download-pdf.html" .}}
-          </ul>
+              {{ end }}
+              {{ partial "download-pdf.html" .}}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-  {{ end }}
-</nav>
+    </div>
+    <script>
+      var topPosition;
+
+      breadcrumbNav = document.getElementById('breadcrumbNav');
+
+      navbarHeading = document.getElementById('navbarHeading');
+
+      navbarBreadcrumb = document.getElementById('navbarBreadcrumb');
+
+      topPosition = window.pageYOffset;
+
+      window.addEventListener('scroll', function () {
+
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollPosition > topPosition) {
+          breadcrumbNav.style.display = 'none';
+          navbarHeading.style.display = 'none';
+          navbarBreadcrumb.style.display = 'block';
+        }
+
+        else {
+          breadcrumbNav.style.display = 'block';
+          navbarHeading.style.display = 'block';
+          navbarBreadcrumb.style.display = 'none';
+        }
+      });
+    </script>
+  </nav>
+</div>

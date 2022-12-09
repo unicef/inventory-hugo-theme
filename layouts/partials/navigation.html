@@ -1,5 +1,5 @@
-<div>
-  <nav class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0"
+<nav>
+  <div class="navbar navbar-expand-md navbar-dark d-flex flex-column p-0"
     style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: {{ site.Params.primary_color }}{{ end }}">
     <div class="w-100 container mx-0 navigation-bar">
       <div id="site-brand">
@@ -75,8 +75,8 @@
     </div>
     {{ if not .IsHome }}
     {{ end }}
-  </nav>
-  <nav id="breadcrumbNav">
+  </div>
+  <div id="breadcrumbNav">
     <div class="w-100 py-2 breadcrumbBar text-light"
       style=" {{ if .IsHome }}background-color: transparent{{ else }}background-color: {{ site.Params.text_color_dark }}{{ end }}">
       <div class="container">
@@ -127,5 +127,5 @@
         }
       });
     </script>
-  </nav>
-</div>
+  </div>
+</nav>
